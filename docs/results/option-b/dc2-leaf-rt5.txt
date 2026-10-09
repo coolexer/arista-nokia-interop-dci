@@ -1,0 +1,53 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Show report for the EVPN routes in network-instance  "default"
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Route Distinguisher: 10.255.2.254:50000
+Tag-ID             : 0
+ip-prefix-len      : 24
+ip-prefix          : 192.168.20.0/24
+neighbor           : 10.255.2.254
+path-id            : 0
+Gateway IP         : 0.0.0.0
+Received paths     : 1
+  Path 1: <Best,Valid,Used,>
+    ESI                   : 00:00:00:00:00:00:00:00:00:00
+    Label                 : 50000
+    Route source          : neighbor 10.255.2.254 (last modified 1m9s ago)
+    Route preference      : No MED, No LocalPref
+    Atomic Aggr           : false
+    BGP next-hop          : 10.255.2.254
+    AS Path               :  i [65000, 65101]
+    Domain Path           : segment 0: [len: 1, 65000:100, isf_safi_type: 70], segment 1: [len: 1, 65000:1, isf_safi_type: 70]
+    Communities           : [origin:65000:2, target:65000:50000, mac-nh:1a:06:02:ff:00:00, bgp-tunnel-encap:VXLAN, origin:65000:1]
+    RR Attributes         : No Originator-ID, Cluster-List is []
+    Aggregation           : None
+    Unknown Attr          : None
+    Invalid Reason        : None
+    Tie Break Reason      : none
+    Route Flap Damping    : None
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Route Distinguisher: 10.255.2.254:50000
+Tag-ID             : 0
+ip-prefix-len      : 24
+ip-prefix          : 192.168.30.0/24
+neighbor           : 10.255.2.254
+path-id            : 0
+Gateway IP         : 0.0.0.0
+Received paths     : 1
+  Path 1: <>
+    ESI                   : 00:00:00:00:00:00:00:00:00:00
+    Label                 : 50000
+    Route source          : neighbor 10.255.2.254 (last modified 1m5s ago)
+    Route preference      : No MED, No LocalPref
+    Atomic Aggr           : false
+    BGP next-hop          : 10.255.2.254
+    AS Path               :  i [65000, 65102]
+    Domain Path           : segment 0: [len: 1, 65000:2, isf_safi_type: 70]
+    Communities           : [origin:65000:2, target:65000:50000, mac-nh:1a:06:02:ff:00:00, bgp-tunnel-encap:VXLAN]
+    RR Attributes         : No Originator-ID, Cluster-List is []
+    Aggregation           : None
+    Unknown Attr          : None
+    Invalid Reason        : As_Loop
+    Tie Break Reason      : none
+    Route Flap Damping    : None
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

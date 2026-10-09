@@ -1,0 +1,10 @@
+**/srl.license
+**/*.license
+**/clab-*/
+**/results/
+!docs/results/
+!docs/results/**
+**/*.pcap
+**/*.pcapng
+.env
+.DS_Store

@@ -1,0 +1,154 @@
+# Option B: X1b gateway, local VXLAN and DCI EVPN-MPLS.
+set / system name host-name dc2-bl
+set / interface system0 admin-state enable
+set / interface system0 subinterface 0 admin-state enable
+set / interface system0 subinterface 0 ipv4 admin-state enable
+set / interface system0 subinterface 0 ipv4 address 10.255.2.254/32
+set / network-instance default admin-state enable
+set / network-instance default interface system0.0
+set / interface ethernet-1/1 admin-state enable
+set / interface ethernet-1/1 mtu 9216
+set / interface ethernet-1/1 subinterface 0 admin-state enable
+set / interface ethernet-1/1 subinterface 0 ip-mtu 9000
+set / interface ethernet-1/1 subinterface 0 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 0 ipv4 address 100.64.2.0/31
+set / network-instance default interface ethernet-1/1.0
+set / interface ethernet-1/2 admin-state enable
+set / interface ethernet-1/2 mtu 9216
+set / interface ethernet-1/2 subinterface 0 admin-state enable
+set / interface ethernet-1/2 subinterface 0 ip-mtu 9000
+set / interface ethernet-1/2 subinterface 0 ipv4 admin-state enable
+set / interface ethernet-1/2 subinterface 0 ipv4 address 100.64.12.1/31
+set / network-instance default interface ethernet-1/2.0
+set / routing-policy prefix-set LOCAL prefix 10.255.2.254/32 mask-length-range exact
+set / routing-policy prefix-set LOCAL prefix 10.255.2.1/32 mask-length-range exact
+set / routing-policy policy LOCAL default-action policy-result reject
+set / routing-policy policy LOCAL statement 10 match prefix prefix-set LOCAL
+set / routing-policy policy LOCAL statement 10 action policy-result accept
+set / routing-policy extended-community-set ENCAP-VXLAN member [ bgp-tunnel-encap:VXLAN ]
+set / routing-policy extended-community-set ENCAP-MPLS member [ bgp-tunnel-encap:MPLS ]
+set / routing-policy extended-community-set LOCAL-SOO member [ origin:65000:2 ]
+set / routing-policy policy EVPN-IN default-action policy-result accept
+set / routing-policy policy EVPN-IN statement 10 match bgp extended-community extended-community-set LOCAL-SOO
+set / routing-policy policy EVPN-IN statement 10 action policy-result reject
+set / routing-policy policy TO-FABRIC default-action policy-result reject
+set / routing-policy policy TO-FABRIC statement 10 match bgp extended-community extended-community-set ENCAP-VXLAN
+set / routing-policy policy TO-FABRIC statement 10 action policy-result accept
+set / routing-policy policy TO-FABRIC statement 10 action bgp extended-community operation add
+set / routing-policy policy TO-FABRIC statement 10 action bgp extended-community referenced-sets [ LOCAL-SOO ]
+set / routing-policy policy TO-DCI default-action policy-result reject
+set / routing-policy policy TO-DCI statement 10 match bgp extended-community extended-community-set ENCAP-MPLS
+set / routing-policy policy TO-DCI statement 10 action policy-result accept
+set / routing-policy policy TO-DCI statement 10 action bgp extended-community operation add
+set / routing-policy policy TO-DCI statement 10 action bgp extended-community referenced-sets [ LOCAL-SOO ]
+set / network-instance default protocols bgp admin-state enable
+set / network-instance default protocols bgp autonomous-system 65000
+set / network-instance default protocols bgp router-id 10.255.2.254
+set / network-instance default protocols bgp afi-safi ipv4-unicast admin-state enable
+set / network-instance default protocols bgp afi-safi evpn admin-state enable
+set / network-instance default protocols bgp group UNDERLAY admin-state enable
+set / network-instance default protocols bgp group UNDERLAY afi-safi ipv4-unicast admin-state enable
+set / network-instance default protocols bgp group UNDERLAY afi-safi evpn admin-state disable
+set / network-instance default protocols bgp group UNDERLAY import-policy [ LOCAL ]
+set / network-instance default protocols bgp group UNDERLAY export-policy [ LOCAL ]
+set / network-instance default protocols bgp neighbor 100.64.2.1 admin-state enable
+set / network-instance default protocols bgp neighbor 100.64.2.1 peer-group UNDERLAY
+set / network-instance default protocols bgp neighbor 100.64.2.1 peer-as 65102
+set / network-instance default protocols bgp group FABRIC admin-state enable
+set / network-instance default protocols bgp group FABRIC afi-safi ipv4-unicast admin-state disable
+set / network-instance default protocols bgp group FABRIC afi-safi evpn admin-state enable
+set / network-instance default protocols bgp group FABRIC import-policy [ EVPN-IN ]
+set / network-instance default protocols bgp group FABRIC export-policy [ TO-FABRIC ]
+set / network-instance default protocols bgp group FABRIC multihop admin-state enable
+set / network-instance default protocols bgp group FABRIC multihop maximum-hops 2
+set / network-instance default protocols bgp neighbor 10.255.2.1 admin-state enable
+set / network-instance default protocols bgp neighbor 10.255.2.1 peer-group FABRIC
+set / network-instance default protocols bgp neighbor 10.255.2.1 peer-as 65102
+set / network-instance default protocols bgp neighbor 10.255.2.1 transport local-address 10.255.2.254
+set / network-instance default protocols bgp group DCI admin-state enable
+set / network-instance default protocols bgp group DCI afi-safi ipv4-unicast admin-state disable
+set / network-instance default protocols bgp group DCI afi-safi evpn admin-state enable
+set / network-instance default protocols bgp group DCI import-policy [ EVPN-IN ]
+set / network-instance default protocols bgp group DCI export-policy [ TO-DCI ]
+set / network-instance default protocols bgp neighbor 10.255.1.254 admin-state enable
+set / network-instance default protocols bgp neighbor 10.255.1.254 peer-group DCI
+set / network-instance default protocols bgp neighbor 10.255.1.254 peer-as 65000
+set / network-instance default protocols bgp neighbor 10.255.1.254 transport local-address 10.255.2.254
+set / system mpls label-ranges static SRGB start-label 16000
+set / system mpls label-ranges static SRGB end-label 16999
+set / system mpls label-ranges static SRGB shared true
+set / system mpls label-ranges dynamic ADJ start-label 20000
+set / system mpls label-ranges dynamic ADJ end-label 20999
+set / system mpls label-ranges dynamic EVPN start-label 21000
+set / system mpls label-ranges dynamic EVPN end-label 21999
+set / system mpls label-ranges dynamic SERVICE start-label 22000
+set / system mpls label-ranges dynamic SERVICE end-label 22999
+set / system mpls label-ranges dynamic BUM start-label 30000
+set / system mpls label-ranges dynamic BUM end-label 30999
+set / system mpls services evpn dynamic-label-block EVPN
+set / system mpls services network-instance dynamic-label-block SERVICE
+set / system mpls services network-instance dynamic-evpn-inclusive-multicast-label-block BUM
+set / network-instance default mpls-forwarding forward-received-packets true
+set / interface ethernet-1/2 subinterface 0 mpls-mtu 9000
+set / network-instance default segment-routing mpls global-block label-range SRGB
+set / network-instance default segment-routing mpls local-prefix-sid 1 interface system0.0
+set / network-instance default segment-routing mpls local-prefix-sid 1 ipv4-label-index 2
+set / network-instance default segment-routing mpls local-prefix-sid 1 node-sid true
+set / network-instance default protocols isis dynamic-label-block ADJ
+set / network-instance default protocols isis instance DCI admin-state enable
+set / network-instance default protocols isis instance DCI level-capability L2
+set / network-instance default protocols isis instance DCI net [ 49.0001.0000.0000.0002.00 ]
+set / network-instance default protocols isis instance DCI ipv4-unicast admin-state enable
+set / network-instance default protocols isis instance DCI segment-routing mpls
+set / network-instance default protocols isis instance DCI interface system0.0 admin-state enable
+set / network-instance default protocols isis instance DCI interface system0.0 ipv4-unicast admin-state enable
+set / network-instance default protocols isis instance DCI interface system0.0 passive true
+set / network-instance default protocols isis instance DCI interface ethernet-1/2.0 admin-state enable
+set / network-instance default protocols isis instance DCI interface ethernet-1/2.0 ipv4-unicast admin-state enable
+set / network-instance default protocols isis instance DCI interface ethernet-1/2.0 circuit-type point-to-point
+set / tunnel-interface vxlan0 vxlan-interface 10 type bridged
+set / tunnel-interface vxlan0 vxlan-interface 10 ingress vni 10010
+set / network-instance L2-10 type mac-vrf
+set / network-instance L2-10 admin-state enable
+set / network-instance L2-10 vxlan-interface vxlan0.10
+set / network-instance L2-10 protocols bgp-evpn bgp-instance 1 admin-state enable
+set / network-instance L2-10 protocols bgp-evpn bgp-instance 1 evi 10
+set / network-instance L2-10 protocols bgp-evpn bgp-instance 1 multi-homing-mode access
+set / network-instance L2-10 protocols bgp-evpn bgp-instance 1 vxlan-interface vxlan0.10
+set / network-instance L2-10 protocols bgp-evpn bgp-instance 1 routes bridge-table inclusive-mcast originating-ip 10.255.2.254
+set / network-instance L2-10 protocols bgp-vpn bgp-instance 1 route-distinguisher rd 10.255.2.254:10
+set / network-instance L2-10 protocols bgp-vpn bgp-instance 1 route-target import-rt target:65000:10010
+set / network-instance L2-10 protocols bgp-vpn bgp-instance 1 route-target export-rt target:65000:10010
+set / network-instance L2-10 protocols bgp-evpn bgp-instance 2 admin-state enable
+set / network-instance L2-10 protocols bgp-evpn bgp-instance 2 evi 11
+set / network-instance L2-10 protocols bgp-evpn bgp-instance 2 multi-homing-mode network
+set / network-instance L2-10 protocols bgp-evpn bgp-instance 2 encapsulation-type mpls
+set / network-instance L2-10 protocols bgp-evpn bgp-instance 2 mpls next-hop-resolution allowed-tunnel-types [ sr-isis ]
+set / network-instance L2-10 protocols bgp-evpn bgp-instance 2 routes bridge-table inclusive-mcast originating-ip 10.255.2.254
+set / network-instance L2-10 protocols bgp-vpn bgp-instance 2 route-distinguisher rd 10.255.2.254:11
+set / network-instance L2-10 protocols bgp-vpn bgp-instance 2 route-target import-rt target:65000:20010
+set / network-instance L2-10 protocols bgp-vpn bgp-instance 2 route-target export-rt target:65000:20010
+set / tunnel-interface vxlan0 vxlan-interface 50000 type routed
+set / tunnel-interface vxlan0 vxlan-interface 50000 ingress vni 50000
+set / network-instance TENANT type ip-vrf
+set / network-instance TENANT admin-state enable
+set / network-instance TENANT vxlan-interface vxlan0.50000
+set / network-instance TENANT protocols bgp-vpn allow-export
+set / network-instance TENANT protocols bgp-evpn bgp-instance 1 admin-state enable
+set / network-instance TENANT protocols bgp-evpn bgp-instance 1 evi 50000
+set / network-instance TENANT protocols bgp-evpn bgp-instance 1 multi-homing-mode access
+set / network-instance TENANT protocols bgp-evpn bgp-instance 1 vxlan-interface vxlan0.50000
+set / network-instance TENANT protocols bgp-evpn bgp-instance 1 dpath-domain-id 65000:2
+set / network-instance TENANT protocols bgp-evpn bgp-instance 1 routes route-table mac-ip advertise-gateway-mac true
+set / network-instance TENANT protocols bgp-vpn bgp-instance 1 route-distinguisher rd 10.255.2.254:50000
+set / network-instance TENANT protocols bgp-vpn bgp-instance 1 route-target import-rt target:65000:50000
+set / network-instance TENANT protocols bgp-vpn bgp-instance 1 route-target export-rt target:65000:50000
+set / network-instance TENANT protocols bgp-evpn bgp-instance 2 admin-state enable
+set / network-instance TENANT protocols bgp-evpn bgp-instance 2 evi 50001
+set / network-instance TENANT protocols bgp-evpn bgp-instance 2 multi-homing-mode network
+set / network-instance TENANT protocols bgp-evpn bgp-instance 2 encapsulation-type mpls
+set / network-instance TENANT protocols bgp-evpn bgp-instance 2 mpls next-hop-resolution allowed-tunnel-types [ sr-isis ]
+set / network-instance TENANT protocols bgp-evpn bgp-instance 2 dpath-domain-id 65000:100
+set / network-instance TENANT protocols bgp-vpn bgp-instance 2 route-distinguisher rd 10.255.2.254:50001
+set / network-instance TENANT protocols bgp-vpn bgp-instance 2 route-target import-rt target:65000:60000
+set / network-instance TENANT protocols bgp-vpn bgp-instance 2 route-target export-rt target:65000:60000

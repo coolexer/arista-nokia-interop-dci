@@ -1,0 +1,28 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Show report for the EVPN routes in network-instance  "default"
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Route Distinguisher: 10.255.1.1:50000
+Tag-ID             : 0
+ip-prefix-len      : 24
+ip-prefix          : 192.168.20.0/24
+neighbor           : 10.255.1.1
+path-id            : 0
+Gateway IP         : 0.0.0.0
+Received paths     : 1
+  Path 1: <Best,Valid,Used,>
+    ESI                   : 00:00:00:00:00:00:00:00:00:00
+    Label                 : 50000
+    Route source          : neighbor 10.255.1.1 (last modified 5m52s ago)
+    Route preference      : No MED, LocalPref is 100
+    Atomic Aggr           : false
+    BGP next-hop          : 10.255.1.1
+    AS Path               :  i
+    Domain Path           : None
+    Communities           : [target:65000:50000, bgp-tunnel-encap:VXLAN, mac-nh:00:1c:73:86:7a:34]
+    RR Attributes         : No Originator-ID, Cluster-List is []
+    Aggregation           : None
+    Unknown Attr          : None
+    Invalid Reason        : None
+    Tie Break Reason      : none
+    Route Flap Damping    : None
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

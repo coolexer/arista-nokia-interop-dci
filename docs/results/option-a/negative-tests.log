@@ -1,0 +1,72 @@
+L2 import RT mismatch
+All changes have been committed. Leaving candidate mode.
+PING 192.168.10.11 (192.168.10.11) from 192.168.10.12 eth1: 56(84) bytes of data.
+
+--- 192.168.10.11 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 2110ms
+
+PING 192.168.20.11 (192.168.20.11) from 192.168.30.12 eth2: 56(84) bytes of data.
+64 bytes from 192.168.20.11: icmp_seq=1 ttl=62 time=11.9 ms
+64 bytes from 192.168.20.11: icmp_seq=2 ttl=62 time=5.79 ms
+64 bytes from 192.168.20.11: icmp_seq=3 ttl=62 time=5.94 ms
+
+--- 192.168.20.11 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 5.794/7.872/11.883/2.836 ms
+All changes have been committed. Leaving candidate mode.
+PING 192.168.10.11 (192.168.10.11) from 192.168.10.12 eth1: 56(84) bytes of data.
+64 bytes from 192.168.10.11: icmp_seq=1 ttl=64 time=33.5 ms
+64 bytes from 192.168.10.11: icmp_seq=2 ttl=64 time=8.21 ms
+64 bytes from 192.168.10.11: icmp_seq=3 ttl=64 time=7.89 ms
+
+--- 192.168.10.11 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2016ms
+rtt min/avg/max/mdev = 7.889/16.547/33.540/12.016 ms
+L3 import RT mismatch
+All changes have been committed. Leaving candidate mode.
+PING 192.168.20.11 (192.168.20.11) from 192.168.30.12 eth2: 56(84) bytes of data.
+From 192.168.30.1 icmp_seq=1 Destination Net Unreachable
+From 192.168.30.1 icmp_seq=2 Destination Net Unreachable
+From 192.168.30.1 icmp_seq=3 Destination Net Unreachable
+
+--- 192.168.20.11 ping statistics ---
+3 packets transmitted, 0 received, +3 errors, 100% packet loss, time 2004ms
+
+PING 192.168.10.11 (192.168.10.11) from 192.168.10.12 eth1: 56(84) bytes of data.
+64 bytes from 192.168.10.11: icmp_seq=1 ttl=64 time=20.3 ms
+64 bytes from 192.168.10.11: icmp_seq=2 ttl=64 time=9.81 ms
+64 bytes from 192.168.10.11: icmp_seq=3 ttl=64 time=9.50 ms
+
+--- 192.168.10.11 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2004ms
+rtt min/avg/max/mdev = 9.498/13.205/20.306/5.022 ms
+All changes have been committed. Leaving candidate mode.
+PING 192.168.20.11 (192.168.20.11) from 192.168.30.12 eth2: 56(84) bytes of data.
+From 192.168.30.1 icmp_seq=1 Destination Net Unreachable
+64 bytes from 192.168.20.11: icmp_seq=2 ttl=62 time=10.3 ms
+64 bytes from 192.168.20.11: icmp_seq=3 ttl=62 time=4.95 ms
+
+--- 192.168.20.11 ping statistics ---
+3 packets transmitted, 2 received, +1 errors, 33.3333% packet loss, time 2003ms
+rtt min/avg/max/mdev = 4.949/7.642/10.336/2.693 ms
+DCI port down
+All changes have been committed. Leaving candidate mode.
+PING 192.168.10.11 (192.168.10.11) from 192.168.10.12 eth1: 56(84) bytes of data.
+
+--- 192.168.10.11 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 2119ms
+
+PING 192.168.20.11 (192.168.20.11) from 192.168.30.12 eth2: 56(84) bytes of data.
+From 192.168.30.1 icmp_seq=1 Destination Net Unreachable
+From 192.168.30.1 icmp_seq=2 Destination Net Unreachable
+From 192.168.30.1 icmp_seq=3 Destination Net Unreachable
+
+--- 192.168.20.11 ping statistics ---
+3 packets transmitted, 0 received, +3 errors, 100% packet loss, time 2002ms
+
+All changes have been committed. Leaving candidate mode.
+PING 192.168.10.11 (192.168.10.11) from 192.168.10.12 eth1: 56(84) bytes of data.
+
+--- 192.168.10.11 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 2060ms
+

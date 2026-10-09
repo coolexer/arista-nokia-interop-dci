@@ -1,0 +1,6 @@
+*.sh text eol=lf
+*.cli text eol=lf
+*.cfg text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.drawio text eol=lf

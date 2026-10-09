@@ -1,0 +1,109 @@
+{
+  "nodeAnnotations": [
+    {
+      "id": "h1",
+      "position": {
+        "x": 80,
+        "y": 220
+      },
+      "label": "h1\nLinux",
+      "icon": "client",
+      "iconColor": "#64748B",
+      "groupId": "dc1",
+      "labelPosition": "bottom"
+    },
+    {
+      "id": "dc1-leaf",
+      "position": {
+        "x": 260,
+        "y": 220
+      },
+      "label": "dc1-leaf\nArista cEOS",
+      "icon": "pe",
+      "iconColor": "#7A7A7A",
+      "groupId": "dc1",
+      "labelPosition": "bottom"
+    },
+    {
+      "id": "dc1-bl",
+      "position": {
+        "x": 460,
+        "y": 220
+      },
+      "label": "dc1-bl\nNokia X1b\nIP transit",
+      "icon": "pe",
+      "iconColor": "#005AFF",
+      "groupId": "dc1",
+      "labelPosition": "bottom"
+    },
+    {
+      "id": "dc2-bl",
+      "position": {
+        "x": 740,
+        "y": 220
+      },
+      "label": "dc2-bl\nNokia X1b\nIP transit",
+      "icon": "pe",
+      "iconColor": "#005AFF",
+      "groupId": "dc2",
+      "labelPosition": "bottom"
+    },
+    {
+      "id": "dc2-leaf",
+      "position": {
+        "x": 940,
+        "y": 220
+      },
+      "label": "dc2-leaf\nNokia IXR-D2L",
+      "icon": "pe",
+      "iconColor": "#005AFF",
+      "groupId": "dc2",
+      "labelPosition": "bottom"
+    },
+    {
+      "id": "h2",
+      "position": {
+        "x": 1120,
+        "y": 220
+      },
+      "label": "h2\nLinux",
+      "icon": "client",
+      "iconColor": "#64748B",
+      "groupId": "dc2",
+      "labelPosition": "bottom"
+    }
+  ],
+  "groupStyleAnnotations": [
+    {
+      "id": "dc1",
+      "name": "DC1",
+      "level": "1",
+      "position": {
+        "x": 20,
+        "y": 100
+      },
+      "width": 500,
+      "height": 280,
+      "labelColor": "#005AFF",
+      "backgroundColor": "#EAF2FF",
+      "borderColor": "#005AFF"
+    },
+    {
+      "id": "dc2",
+      "name": "DC2",
+      "level": "1",
+      "position": {
+        "x": 680,
+        "y": 100
+      },
+      "width": 500,
+      "height": 280,
+      "labelColor": "#005AFF",
+      "backgroundColor": "#EAF2FF",
+      "borderColor": "#005AFF"
+    }
+  ],
+  "viewerSettings": {
+    "linkLabelMode": "show-all"
+  }
+}

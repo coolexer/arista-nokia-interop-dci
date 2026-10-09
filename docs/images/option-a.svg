@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="680" viewBox="0 0 1600 680">
+<text x="48" y="50" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#64748B" text-anchor="start">ARISTA + NOKIA  /  INTEROPERABILITY LAB</text>
+<text x="48" y="108" font-family="Arial,sans-serif" font-size="36" font-weight="700" fill="#001135" text-anchor="start">A  |  End-to-end EVPN-VXLAN</text>
+<text x="48" y="147" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#64748B" text-anchor="start">cEOS 4.34.7M  +  SR Linux 26.7.1  |  6 nodes  |  L2 and L3</text>
+<rect x="40" y="200" width="610" height="400" rx="14" fill="#F3F6FA" stroke="#D8E0EC" stroke-width="2"/>
+<rect x="950" y="200" width="610" height="400" rx="14" fill="#F3F6FA" stroke="#D8E0EC" stroke-width="2"/>
+<text x="66" y="239" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#001135" text-anchor="start">DATA CENTER 1</text>
+<text x="976" y="239" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#001135" text-anchor="start">DATA CENTER 2</text>
+<polyline points="212,366 278,366" fill="none" stroke="#94A3B8" stroke-width="4"/>
+<polyline points="422,366 498,366" fill="none" stroke="#94A3B8" stroke-width="4"/>
+<polyline points="642,366 958,366" fill="none" stroke="#94A3B8" stroke-width="4"/>
+<polyline points="1102,366 1178,366" fill="none" stroke="#94A3B8" stroke-width="4"/>
+<polyline points="1322,366 1388,366" fill="none" stroke="#94A3B8" stroke-width="4"/>
+<rect x="68" y="320" width="144" height="92" rx="14" fill="#64748B" stroke="#64748B" stroke-width="2"/>
+<text x="140" y="360" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="white" text-anchor="middle">h1</text>
+<text x="140" y="387" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="white" text-anchor="middle">HOST</text>
+<text x="140" y="450" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#001135" text-anchor="middle">Linux client</text>
+<rect x="278" y="320" width="144" height="92" rx="14" fill="#7A7A7A" stroke="#7A7A7A" stroke-width="2"/>
+<text x="350" y="360" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="white" text-anchor="middle">dc1-leaf</text>
+<text x="350" y="387" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="white" text-anchor="middle">LEAF</text>
+<text x="350" y="450" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#001135" text-anchor="middle">Arista cEOS</text>
+<rect x="498" y="320" width="144" height="92" rx="14" fill="#005AFF" stroke="#005AFF" stroke-width="2"/>
+<text x="570" y="360" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="white" text-anchor="middle">dc1-bl</text>
+<text x="570" y="387" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="white" text-anchor="middle">BORDER LEAF</text>
+<text x="570" y="450" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#001135" text-anchor="middle">Nokia X1b</text>
+<text x="570" y="486" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#64748B" text-anchor="middle">IP transit</text>
+<rect x="958" y="320" width="144" height="92" rx="14" fill="#005AFF" stroke="#005AFF" stroke-width="2"/>
+<text x="1030" y="360" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="white" text-anchor="middle">dc2-bl</text>
+<text x="1030" y="387" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="white" text-anchor="middle">BORDER LEAF</text>
+<text x="1030" y="450" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#001135" text-anchor="middle">Nokia X1b</text>
+<text x="1030" y="486" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#64748B" text-anchor="middle">IP transit</text>
+<rect x="1178" y="320" width="144" height="92" rx="14" fill="#005AFF" stroke="#005AFF" stroke-width="2"/>
+<text x="1250" y="360" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="white" text-anchor="middle">dc2-leaf</text>
+<text x="1250" y="387" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="white" text-anchor="middle">LEAF</text>
+<text x="1250" y="450" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#001135" text-anchor="middle">Nokia IXR-D2L</text>
+<rect x="1388" y="320" width="144" height="92" rx="14" fill="#64748B" stroke="#64748B" stroke-width="2"/>
+<text x="1460" y="360" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="white" text-anchor="middle">h2</text>
+<text x="1460" y="387" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="white" text-anchor="middle">HOST</text>
+<text x="1460" y="450" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#001135" text-anchor="middle">Linux client</text>
+<text x="800" y="342" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#001135" text-anchor="middle">DWDM / Ethernet</text>
+<text x="800" y="406" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#001135" text-anchor="middle">IP + eBGP</text>
+<polyline points="350,310 350,277 1250,277 1250,310" fill="none" stroke="#16A085" stroke-width="3"/>
+<text x="800" y="260" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#087F6A" text-anchor="middle">E2E EVPN + VXLAN  |  leaf VTEP to leaf VTEP</text>
+<text x="350" y="544" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#001135" text-anchor="middle">L2: 192.168.10.11/24</text>
+<text x="350" y="572" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#001135" text-anchor="middle">L3: 192.168.20.11/24</text>
+<text x="1250" y="544" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#001135" text-anchor="middle">L2: 192.168.10.12/24</text>
+<text x="1250" y="572" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#001135" text-anchor="middle">L3: 192.168.30.12/24</text>
+<text x="48" y="648" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#001135" text-anchor="start">L2  VNI 10010 / EVPN RT-2, RT-3     |     L3  VNI 50000 / EVPN RT-5 / symmetric IRB</text>
+</svg>
