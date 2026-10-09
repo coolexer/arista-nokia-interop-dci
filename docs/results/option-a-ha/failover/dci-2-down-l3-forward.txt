@@ -1,0 +1,34 @@
+PING 192.168.30.12 (192.168.30.12) from 192.168.20.11 eth2: 56(84) bytes of data.
+[1791576363.687183] 64 bytes from 192.168.30.12: icmp_seq=1 ttl=62 time=4.09 ms
+[1791576363.892065] 64 bytes from 192.168.30.12: icmp_seq=2 ttl=62 time=8.13 ms
+[1791576364.102291] 64 bytes from 192.168.30.12: icmp_seq=3 ttl=62 time=17.3 ms
+[1791576364.293588] 64 bytes from 192.168.30.12: icmp_seq=4 ttl=62 time=7.71 ms
+[1791576364.491218] 64 bytes from 192.168.30.12: icmp_seq=5 ttl=62 time=5.15 ms
+[1791576364.692387] 64 bytes from 192.168.30.12: icmp_seq=6 ttl=62 time=5.53 ms
+[1791576364.892389] 64 bytes from 192.168.30.12: icmp_seq=7 ttl=62 time=4.61 ms
+[1791576365.092879] 64 bytes from 192.168.30.12: icmp_seq=8 ttl=62 time=4.02 ms
+[1791576365.294413] 64 bytes from 192.168.30.12: icmp_seq=9 ttl=62 time=5.15 ms
+[1791576365.494214] 64 bytes from 192.168.30.12: icmp_seq=10 ttl=62 time=4.44 ms
+[1791576365.695873] 64 bytes from 192.168.30.12: icmp_seq=11 ttl=62 time=5.16 ms
+[1791576370.319856] From 192.168.20.1 icmp_seq=33 Destination Net Unreachable
+[1791576371.361027] From 192.168.20.1 icmp_seq=38 Destination Net Unreachable
+[1791576372.400752] From 192.168.20.1 icmp_seq=43 Destination Net Unreachable
+[1791576373.439145] From 192.168.20.1 icmp_seq=48 Destination Net Unreachable
+[1791576374.479589] From 192.168.20.1 icmp_seq=53 Destination Net Unreachable
+[1791576375.520178] From 192.168.20.1 icmp_seq=58 Destination Net Unreachable
+[1791576376.559361] From 192.168.20.1 icmp_seq=63 Destination Net Unreachable
+[1791576377.601042] From 192.168.20.1 icmp_seq=68 Destination Net Unreachable
+[1791576378.639873] From 192.168.20.1 icmp_seq=73 Destination Net Unreachable
+[1791576379.679527] From 192.168.20.1 icmp_seq=78 Destination Net Unreachable
+[1791576380.738212] From 192.168.20.1 icmp_seq=83 Destination Net Unreachable
+[1791576381.790581] From 192.168.20.1 icmp_seq=88 Destination Net Unreachable
+[1791576382.849861] From 192.168.20.1 icmp_seq=93 Destination Net Unreachable
+[1791576383.889659] From 192.168.20.1 icmp_seq=98 Destination Net Unreachable
+[1791576384.930368] From 192.168.20.1 icmp_seq=103 Destination Net Unreachable
+[1791576385.990007] From 192.168.20.1 icmp_seq=108 Destination Net Unreachable
+[1791576387.029794] From 192.168.20.1 icmp_seq=113 Destination Net Unreachable
+[1791576388.080242] From 192.168.20.1 icmp_seq=118 Destination Net Unreachable
+
+--- 192.168.30.12 ping statistics ---
+120 packets transmitted, 11 received, +18 errors, 90.8333% packet loss, time 24803ms
+rtt min/avg/max/mdev = 4.023/6.480/17.286/3.650 ms

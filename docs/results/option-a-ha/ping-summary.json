@@ -1,0 +1,322 @@
+[
+  {
+    "trace": "dci-1-down-l2-forward.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 0.225,
+    "largest_rtt_ms": 31.7,
+    "replies_with_rtt_over_1s": 0,
+    "approx_tail_without_reply_s": 0
+  },
+  {
+    "trace": "dci-1-down-l2-reverse.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 0.213,
+    "largest_rtt_ms": 21.8,
+    "replies_with_rtt_over_1s": 0,
+    "approx_tail_without_reply_s": 0
+  },
+  {
+    "trace": "dci-1-down-l3-forward.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 0.216,
+    "largest_rtt_ms": 16.3,
+    "replies_with_rtt_over_1s": 0,
+    "approx_tail_without_reply_s": 0
+  },
+  {
+    "trace": "dci-1-down-l3-reverse.txt",
+    "transmitted": 120,
+    "received": 119,
+    "loss_percent": 0.833333,
+    "largest_reply_gap_s": 0.439,
+    "largest_rtt_ms": 26.7,
+    "replies_with_rtt_over_1s": 0,
+    "approx_tail_without_reply_s": 0
+  },
+  {
+    "trace": "dci-2-down-l2-forward.txt",
+    "transmitted": 120,
+    "received": 11,
+    "loss_percent": 90.8333,
+    "largest_reply_gap_s": 0.208,
+    "largest_rtt_ms": 9.64,
+    "replies_with_rtt_over_1s": 0,
+    "approx_tail_without_reply_s": 23.035
+  },
+  {
+    "trace": "dci-2-down-l2-reverse.txt",
+    "transmitted": 120,
+    "received": 12,
+    "loss_percent": 90.0,
+    "largest_reply_gap_s": 0.203,
+    "largest_rtt_ms": 6.35,
+    "replies_with_rtt_over_1s": 0,
+    "approx_tail_without_reply_s": 26.993
+  },
+  {
+    "trace": "dci-2-down-l3-forward.txt",
+    "transmitted": 120,
+    "received": 11,
+    "loss_percent": 90.8333,
+    "largest_reply_gap_s": 0.21,
+    "largest_rtt_ms": 17.3,
+    "replies_with_rtt_over_1s": 0,
+    "approx_tail_without_reply_s": 22.794
+  },
+  {
+    "trace": "dci-2-down-l3-reverse.txt",
+    "transmitted": 120,
+    "received": 12,
+    "loss_percent": 90.0,
+    "largest_reply_gap_s": 0.204,
+    "largest_rtt_ms": 10.5,
+    "replies_with_rtt_over_1s": 0,
+    "approx_tail_without_reply_s": 21.882
+  },
+  {
+    "trace": "pause-dc1-bl-l2-forward.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 2.974,
+    "largest_rtt_ms": 18531.0,
+    "replies_with_rtt_over_1s": 13,
+    "approx_tail_without_reply_s": 0.001
+  },
+  {
+    "trace": "pause-dc1-bl-l2-reverse.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 2.976,
+    "largest_rtt_ms": 18536.0,
+    "replies_with_rtt_over_1s": 13,
+    "approx_tail_without_reply_s": 0.002
+  },
+  {
+    "trace": "pause-dc1-bl-l3-forward.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 2.966,
+    "largest_rtt_ms": 18533.0,
+    "replies_with_rtt_over_1s": 13,
+    "approx_tail_without_reply_s": 0.003
+  },
+  {
+    "trace": "pause-dc1-bl-l3-reverse.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 2.949,
+    "largest_rtt_ms": 18566.0,
+    "replies_with_rtt_over_1s": 13,
+    "approx_tail_without_reply_s": 0.005
+  },
+  {
+    "trace": "pause-dc1-bl2-l2-forward.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 3.169,
+    "largest_rtt_ms": 18703.0,
+    "replies_with_rtt_over_1s": 14,
+    "approx_tail_without_reply_s": 0
+  },
+  {
+    "trace": "pause-dc1-bl2-l2-reverse.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 2.97,
+    "largest_rtt_ms": 18624.0,
+    "replies_with_rtt_over_1s": 13,
+    "approx_tail_without_reply_s": 0
+  },
+  {
+    "trace": "pause-dc1-bl2-l3-forward.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 2.98,
+    "largest_rtt_ms": 18650.0,
+    "replies_with_rtt_over_1s": 13,
+    "approx_tail_without_reply_s": 0
+  },
+  {
+    "trace": "pause-dc1-bl2-l3-reverse.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 2.972,
+    "largest_rtt_ms": 18640.0,
+    "replies_with_rtt_over_1s": 13,
+    "approx_tail_without_reply_s": 0
+  },
+  {
+    "trace": "pause-dc2-bl-l2-forward.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 2.752,
+    "largest_rtt_ms": 18118.0,
+    "replies_with_rtt_over_1s": 12,
+    "approx_tail_without_reply_s": 0
+  },
+  {
+    "trace": "pause-dc2-bl-l2-reverse.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 2.716,
+    "largest_rtt_ms": 18136.0,
+    "replies_with_rtt_over_1s": 12,
+    "approx_tail_without_reply_s": 0.003
+  },
+  {
+    "trace": "pause-dc2-bl-l3-forward.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 2.746,
+    "largest_rtt_ms": 18118.0,
+    "replies_with_rtt_over_1s": 12,
+    "approx_tail_without_reply_s": 0.0
+  },
+  {
+    "trace": "pause-dc2-bl-l3-reverse.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 2.715,
+    "largest_rtt_ms": 18147.0,
+    "replies_with_rtt_over_1s": 12,
+    "approx_tail_without_reply_s": 0.003
+  },
+  {
+    "trace": "pause-dc2-bl2-l2-forward.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 2.933,
+    "largest_rtt_ms": 19038.0,
+    "replies_with_rtt_over_1s": 13,
+    "approx_tail_without_reply_s": 0
+  },
+  {
+    "trace": "pause-dc2-bl2-l2-reverse.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 2.958,
+    "largest_rtt_ms": 19026.0,
+    "replies_with_rtt_over_1s": 13,
+    "approx_tail_without_reply_s": 0
+  },
+  {
+    "trace": "pause-dc2-bl2-l3-forward.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 2.95,
+    "largest_rtt_ms": 19033.0,
+    "replies_with_rtt_over_1s": 13,
+    "approx_tail_without_reply_s": 0
+  },
+  {
+    "trace": "pause-dc2-bl2-l3-reverse.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 2.939,
+    "largest_rtt_ms": 19028.0,
+    "replies_with_rtt_over_1s": 13,
+    "approx_tail_without_reply_s": 0
+  },
+  {
+    "trace": "uplink-1-down-l2-forward.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 0.386,
+    "largest_rtt_ms": 191.0,
+    "replies_with_rtt_over_1s": 0,
+    "approx_tail_without_reply_s": 0
+  },
+  {
+    "trace": "uplink-1-down-l2-reverse.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 0.397,
+    "largest_rtt_ms": 203.0,
+    "replies_with_rtt_over_1s": 0,
+    "approx_tail_without_reply_s": 0
+  },
+  {
+    "trace": "uplink-1-down-l3-forward.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 0.382,
+    "largest_rtt_ms": 187.0,
+    "replies_with_rtt_over_1s": 0,
+    "approx_tail_without_reply_s": 0
+  },
+  {
+    "trace": "uplink-1-down-l3-reverse.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 0.399,
+    "largest_rtt_ms": 205.0,
+    "replies_with_rtt_over_1s": 0,
+    "approx_tail_without_reply_s": 0
+  },
+  {
+    "trace": "uplink-2-down-l2-forward.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 0.256,
+    "largest_rtt_ms": 59.3,
+    "replies_with_rtt_over_1s": 0,
+    "approx_tail_without_reply_s": 0.008
+  },
+  {
+    "trace": "uplink-2-down-l2-reverse.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 0.256,
+    "largest_rtt_ms": 58.7,
+    "replies_with_rtt_over_1s": 0,
+    "approx_tail_without_reply_s": 0.008
+  },
+  {
+    "trace": "uplink-2-down-l3-forward.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 0.215,
+    "largest_rtt_ms": 19.7,
+    "replies_with_rtt_over_1s": 0,
+    "approx_tail_without_reply_s": 0
+  },
+  {
+    "trace": "uplink-2-down-l3-reverse.txt",
+    "transmitted": 120,
+    "received": 120,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 0.252,
+    "largest_rtt_ms": 55.7,
+    "replies_with_rtt_over_1s": 0,
+    "approx_tail_without_reply_s": 0.007
+  }
+]

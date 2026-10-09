@@ -1,0 +1,83 @@
+    tunnel 10.255.1.1/32 type vxlan owner vxlan_mgr id 1 {
+        next-hop-group 206330953
+        metric 0
+        preference 0
+        last-app-update "2026-10-09T20:35:07.645Z (2 minutes ago)"
+        resource-allocation-failed false
+        fib-programming {
+            last-successful-operation-type modify
+            last-successful-operation-timestamp "2026-10-09T20:35:07.648Z (2 minutes ago)"
+            pending-operation-type none
+            last-failed-operation-type none
+        }
+        vxlan {
+            destination-address 10.255.1.1
+            source-address 10.255.1.254
+            time-to-live 255
+        }
+    }
+    tunnel 10.255.1.253/32 type sr-isis owner segrt_mgr id 16003 {
+        next-hop-group 206330948
+        metric 10
+        preference 11
+        last-app-update "2026-10-09T20:34:12.546Z (3 minutes ago)"
+        resource-allocation-failed false
+        internal-tags [
+            "algorithm-id = 0x0"
+            "isis-reach-type = 0x4"
+        ]
+        fib-programming {
+            last-successful-operation-type modify
+            last-successful-operation-timestamp "2026-10-09T20:34:12.553Z (3 minutes ago)"
+            pending-operation-type none
+            last-failed-operation-type none
+        }
+    }
+    tunnel 10.255.2.253/32 type sr-isis owner segrt_mgr id 16004 {
+        next-hop-group 206330949
+        metric 110
+        preference 11
+        last-app-update "2026-10-09T20:34:12.547Z (3 minutes ago)"
+        resource-allocation-failed false
+        internal-tags [
+            "algorithm-id = 0x0"
+            "isis-reach-type = 0x4"
+        ]
+        fib-programming {
+            last-successful-operation-type modify
+            last-successful-operation-timestamp "2026-10-09T20:34:12.553Z (3 minutes ago)"
+            pending-operation-type none
+            last-failed-operation-type none
+        }
+    }
+    tunnel 10.255.2.254/32 type sr-isis owner segrt_mgr id 16002 {
+        next-hop-group 206330947
+        metric 100
+        preference 11
+        last-app-update "2026-10-09T20:34:12.546Z (3 minutes ago)"
+        resource-allocation-failed false
+        internal-tags [
+            "algorithm-id = 0x0"
+            "isis-reach-type = 0x4"
+        ]
+        fib-programming {
+            last-successful-operation-type modify
+            last-successful-operation-timestamp "2026-10-09T20:34:12.553Z (3 minutes ago)"
+            pending-operation-type none
+            last-failed-operation-type none
+        }
+    }
+    statistics {
+        active-tunnels 4
+        total-tunnels 4
+    }
+    tunnel-summary {
+        tunnel-type sr-isis {
+            active-tunnels 3
+            total-tunnels 3
+        }
+        tunnel-type vxlan {
+            active-tunnels 1
+            total-tunnels 1
+        }
+    }

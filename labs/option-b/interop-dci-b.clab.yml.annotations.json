@@ -28,7 +28,7 @@
       "id": "dc1-bl",
       "position": {
         "x": 460,
-        "y": 220
+        "y": 150
       },
       "label": "dc1-bl\nNokia X1b\nVXLAN / MPLS GW",
       "icon": "pe",
@@ -40,7 +40,7 @@
       "id": "dc2-bl",
       "position": {
         "x": 740,
-        "y": 220
+        "y": 150
       },
       "label": "dc2-bl\nNokia X1b\nVXLAN / MPLS GW",
       "icon": "pe",
@@ -71,6 +71,30 @@
       "iconColor": "#64748B",
       "groupId": "dc2",
       "labelPosition": "bottom"
+    },
+    {
+      "id": "dc1-bl2",
+      "position": {
+        "x": 460,
+        "y": 360
+      },
+      "label": "dc1-bl2\nNokia X1b\nVXLAN / MPLS GW",
+      "icon": "pe",
+      "iconColor": "#005AFF",
+      "groupId": "dc1",
+      "labelPosition": "bottom"
+    },
+    {
+      "id": "dc2-bl2",
+      "position": {
+        "x": 740,
+        "y": 360
+      },
+      "label": "dc2-bl2\nNokia X1b\nVXLAN / MPLS GW",
+      "icon": "pe",
+      "iconColor": "#005AFF",
+      "groupId": "dc2",
+      "labelPosition": "bottom"
     }
   ],
   "groupStyleAnnotations": [
@@ -80,10 +104,10 @@
       "level": "1",
       "position": {
         "x": 20,
-        "y": 100
+        "y": 60
       },
       "width": 500,
-      "height": 280,
+      "height": 430,
       "labelColor": "#005AFF",
       "backgroundColor": "#EAF2FF",
       "borderColor": "#005AFF"
@@ -94,10 +118,10 @@
       "level": "1",
       "position": {
         "x": 680,
-        "y": 100
+        "y": 60
       },
       "width": 500,
-      "height": 280,
+      "height": 430,
       "labelColor": "#005AFF",
       "backgroundColor": "#EAF2FF",
       "borderColor": "#005AFF"

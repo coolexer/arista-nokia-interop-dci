@@ -88,3 +88,33 @@ set / network-instance TENANT protocols bgp-evpn bgp-instance 1 routes route-tab
 set / network-instance TENANT protocols bgp-vpn bgp-instance 1 route-distinguisher rd 10.255.2.1:50000
 set / network-instance TENANT protocols bgp-vpn bgp-instance 1 route-target export-rt target:65000:50000
 set / network-instance TENANT protocols bgp-vpn bgp-instance 1 route-target import-rt target:65000:50000
+set / interface ethernet-1/4 admin-state enable
+set / interface ethernet-1/4 mtu 9216
+set / interface ethernet-1/4 subinterface 0 admin-state enable
+set / interface ethernet-1/4 subinterface 0 ip-mtu 9000
+set / interface ethernet-1/4 subinterface 0 ipv4 admin-state enable
+set / interface ethernet-1/4 subinterface 0 ipv4 address 100.64.2.3/31
+set / network-instance default interface ethernet-1/4.0
+set / bfd subinterface ethernet-1/4.0 admin-state enable
+set / bfd subinterface ethernet-1/4.0 desired-minimum-transmit-interval 500000
+set / bfd subinterface ethernet-1/4.0 required-minimum-receive 500000
+set / bfd subinterface ethernet-1/4.0 detection-multiplier 3
+set / interface ethernet-1/1 admin-state enable
+set / interface ethernet-1/1 mtu 9216
+set / interface ethernet-1/1 subinterface 0 admin-state enable
+set / interface ethernet-1/1 subinterface 0 ip-mtu 9000
+set / interface ethernet-1/1 subinterface 0 ipv4 admin-state enable
+set / interface ethernet-1/1 subinterface 0 ipv4 address 100.64.2.1/31
+set / network-instance default interface ethernet-1/1.0
+set / bfd subinterface ethernet-1/1.0 admin-state enable
+set / bfd subinterface ethernet-1/1.0 desired-minimum-transmit-interval 500000
+set / bfd subinterface ethernet-1/1.0 required-minimum-receive 500000
+set / bfd subinterface ethernet-1/1.0 detection-multiplier 3
+set / network-instance default protocols bgp afi-safi ipv4-unicast multipath allow-multiple-as true
+set / network-instance default protocols bgp afi-safi ipv4-unicast multipath ebgp maximum-paths 2
+set / network-instance default protocols bgp group UNDERLAY failure-detection enable-bfd true
+set / network-instance default protocols bgp neighbor 100.64.2.2 admin-state enable
+set / network-instance default protocols bgp neighbor 100.64.2.2 peer-group UNDERLAY
+set / network-instance default protocols bgp neighbor 100.64.2.2 peer-as 65212
+set / routing-policy prefix-set UNDERLAY prefix 10.255.2.253/32 mask-length-range exact
+set / routing-policy prefix-set UNDERLAY prefix 10.255.1.253/32 mask-length-range exact

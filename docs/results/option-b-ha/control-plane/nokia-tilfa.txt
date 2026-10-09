@@ -1,0 +1,21 @@
+    admin-state enable
+    augment-route-table false
+    multi-homed-prefix {
+        admin-state disable
+        preference none
+    }
+    remote-lfa {
+        admin-state disable
+        max-pq-cost 0
+        node-protect {
+            admin-state disable
+            max-pq-nodes 0
+        }
+    }
+    ti-lfa {
+        admin-state enable
+        max-sr-policy-lfa-labels 2
+        node-protect {
+            admin-state disable
+        }
+    }

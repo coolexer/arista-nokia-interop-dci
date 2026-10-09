@@ -1,0 +1,16 @@
+PING 192.168.10.12 (192.168.10.12) from 192.168.10.11 eth1: 56(84) bytes of data.
+[1791576363.645311] 64 bytes from 192.168.10.12: icmp_seq=1 ttl=64 time=3.39 ms
+[1791576363.846106] 64 bytes from 192.168.10.12: icmp_seq=2 ttl=64 time=3.41 ms
+[1791576364.053829] 64 bytes from 192.168.10.12: icmp_seq=3 ttl=64 time=9.64 ms
+[1791576364.252768] 64 bytes from 192.168.10.12: icmp_seq=4 ttl=64 time=8.26 ms
+[1791576364.452310] 64 bytes from 192.168.10.12: icmp_seq=5 ttl=64 time=6.94 ms
+[1791576364.653591] 64 bytes from 192.168.10.12: icmp_seq=6 ttl=64 time=7.45 ms
+[1791576364.853626] 64 bytes from 192.168.10.12: icmp_seq=7 ttl=64 time=7.00 ms
+[1791576365.051147] 64 bytes from 192.168.10.12: icmp_seq=8 ttl=64 time=4.05 ms
+[1791576365.252369] 64 bytes from 192.168.10.12: icmp_seq=9 ttl=64 time=4.83 ms
+[1791576365.452427] 64 bytes from 192.168.10.12: icmp_seq=10 ttl=64 time=4.56 ms
+[1791576365.653837] 64 bytes from 192.168.10.12: icmp_seq=11 ttl=64 time=4.94 ms
+
+--- 192.168.10.12 ping statistics ---
+120 packets transmitted, 11 received, 90.8333% packet loss, time 25044ms
+rtt min/avg/max/mdev = 3.386/5.862/9.641/2.001 ms

@@ -6,10 +6,10 @@ command -v containerlab >/dev/null
 command -v docker >/dev/null
 docker info >/dev/null
 containerlab version | tail -n 5
-for f in configs/dc1-leaf.cfg configs/dc1-bl.cli configs/dc2-bl.cli configs/dc2-leaf.cli configs/host-init.sh; do
+for f in configs/dc1-leaf.cfg configs/dc1-bl.cli configs/dc2-bl.cli configs/dc1-bl2.cli configs/dc2-bl2.cli configs/dc2-leaf.cli configs/host-init.sh; do
   test -s "$f" || { echo "Missing config: $f" >&2; exit 1; }
 done
-for script in preflight.sh verify.sh configs/host-init.sh; do
+for script in preflight.sh verify.sh failover.sh bum.sh configs/host-init.sh; do
   bash -n "$script"
 done
 containerlab graph --offline --mermaid --topo interop-dci-a.clab.yml > /dev/null

@@ -2,12 +2,12 @@
 
 Reproducible Containerlab examples for **Arista cEOS 4.34.7M ↔ Nokia SR Linux 26.7.1**, connecting Layer 2 and Layer 3 services across two data centers.
 
-Each lab has **6 nodes / 7 links**: an Arista leaf, a Nokia leaf, two Nokia IXR-X1b border leafs, and two Linux clients. The transparent Ethernet/DWDM connection is represented by a veth link.
+Each lab has **8 nodes / 12 links**: an Arista leaf, a Nokia leaf, four Nokia IXR-X1b border leafs (two per DC), and two Linux clients. Two transparent Ethernet/DWDM circuits and local BL interlinks form redundant routed paths, represented by veth links.
 
 | Lab | DCI architecture | Border-leaf role | Validation |
 |---|---|---|---|
-| [Option A](labs/option-a) | End-to-end EVPN-VXLAN over routed IP | IP transit | L2/L3, MTU, RT isolation and DCI outage tested |
-| [Option B](labs/option-b) | Local VXLAN fabrics + EVPN-MPLS over SR-MPLS | Service gateway | L2/L3, MTU, RT isolation and DCI outage tested |
+| [Option A](labs/option-a) | End-to-end EVPN-VXLAN over routed IP | IP transit | L2/L3, MTU, 8 single-fault cases; see HA report |
+| [Option B](labs/option-b) | Local VXLAN fabrics + EVPN-MPLS over SR-MPLS | Service gateway | L2/L3, MTU, 8 single-fault cases; see HA report |
 
 ## Option A — end-to-end VXLAN
 
@@ -19,11 +19,17 @@ Leaf VTEPs exchange EVPN directly. X1b border leafs route outer IP packets and d
 
 ![Option B topology](docs/images/option-b.png)
 
-The X1b gateways terminate each local VXLAN fabric. A multi-instance MAC-VRF stitches L2 to EVPN-MPLS; a separate IP-VRF stitches L3 using two EVPN IFL instances, `allow-export` and D-PATH. The DCI runs IS-IS + SR-MPLS. Leaf VTEPs are kept within their respective fabrics.
+The X1b gateways terminate each local VXLAN fabric. A multi-instance MAC-VRF stitches L2 to EVPN-MPLS; a separate IP-VRF stitches L3 using two EVPN IFL instances, `allow-export` and D-PATH. The DCI runs IS-IS + SR-MPLS with BFD and TI-LFA. L3 uses two gateway next hops; L2 uses Nokia's shared RD/originating-IP gateway redundancy procedure. Leaf VTEPs are kept within their respective fabrics.
+
+## Redundancy
+
+A uses ECMP in the IP underlay plus single-hop BFD. B adds L3 service-gateway ECMP and MPLS transport protection; its L2 stitching requires shared gateway identity and loop-prevention policies. See [the redundancy design and failure tests](docs/redundancy.md). The access leafs and hosts remain single-attached.
 
 ## Run a lab
 
 Prerequisites: Linux or WSL2, Docker, Containerlab, locally available NOS images, and an SR Linux license suitable for X1b emulation. This repository contains configuration examples; **it contains no license keys, NOS images, registry addresses or distribution links**.
+
+For WSL, keep an active WSL terminal/session while the lab runs. Systemd services alone do not keep the WSL instance alive; see [Microsoft's explanation](https://learn.microsoft.com/en-us/windows/wsl/systemd). After WSL terminates a distro, use Containerlab to recreate the lab links before repeating tests.
 
 Tag your authorized local images as follows:
 
@@ -45,9 +51,12 @@ chmod +x preflight.sh verify.sh configs/host-init.sh
 sudo containerlab deploy --topo interop-dci-a.clab.yml
 # After startup configuration and BGP convergence:
 ./verify.sh all
+./bum.sh
+# Inject and restore single BL, DCI and uplink faults:
+./failover.sh
 ```
 
-For B, use `labs/option-b` and `interop-dci-b.clab.yml`. `verify.sh l2` and `verify.sh l3` run individual service checks. `preflight.sh` validates files and local prerequisites without deploying or pulling images. Run the labs sequentially when WSL memory is limited.
+For B, use `labs/option-b` and `interop-dci-b.clab.yml`. `verify.sh l2` and `verify.sh l3` run individual service checks. `preflight.sh` validates files and local prerequisites without deploying or pulling images. Run the labs sequentially when WSL memory is limited. The four X1b simulators make these labs substantially heavier than the original six-node baseline; allow sufficient startup time and monitor RAM/swap and CPU.
 
 ```bash
 sudo containerlab destroy --topo interop-dci-a.clab.yml
@@ -67,8 +76,11 @@ The L2 clients share `192.168.10.0/24`. The L3 clients use separate local subnet
 - [Selected Option A CLI and traffic evidence](docs/results/option-a)
 - [Selected Option B CLI and traffic evidence](docs/results/option-b)
 - [Configuration and acceptance details](docs/design.md)
+- [Redundancy mechanisms and failure tests](docs/redundancy.md)
+- [Option A HA evidence](docs/results/option-a-ha)
+- [Option B HA evidence](docs/results/option-b-ha)
 
-The tested cEOS image reports an **engineering build** of 4.34.7M. Container software forwarding demonstrates protocol interoperability; it does not qualify X1b ASIC performance, production scale, redundancy or DWDM optics. This is an independent lab example, not a vendor certification.
+The tested cEOS image reports an **engineering build** of 4.34.7M. Container software forwarding demonstrates protocol interoperability; it does not qualify X1b ASIC performance, production scale, hardware failover timing or DWDM optics. This is an independent lab example, not a vendor certification.
 
 ## Documentation
 

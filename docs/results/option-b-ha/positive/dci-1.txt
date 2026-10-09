@@ -1,0 +1,75 @@
+tcpdump: listening on e1-2, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+20:23:13.548339 1a:7a:00:ff:00:01 > 1a:10:03:ff:00:01, ethertype MPLS unicast (0x8847), length 82: MPLS (label 16002, tc 0, ttl 255)
+	(label 30000, tc 0, [S], ttl 255)
+	0x0000:  ffff ffff ffff 0200 0001 1011 0806 0001  ................
+	0x0010:  0800 0604 0001 0200 0001 1011 c0a8 0a0b  ................
+	0x0020:  0000 0000 0000 c0a8 0a0c 0000 0000 0000  ................
+	0x0030:  0000 0000 0000 0000 0000 0000            ............
+20:23:19.991885 1a:7a:00:ff:00:01 > 1a:10:03:ff:00:01, ethertype MPLS unicast (0x8847), length 106: MPLS (label 16002, tc 0, ttl 62)
+	(label 22001, tc 0, [S], ttl 62)
+	(tos 0x0, ttl 62, id 62740, offset 0, flags [DF], proto ICMP (1), length 84)
+    192.168.20.11 > 192.168.30.12: ICMP echo request, id 231, seq 1, length 64
+20:23:20.191968 1a:7a:00:ff:00:01 > 1a:10:03:ff:00:01, ethertype MPLS unicast (0x8847), length 106: MPLS (label 16002, tc 0, ttl 62)
+	(label 22001, tc 0, [S], ttl 62)
+	(tos 0x0, ttl 62, id 62753, offset 0, flags [DF], proto ICMP (1), length 84)
+    192.168.20.11 > 192.168.30.12: ICMP echo request, id 231, seq 2, length 64
+20:23:20.393075 1a:7a:00:ff:00:01 > 1a:10:03:ff:00:01, ethertype MPLS unicast (0x8847), length 106: MPLS (label 16002, tc 0, ttl 62)
+	(label 22001, tc 0, [S], ttl 62)
+	(tos 0x0, ttl 62, id 62770, offset 0, flags [DF], proto ICMP (1), length 84)
+    192.168.20.11 > 192.168.30.12: ICMP echo request, id 231, seq 3, length 64
+20:23:20.594139 1a:7a:00:ff:00:01 > 1a:10:03:ff:00:01, ethertype MPLS unicast (0x8847), length 106: MPLS (label 16002, tc 0, ttl 62)
+	(label 22001, tc 0, [S], ttl 62)
+	(tos 0x0, ttl 62, id 62776, offset 0, flags [DF], proto ICMP (1), length 84)
+    192.168.20.11 > 192.168.30.12: ICMP echo request, id 231, seq 4, length 64
+20:23:20.794403 1a:7a:00:ff:00:01 > 1a:10:03:ff:00:01, ethertype MPLS unicast (0x8847), length 106: MPLS (label 16002, tc 0, ttl 62)
+	(label 22001, tc 0, [S], ttl 62)
+	(tos 0x0, ttl 62, id 62782, offset 0, flags [DF], proto ICMP (1), length 84)
+    192.168.20.11 > 192.168.30.12: ICMP echo request, id 231, seq 5, length 64
+20:23:21.035116 1a:7a:00:ff:00:01 > 1a:10:03:ff:00:01, ethertype MPLS unicast (0x8847), length 106: MPLS (label 16002, tc 0, ttl 62)
+	(label 22001, tc 0, [S], ttl 62)
+	(tos 0x0, ttl 62, id 62805, offset 0, flags [none], proto ICMP (1), length 84)
+    192.168.20.11 > 192.168.30.12: ICMP echo reply, id 232, seq 1, length 64
+20:23:21.235495 1a:7a:00:ff:00:01 > 1a:10:03:ff:00:01, ethertype MPLS unicast (0x8847), length 106: MPLS (label 16002, tc 0, ttl 62)
+	(label 22001, tc 0, [S], ttl 62)
+	(tos 0x0, ttl 62, id 62819, offset 0, flags [none], proto ICMP (1), length 84)
+    192.168.20.11 > 192.168.30.12: ICMP echo reply, id 232, seq 2, length 64
+20:23:21.435654 1a:7a:00:ff:00:01 > 1a:10:03:ff:00:01, ethertype MPLS unicast (0x8847), length 106: MPLS (label 16002, tc 0, ttl 62)
+	(label 22001, tc 0, [S], ttl 62)
+	(tos 0x0, ttl 62, id 62831, offset 0, flags [none], proto ICMP (1), length 84)
+    192.168.20.11 > 192.168.30.12: ICMP echo reply, id 232, seq 3, length 64
+20:23:21.637394 1a:7a:00:ff:00:01 > 1a:10:03:ff:00:01, ethertype MPLS unicast (0x8847), length 106: MPLS (label 16002, tc 0, ttl 62)
+	(label 22001, tc 0, [S], ttl 62)
+	(tos 0x0, ttl 62, id 62843, offset 0, flags [none], proto ICMP (1), length 84)
+    192.168.20.11 > 192.168.30.12: ICMP echo reply, id 232, seq 4, length 64
+20:23:21.837814 1a:7a:00:ff:00:01 > 1a:10:03:ff:00:01, ethertype MPLS unicast (0x8847), length 106: MPLS (label 16002, tc 0, ttl 62)
+	(label 22001, tc 0, [S], ttl 62)
+	(tos 0x0, ttl 62, id 62846, offset 0, flags [none], proto ICMP (1), length 84)
+    192.168.20.11 > 192.168.30.12: ICMP echo reply, id 232, seq 5, length 64
+20:23:22.113123 1a:7a:00:ff:00:01 > 1a:10:03:ff:00:01, ethertype MPLS unicast (0x8847), length 1522: MPLS (label 16002, tc 0, ttl 62)
+	(label 22001, tc 0, [S], ttl 62)
+	(tos 0x0, ttl 62, id 0, offset 0, flags [DF], proto ICMP (1), length 1500)
+    192.168.20.11 > 192.168.30.12: ICMP echo request, id 233, seq 1, length 1480
+20:23:22.313616 1a:7a:00:ff:00:01 > 1a:10:03:ff:00:01, ethertype MPLS unicast (0x8847), length 1522: MPLS (label 16002, tc 0, ttl 62)
+	(label 22001, tc 0, [S], ttl 62)
+	(tos 0x0, ttl 62, id 0, offset 0, flags [DF], proto ICMP (1), length 1500)
+    192.168.20.11 > 192.168.30.12: ICMP echo request, id 233, seq 2, length 1480
+20:23:22.516898 1a:7a:00:ff:00:01 > 1a:10:03:ff:00:01, ethertype MPLS unicast (0x8847), length 1522: MPLS (label 16002, tc 0, ttl 62)
+	(label 22001, tc 0, [S], ttl 62)
+	(tos 0x0, ttl 62, id 0, offset 0, flags [DF], proto ICMP (1), length 1500)
+    192.168.20.11 > 192.168.30.12: ICMP echo request, id 233, seq 3, length 1480
+20:23:23.039224 1a:7a:00:ff:00:01 > 1a:10:03:ff:00:01, ethertype MPLS unicast (0x8847), length 1522: MPLS (label 16002, tc 0, ttl 62)
+	(label 22001, tc 0, [S], ttl 62)
+	(tos 0x0, ttl 62, id 62888, offset 0, flags [none], proto ICMP (1), length 1500)
+    192.168.20.11 > 192.168.30.12: ICMP echo reply, id 234, seq 1, length 1480
+20:23:23.238249 1a:7a:00:ff:00:01 > 1a:10:03:ff:00:01, ethertype MPLS unicast (0x8847), length 1522: MPLS (label 16002, tc 0, ttl 62)
+	(label 22001, tc 0, [S], ttl 62)
+	(tos 0x0, ttl 62, id 62895, offset 0, flags [none], proto ICMP (1), length 1500)
+    192.168.20.11 > 192.168.30.12: ICMP echo reply, id 234, seq 2, length 1480
+20:23:23.438110 1a:7a:00:ff:00:01 > 1a:10:03:ff:00:01, ethertype MPLS unicast (0x8847), length 1522: MPLS (label 16002, tc 0, ttl 62)
+	(label 22001, tc 0, [S], ttl 62)
+	(tos 0x0, ttl 62, id 62904, offset 0, flags [none], proto ICMP (1), length 1500)
+    192.168.20.11 > 192.168.30.12: ICMP echo reply, id 234, seq 3, length 1480
+
+17 packets captured
+17 packets received by filter
+0 packets dropped by kernel

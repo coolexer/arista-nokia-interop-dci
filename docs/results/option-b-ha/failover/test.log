@@ -1,0 +1,49 @@
+SCENARIO pause-dc1-bl START 2026-10-09T20:29:50.885042196Z
+FAULT pause-dc1-bl 2026-10-09T20:30:02.115253093Z
+PASS pause-dc1-bl: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE pause-dc1-bl 2026-10-09T20:30:19.839528380Z
+PASS pause-dc1-bl: restoration
+SCENARIO pause-dc1-bl2 START 2026-10-09T20:30:34.627250953Z
+FAULT pause-dc1-bl2 2026-10-09T20:30:40.256182216Z
+PASS pause-dc1-bl2: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE pause-dc1-bl2 2026-10-09T20:30:57.796104001Z
+PASS pause-dc1-bl2: restoration
+SCENARIO pause-dc2-bl START 2026-10-09T20:31:13.687954820Z
+FAULT pause-dc2-bl 2026-10-09T20:31:18.922557728Z
+PASS pause-dc2-bl: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE pause-dc2-bl 2026-10-09T20:31:38.223443229Z
+PASS pause-dc2-bl: restoration
+SCENARIO pause-dc2-bl2 START 2026-10-09T20:32:01.522129435Z
+FAULT pause-dc2-bl2 2026-10-09T20:32:06.535187338Z
+PASS pause-dc2-bl2: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE pause-dc2-bl2 2026-10-09T20:32:25.837725137Z
+PASS pause-dc2-bl2: restoration
+SCENARIO dci-1-down START 2026-10-09T20:32:50.970285129Z
+FAULT dci-1-down 2026-10-09T20:32:55.869375235Z
+All changes have been committed. Leaving candidate mode.
+PASS dci-1-down: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE dci-1-down 2026-10-09T20:33:16.209281066Z
+All changes have been committed. Leaving candidate mode.
+PASS dci-1-down: restoration
+SCENARIO dci-2-down START 2026-10-09T20:33:32.465144366Z
+FAULT dci-2-down 2026-10-09T20:33:38.680593331Z
+All changes have been committed. Leaving candidate mode.
+PASS dci-2-down: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE dci-2-down 2026-10-09T20:33:59.700703108Z
+All changes have been committed. Leaving candidate mode.
+PASS dci-2-down: restoration
+SCENARIO uplink-1-down START 2026-10-09T20:34:29.504824154Z
+FAULT uplink-1-down 2026-10-09T20:34:34.278543053Z
+All changes have been committed. Leaving candidate mode.
+PASS uplink-1-down: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE uplink-1-down 2026-10-09T20:34:56.220628972Z
+All changes have been committed. Leaving candidate mode.
+PASS uplink-1-down: restoration
+SCENARIO uplink-2-down START 2026-10-09T20:35:25.853586483Z
+FAULT uplink-2-down 2026-10-09T20:35:31.333098897Z
+All changes have been committed. Leaving candidate mode.
+PASS uplink-2-down: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE uplink-2-down 2026-10-09T20:35:57.820847442Z
+All changes have been committed. Leaving candidate mode.
+PASS uplink-2-down: restoration
+PASS: all 8 isolated single-fault scenarios. Ping traces show observed loss; no ASIC/SLA timing claim.

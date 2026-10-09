@@ -5,7 +5,7 @@ cd -- "$(dirname -- "$0")"
 mode=${1:-all}
 case "$mode" in all|l2|l3) ;; *) echo 'Usage: ./verify.sh [all|l2|l3]' >&2; exit 2 ;; esac
 prefix=clab-interop-dci-b
-for node in dc1-leaf dc1-bl dc2-bl dc2-leaf h1 h2; do
+for node in dc1-leaf dc1-bl dc1-bl2 dc2-bl dc2-bl2 dc2-leaf h1 h2; do
   [[ $(docker inspect -f '{{.State.Running}}' "$prefix-$node" 2>/dev/null) == true ]] || {
     echo "Lab node is not running: $prefix-$node. Deploy the lab separately." >&2; exit 1;
   }
@@ -17,7 +17,7 @@ srl() { docker exec "$prefix-$1" timeout 30 sr_cli -d "$2"; }
 eos() { docker exec "$prefix-dc1-leaf" timeout 30 Cli -c "$1"; }
 ping_host() { docker exec "$prefix-$1" ping -n -I "$2" -i 0.2 -c 5 -W 2 "$3"; }
 echo "Results: $out"
-for node in dc1-bl dc2-bl dc2-leaf; do
+for node in dc1-bl dc1-bl2 dc2-bl dc2-bl2 dc2-leaf; do
   srl "$node" 'show version' | tee "$out/$node-version.txt"
   grep -q '26.7.1' "$out/$node-version.txt" || { echo "Wrong SR Linux release: $node"; exit 1; }
   srl "$node" 'show network-instance default protocols bgp summary' > "$out/$node-bgp.txt"
@@ -46,17 +46,27 @@ for node in dc1-bl dc2-bl; do
   srl "$node" 'show network-instance L2-10 bridge-table mac-table all' > "$out/$node-macs-before.txt"
   srl "$node" 'show network-instance default protocols bgp routes evpn route-type 5 detail' > "$out/$node-rt5.txt"
 done
-# Capture each segment separately: local VXLAN and DCI MPLS.
+# Capture both DCI circuits; service/ECMP selection may use either BL.
+capture_pids=()
 docker exec -u 0 "$prefix-dc1-bl" timeout 30 tcpdump -l -n -e -vv -i e1-2 \
-  'ether proto 0x8847 or udp port 4789' > "$out/dci-mpls.txt" 2>&1 &
-dci_pid=$!
+  'ether proto 0x8847 or udp port 4789' > "$out/dci-1.txt" 2>&1 &
+capture_pids+=("$!")
+docker exec -u 0 "$prefix-dc1-bl2" timeout 30 tcpdump -l -n -e -vv -i e1-2 \
+  'ether proto 0x8847 or udp port 4789' > "$out/dci-2.txt" 2>&1 &
+capture_pids+=("$!")
 docker exec -u 0 "$prefix-dc1-bl" timeout 30 tcpdump -l -n -e -vv -i e1-1 \
-  'udp port 4789' > "$out/dc1-vxlan.txt" 2>&1 &
-dc1_pid=$!
+  'udp port 4789' > "$out/dc1-bl-vxlan.txt" 2>&1 &
+capture_pids+=("$!")
+docker exec -u 0 "$prefix-dc1-bl2" timeout 30 tcpdump -l -n -e -vv -i e1-1 \
+  'udp port 4789' > "$out/dc1-bl2-vxlan.txt" 2>&1 &
+capture_pids+=("$!")
 docker exec -u 0 "$prefix-dc2-bl" timeout 30 tcpdump -l -n -e -vv -i e1-1 \
-  'udp port 4789' > "$out/dc2-vxlan.txt" 2>&1 &
-dc2_pid=$!
-trap 'kill "$dci_pid" "$dc1_pid" "$dc2_pid" 2>/dev/null || true' EXIT
+  'udp port 4789' > "$out/dc2-bl-vxlan.txt" 2>&1 &
+capture_pids+=("$!")
+docker exec -u 0 "$prefix-dc2-bl2" timeout 30 tcpdump -l -n -e -vv -i e1-1 \
+  'udp port 4789' > "$out/dc2-bl2-vxlan.txt" 2>&1 &
+capture_pids+=("$!")
+trap 'kill "${capture_pids[@]}" 2>/dev/null || true' EXIT
 sleep 1
 if [[ "$mode" == all || "$mode" == l2 ]]; then
   docker exec "$prefix-h1" ip neigh flush dev eth1
@@ -74,16 +84,17 @@ if [[ "$mode" == all || "$mode" == l3 ]]; then
   docker exec "$prefix-h1" ping -n -I eth2 -i 0.2 -M do -s 1472 -c 3 -W 2 192.168.30.12
   docker exec "$prefix-h2" ping -n -I eth2 -i 0.2 -M do -s 1472 -c 3 -W 2 192.168.20.11
 fi
-wait "$dci_pid" || true
-wait "$dc1_pid" || true
-wait "$dc2_pid" || true
+for pid in "${capture_pids[@]}"; do wait "$pid" || true; done
 trap - EXIT
+cat "$out/dci-1.txt" "$out/dci-2.txt" > "$out/dci-mpls.txt"
+cat "$out/dc1-bl-vxlan.txt" "$out/dc1-bl2-vxlan.txt" > "$out/dc1-vxlan.txt"
+cat "$out/dc2-bl-vxlan.txt" "$out/dc2-bl2-vxlan.txt" > "$out/dc2-vxlan.txt"
 for capture in "$out/dc1-vxlan.txt" "$out/dc2-vxlan.txt"; do
-  if [[ "$mode" == all || "$mode" == l2 ]]; then grep -qi 'vni 10010' "$capture"; fi
-  if [[ "$mode" == all || "$mode" == l3 ]]; then grep -qi 'vni 50000' "$capture"; fi
+  if [[ "$mode" == all || "$mode" == l2 ]]; then grep -qi "vni 10010" "$capture"; fi
+  if [[ "$mode" == all || "$mode" == l3 ]]; then grep -qi "vni 50000" "$capture"; fi
 done
-grep -q 'MPLS' "$out/dci-mpls.txt"
-if grep -q 'VXLAN' "$out/dci-mpls.txt"; then echo 'Unexpected E2E VXLAN on DCI'; exit 1; fi
+grep -q "MPLS" "$out/dci-mpls.txt"
+if grep -q "VXLAN" "$out/dci-mpls.txt"; then echo "Unexpected VXLAN on DCI"; exit 1; fi
 srl dc2-leaf 'show network-instance L2-10 bridge-table mac-table all'  > "$out/dc2-leaf-macs.txt"
 eos 'show mac address-table vlan 10' > "$out/dc1-leaf-macs.txt"
 echo "PASS: $mode bidirectional connectivity, inner IP MTU 1500 and local VXLAN VNI and DCI MPLS capture."

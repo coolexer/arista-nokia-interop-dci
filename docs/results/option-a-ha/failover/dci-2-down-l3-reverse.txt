@@ -1,0 +1,107 @@
+PING 192.168.20.11 (192.168.20.11) from 192.168.30.12 eth2: 56(84) bytes of data.
+[1791576363.517219] 64 bytes from 192.168.20.11: icmp_seq=1 ttl=62 time=4.19 ms
+[1791576363.720933] 64 bytes from 192.168.20.11: icmp_seq=2 ttl=62 time=7.09 ms
+[1791576363.925382] 64 bytes from 192.168.20.11: icmp_seq=3 ttl=62 time=10.5 ms
+[1791576364.121308] 64 bytes from 192.168.20.11: icmp_seq=4 ttl=62 time=5.44 ms
+[1791576364.323957] 64 bytes from 192.168.20.11: icmp_seq=5 ttl=62 time=7.03 ms
+[1791576364.523105] 64 bytes from 192.168.20.11: icmp_seq=6 ttl=62 time=5.54 ms
+[1791576364.726511] 64 bytes from 192.168.20.11: icmp_seq=7 ttl=62 time=7.81 ms
+[1791576364.923637] 64 bytes from 192.168.20.11: icmp_seq=8 ttl=62 time=4.45 ms
+[1791576365.123971] 64 bytes from 192.168.20.11: icmp_seq=9 ttl=62 time=4.12 ms
+[1791576365.324459] 64 bytes from 192.168.20.11: icmp_seq=10 ttl=62 time=4.22 ms
+[1791576365.526195] 64 bytes from 192.168.20.11: icmp_seq=11 ttl=62 time=5.14 ms
+[1791576365.727692] 64 bytes from 192.168.20.11: icmp_seq=12 ttl=62 time=5.89 ms
+[1791576369.730626] From 192.168.30.1 icmp_seq=31 Destination Net Unreachable
+[1791576369.930805] From 192.168.30.1 icmp_seq=32 Destination Net Unreachable
+[1791576370.133226] From 192.168.30.1 icmp_seq=33 Destination Net Unreachable
+[1791576370.332275] From 192.168.30.1 icmp_seq=34 Destination Net Unreachable
+[1791576370.533999] From 192.168.30.1 icmp_seq=35 Destination Net Unreachable
+[1791576370.733861] From 192.168.30.1 icmp_seq=36 Destination Net Unreachable
+[1791576370.936528] From 192.168.30.1 icmp_seq=37 Destination Net Unreachable
+[1791576371.136406] From 192.168.30.1 icmp_seq=38 Destination Net Unreachable
+[1791576371.337067] From 192.168.30.1 icmp_seq=39 Destination Net Unreachable
+[1791576371.537365] From 192.168.30.1 icmp_seq=40 Destination Net Unreachable
+[1791576371.737712] From 192.168.30.1 icmp_seq=41 Destination Net Unreachable
+[1791576371.938601] From 192.168.30.1 icmp_seq=42 Destination Net Unreachable
+[1791576372.139399] From 192.168.30.1 icmp_seq=43 Destination Net Unreachable
+[1791576372.340112] From 192.168.30.1 icmp_seq=44 Destination Net Unreachable
+[1791576372.541349] From 192.168.30.1 icmp_seq=45 Destination Net Unreachable
+[1791576372.742120] From 192.168.30.1 icmp_seq=46 Destination Net Unreachable
+[1791576372.941678] From 192.168.30.1 icmp_seq=47 Destination Net Unreachable
+[1791576373.143407] From 192.168.30.1 icmp_seq=48 Destination Net Unreachable
+[1791576373.344261] From 192.168.30.1 icmp_seq=49 Destination Net Unreachable
+[1791576373.545296] From 192.168.30.1 icmp_seq=50 Destination Net Unreachable
+[1791576373.746857] From 192.168.30.1 icmp_seq=51 Destination Net Unreachable
+[1791576373.946155] From 192.168.30.1 icmp_seq=52 Destination Net Unreachable
+[1791576374.149619] From 192.168.30.1 icmp_seq=53 Destination Net Unreachable
+[1791576374.348335] From 192.168.30.1 icmp_seq=54 Destination Net Unreachable
+[1791576374.549627] From 192.168.30.1 icmp_seq=55 Destination Net Unreachable
+[1791576374.749767] From 192.168.30.1 icmp_seq=56 Destination Net Unreachable
+[1791576374.955509] From 192.168.30.1 icmp_seq=57 Destination Net Unreachable
+[1791576375.152735] From 192.168.30.1 icmp_seq=58 Destination Net Unreachable
+[1791576375.353758] From 192.168.30.1 icmp_seq=59 Destination Net Unreachable
+[1791576375.554606] From 192.168.30.1 icmp_seq=60 Destination Net Unreachable
+[1791576375.755156] From 192.168.30.1 icmp_seq=61 Destination Net Unreachable
+[1791576375.955364] From 192.168.30.1 icmp_seq=62 Destination Net Unreachable
+[1791576376.157826] From 192.168.30.1 icmp_seq=63 Destination Net Unreachable
+[1791576376.358364] From 192.168.30.1 icmp_seq=64 Destination Net Unreachable
+[1791576376.559132] From 192.168.30.1 icmp_seq=65 Destination Net Unreachable
+[1791576376.760877] From 192.168.30.1 icmp_seq=66 Destination Net Unreachable
+[1791576376.960114] From 192.168.30.1 icmp_seq=67 Destination Net Unreachable
+[1791576377.162132] From 192.168.30.1 icmp_seq=68 Destination Net Unreachable
+[1791576377.364334] From 192.168.30.1 icmp_seq=69 Destination Net Unreachable
+[1791576377.563742] From 192.168.30.1 icmp_seq=70 Destination Net Unreachable
+[1791576377.764218] From 192.168.30.1 icmp_seq=71 Destination Net Unreachable
+[1791576377.964160] From 192.168.30.1 icmp_seq=72 Destination Net Unreachable
+[1791576378.167175] From 192.168.30.1 icmp_seq=73 Destination Net Unreachable
+[1791576378.367077] From 192.168.30.1 icmp_seq=74 Destination Net Unreachable
+[1791576378.566874] From 192.168.30.1 icmp_seq=75 Destination Net Unreachable
+[1791576378.767891] From 192.168.30.1 icmp_seq=76 Destination Net Unreachable
+[1791576378.969866] From 192.168.30.1 icmp_seq=77 Destination Net Unreachable
+[1791576379.172531] From 192.168.30.1 icmp_seq=78 Destination Net Unreachable
+[1791576379.372140] From 192.168.30.1 icmp_seq=79 Destination Net Unreachable
+[1791576379.572848] From 192.168.30.1 icmp_seq=80 Destination Net Unreachable
+[1791576379.774050] From 192.168.30.1 icmp_seq=81 Destination Net Unreachable
+[1791576379.975319] From 192.168.30.1 icmp_seq=82 Destination Net Unreachable
+[1791576380.175971] From 192.168.30.1 icmp_seq=83 Destination Net Unreachable
+[1791576380.375695] From 192.168.30.1 icmp_seq=84 Destination Net Unreachable
+[1791576380.575747] From 192.168.30.1 icmp_seq=85 Destination Net Unreachable
+[1791576380.778073] From 192.168.30.1 icmp_seq=86 Destination Net Unreachable
+[1791576380.978161] From 192.168.30.1 icmp_seq=87 Destination Net Unreachable
+[1791576381.179787] From 192.168.30.1 icmp_seq=88 Destination Net Unreachable
+[1791576381.379191] From 192.168.30.1 icmp_seq=89 Destination Net Unreachable
+[1791576381.581052] From 192.168.30.1 icmp_seq=90 Destination Net Unreachable
+[1791576381.782183] From 192.168.30.1 icmp_seq=91 Destination Net Unreachable
+[1791576381.982995] From 192.168.30.1 icmp_seq=92 Destination Net Unreachable
+[1791576382.184677] From 192.168.30.1 icmp_seq=93 Destination Net Unreachable
+[1791576382.382849] From 192.168.30.1 icmp_seq=94 Destination Net Unreachable
+[1791576382.584074] From 192.168.30.1 icmp_seq=95 Destination Net Unreachable
+[1791576382.784692] From 192.168.30.1 icmp_seq=96 Destination Net Unreachable
+[1791576382.987451] From 192.168.30.1 icmp_seq=97 Destination Net Unreachable
+[1791576383.187172] From 192.168.30.1 icmp_seq=98 Destination Net Unreachable
+[1791576383.387100] From 192.168.30.1 icmp_seq=99 Destination Net Unreachable
+[1791576383.588958] From 192.168.30.1 icmp_seq=100 Destination Net Unreachable
+[1791576383.791406] From 192.168.30.1 icmp_seq=101 Destination Net Unreachable
+[1791576383.990885] From 192.168.30.1 icmp_seq=102 Destination Net Unreachable
+[1791576384.192065] From 192.168.30.1 icmp_seq=103 Destination Net Unreachable
+[1791576384.392095] From 192.168.30.1 icmp_seq=104 Destination Net Unreachable
+[1791576384.593108] From 192.168.30.1 icmp_seq=105 Destination Net Unreachable
+[1791576384.795994] From 192.168.30.1 icmp_seq=106 Destination Net Unreachable
+[1791576384.995740] From 192.168.30.1 icmp_seq=107 Destination Net Unreachable
+[1791576385.200064] From 192.168.30.1 icmp_seq=108 Destination Net Unreachable
+[1791576385.398735] From 192.168.30.1 icmp_seq=109 Destination Net Unreachable
+[1791576385.597996] From 192.168.30.1 icmp_seq=110 Destination Net Unreachable
+[1791576385.800974] From 192.168.30.1 icmp_seq=111 Destination Net Unreachable
+[1791576386.001299] From 192.168.30.1 icmp_seq=112 Destination Net Unreachable
+[1791576386.202659] From 192.168.30.1 icmp_seq=113 Destination Net Unreachable
+[1791576386.403007] From 192.168.30.1 icmp_seq=114 Destination Net Unreachable
+[1791576386.603167] From 192.168.30.1 icmp_seq=115 Destination Net Unreachable
+[1791576386.804926] From 192.168.30.1 icmp_seq=116 Destination Net Unreachable
+[1791576387.005622] From 192.168.30.1 icmp_seq=117 Destination Net Unreachable
+[1791576387.206022] From 192.168.30.1 icmp_seq=118 Destination Net Unreachable
+[1791576387.409661] From 192.168.30.1 icmp_seq=119 Destination Net Unreachable
+[1791576387.609325] From 192.168.30.1 icmp_seq=120 Destination Net Unreachable
+
+--- 192.168.20.11 ping statistics ---
+120 packets transmitted, 12 received, +90 errors, 90% packet loss, time 24092ms
+rtt min/avg/max/mdev = 4.116/5.949/10.477/1.807 ms
