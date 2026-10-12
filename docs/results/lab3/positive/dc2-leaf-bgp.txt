@@ -1,0 +1,48 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+BGP is enabled and up in network-instance "default"
+Global AS number  : 65102
+BGP identifier    : 10.255.2.1
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Total paths               : 13
+  Received routes           : 8
+  Received and active routes: 9
+  Total UP peers            : 3
+  Configured peers          : 3, 0 are disabled
+  Dynamic peers             : None
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Default preferences
+  BGP Local Preference attribute: 100
+  EBGP route-table preference   : 170
+  IBGP route-table preference   : 170
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Wait for FIB install to advertise: True
+Send rapid withdrawals           : disabled
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ipv4-unicast AFI/SAFI
+    Received routes               : 9
+    Received and active routes    : 6
+    Max number of multipaths EBGP : 2
+    Max number of multipaths IBGP : 1
+    Multipath can transit multi AS: True
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ipv6-unicast AFI/SAFI
+    Received routes               : 0
+    Received and active routes    : 0
+    Max number of multipaths EBGP : N/A
+    Max number of multipaths IBGP : N/A
+    Multipath can transit multi AS: N/A
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+EVPN-unicast AFI/SAFI
+    Received routes               : 3
+    Received and active routes    : 3
+    Max number of multipaths EBGP : N/A
+    Max number of multipaths IBGP : N/A
+    Multipath can transit multi AS: N/A
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Route-target AFI/SAFI
+    Received routes               : 0
+    Received and active routes    : 0
+    Max number of multipaths EBGP : N/A
+    Max number of multipaths IBGP : N/A
+    Multipath can transit multi AS: N/A
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

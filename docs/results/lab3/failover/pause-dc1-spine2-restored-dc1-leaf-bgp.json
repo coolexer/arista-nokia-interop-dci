@@ -1,0 +1,40 @@
+{
+    "vrfs": {
+        "default": {
+            "vrf": "default",
+            "routerId": "10.255.1.1",
+            "asn": "65101",
+            "peers": {
+                "100.64.1.1": {
+                    "description": "UNDERLAY-DC1-BL",
+                    "version": 4,
+                    "msgReceived": 47,
+                    "msgSent": 43,
+                    "inMsgQueue": 0,
+                    "outMsgQueue": 0,
+                    "asn": "65201",
+                    "prefixAccepted": 4,
+                    "prefixReceived": 4,
+                    "upDownTime": 1791791131.098844,
+                    "underMaintenance": false,
+                    "peerState": "Established",
+                    "prefixAdvertised": 2
+                },
+                "100.64.1.3": {
+                    "version": 4,
+                    "msgReceived": 41,
+                    "msgSent": 49,
+                    "inMsgQueue": 0,
+                    "outMsgQueue": 0,
+                    "asn": "65211",
+                    "prefixAccepted": 1,
+                    "prefixReceived": 1,
+                    "upDownTime": 1791791190.814826,
+                    "underMaintenance": false,
+                    "peerState": "Established",
+                    "prefixAdvertised": 5
+                }
+            }
+        }
+    }
+}

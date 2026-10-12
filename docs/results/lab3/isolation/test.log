@@ -1,0 +1,109 @@
+PING 192.168.10.11 (192.168.10.11) from 192.168.10.12 eth1: 56(84) bytes of data.
+64 bytes from 192.168.10.11: icmp_seq=1 ttl=64 time=7.49 ms
+64 bytes from 192.168.10.11: icmp_seq=2 ttl=64 time=3.68 ms
+64 bytes from 192.168.10.11: icmp_seq=3 ttl=64 time=4.18 ms
+
+--- 192.168.10.11 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 3.684/5.116/7.487/1.688 ms
+PING 192.168.20.11 (192.168.20.11) from 192.168.30.12 eth2: 56(84) bytes of data.
+64 bytes from 192.168.20.11: icmp_seq=1 ttl=62 time=15.6 ms
+64 bytes from 192.168.20.11: icmp_seq=2 ttl=62 time=17.8 ms
+64 bytes from 192.168.20.11: icmp_seq=3 ttl=62 time=6.65 ms
+
+--- 192.168.20.11 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 6.645/13.337/17.779/4.816 ms
+TEST L2 import-RT mismatch
+All changes have been committed. Leaving candidate mode.
+PING 192.168.10.11 (192.168.10.11) from 192.168.10.12 eth1: 56(84) bytes of data.
+
+--- 192.168.10.11 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 419ms
+PING 192.168.20.11 (192.168.20.11) from 192.168.30.12 eth2: 56(84) bytes of data.
+64 bytes from 192.168.20.11: icmp_seq=1 ttl=62 time=6.93 ms
+64 bytes from 192.168.20.11: icmp_seq=2 ttl=62 time=8.17 ms
+64 bytes from 192.168.20.11: icmp_seq=3 ttl=62 time=6.27 ms
+
+--- 192.168.20.11 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 401ms
+rtt min/avg/max/mdev = 6.265/7.121/8.165/0.786 ms
+All changes have been committed. Leaving candidate mode.
+PING 192.168.10.11 (192.168.10.11) from 192.168.10.12 eth1: 56(84) bytes of data.
+64 bytes from 192.168.10.11: icmp_seq=1 ttl=64 time=1071 ms
+64 bytes from 192.168.10.11: icmp_seq=2 ttl=64 time=864 ms
+64 bytes from 192.168.10.11: icmp_seq=3 ttl=64 time=645 ms
+
+--- 192.168.10.11 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 428ms
+rtt min/avg/max/mdev = 644.610/859.891/1071.271/174.205 ms, pipe 3
+PING 192.168.20.11 (192.168.20.11) from 192.168.30.12 eth2: 56(84) bytes of data.
+64 bytes from 192.168.20.11: icmp_seq=1 ttl=62 time=10.8 ms
+64 bytes from 192.168.20.11: icmp_seq=2 ttl=62 time=6.70 ms
+64 bytes from 192.168.20.11: icmp_seq=3 ttl=62 time=6.24 ms
+
+--- 192.168.20.11 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 6.242/7.913/10.795/2.046 ms
+PASS: L2 isolated; L3 unaffected; L2 restored
+TEST L3 import-RT mismatch
+All changes have been committed. Leaving candidate mode.
+PING 192.168.20.11 (192.168.20.11) from 192.168.30.12 eth2: 56(84) bytes of data.
+From 192.168.30.1 icmp_seq=1 Destination Net Unreachable
+From 192.168.30.1 icmp_seq=2 Destination Net Unreachable
+From 192.168.30.1 icmp_seq=3 Destination Net Unreachable
+
+--- 192.168.20.11 ping statistics ---
+3 packets transmitted, 0 received, +3 errors, 100% packet loss, time 401ms
+PING 192.168.10.11 (192.168.10.11) from 192.168.10.12 eth1: 56(84) bytes of data.
+64 bytes from 192.168.10.11: icmp_seq=1 ttl=64 time=5.09 ms
+64 bytes from 192.168.10.11: icmp_seq=2 ttl=64 time=5.59 ms
+64 bytes from 192.168.10.11: icmp_seq=3 ttl=64 time=3.62 ms
+
+--- 192.168.10.11 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 3.619/4.764/5.586/0.835 ms
+All changes have been committed. Leaving candidate mode.
+PING 192.168.10.11 (192.168.10.11) from 192.168.10.12 eth1: 56(84) bytes of data.
+64 bytes from 192.168.10.11: icmp_seq=1 ttl=64 time=3.74 ms
+64 bytes from 192.168.10.11: icmp_seq=2 ttl=64 time=5.15 ms
+64 bytes from 192.168.10.11: icmp_seq=3 ttl=64 time=4.44 ms
+
+--- 192.168.10.11 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 3.740/4.444/5.149/0.575 ms
+PING 192.168.20.11 (192.168.20.11) from 192.168.30.12 eth2: 56(84) bytes of data.
+64 bytes from 192.168.20.11: icmp_seq=1 ttl=62 time=7.66 ms
+64 bytes from 192.168.20.11: icmp_seq=2 ttl=62 time=6.83 ms
+64 bytes from 192.168.20.11: icmp_seq=3 ttl=62 time=6.45 ms
+
+--- 192.168.20.11 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 401ms
+rtt min/avg/max/mdev = 6.449/6.980/7.659/0.504 ms
+PASS: L3 isolated; L2 unaffected; L3 restored
+TEST both DCI ports down, both spines remain running
+PING 192.168.10.11 (192.168.10.11) from 192.168.10.12 eth1: 56(84) bytes of data.
+
+--- 192.168.10.11 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 421ms
+PING 192.168.20.11 (192.168.20.11) from 192.168.30.12 eth2: 56(84) bytes of data.
+
+--- 192.168.20.11 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 415ms
+PING 192.168.10.11 (192.168.10.11) from 192.168.10.12 eth1: 56(84) bytes of data.
+64 bytes from 192.168.10.11: icmp_seq=1 ttl=64 time=3.99 ms
+64 bytes from 192.168.10.11: icmp_seq=2 ttl=64 time=5.07 ms
+64 bytes from 192.168.10.11: icmp_seq=3 ttl=64 time=5.75 ms
+
+--- 192.168.10.11 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 401ms
+rtt min/avg/max/mdev = 3.990/4.937/5.752/0.725 ms
+PING 192.168.20.11 (192.168.20.11) from 192.168.30.12 eth2: 56(84) bytes of data.
+64 bytes from 192.168.20.11: icmp_seq=1 ttl=62 time=11.2 ms
+64 bytes from 192.168.20.11: icmp_seq=2 ttl=62 time=5.19 ms
+64 bytes from 192.168.20.11: icmp_seq=3 ttl=62 time=5.39 ms
+
+--- 192.168.20.11 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 5.186/7.272/11.244/2.809 ms
+PASS: service isolation and complete DCI-loss checks; changes restored

@@ -1,0 +1,43 @@
+SCENARIO pause-dc1-spine1 START 2026-10-12T07:45:07.184728932Z
+FAULT pause-dc1-spine1 2026-10-12T07:45:10.954953909Z
+PASS pause-dc1-spine1: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE pause-dc1-spine1 2026-10-12T07:45:30.456584826Z
+PASS pause-dc1-spine1: all nodes restored
+SCENARIO pause-dc1-spine2 START 2026-10-12T07:46:09.334476087Z
+FAULT pause-dc1-spine2 2026-10-12T07:46:13.525880278Z
+PASS pause-dc1-spine2: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE pause-dc1-spine2 2026-10-12T07:46:30.548890570Z
+PASS pause-dc1-spine2: all nodes restored
+SCENARIO pause-dc2-bl START 2026-10-12T07:46:52.831523418Z
+FAULT pause-dc2-bl 2026-10-12T07:46:56.732866272Z
+PASS pause-dc2-bl: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE pause-dc2-bl 2026-10-12T07:47:16.152435379Z
+PASS pause-dc2-bl: all nodes restored
+SCENARIO pause-dc2-bl2 START 2026-10-12T07:47:41.308515718Z
+FAULT pause-dc2-bl2 2026-10-12T07:47:45.050418460Z
+PASS pause-dc2-bl2: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE pause-dc2-bl2 2026-10-12T07:48:05.021053836Z
+PASS pause-dc2-bl2: all nodes restored
+SCENARIO dci-1-down START 2026-10-12T07:48:24.569574752Z
+FAULT dci-1-down 2026-10-12T07:48:30.980088629Z
+PASS dci-1-down: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE dci-1-down 2026-10-12T07:48:50.871051637Z
+PASS dci-1-down: all nodes restored
+SCENARIO dci-2-down START 2026-10-12T07:49:13.723875013Z
+FAULT dci-2-down 2026-10-12T07:49:17.949839438Z
+PASS dci-2-down: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE dci-2-down 2026-10-12T07:49:34.821855839Z
+PASS dci-2-down: all nodes restored
+SCENARIO arista-uplink-1-down START 2026-10-12T07:49:57.255006800Z
+FAULT arista-uplink-1-down 2026-10-12T07:50:00.955397092Z
+PASS arista-uplink-1-down: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE arista-uplink-1-down 2026-10-12T07:50:18.032856991Z
+PASS arista-uplink-1-down: all nodes restored
+SCENARIO nokia-uplink-2-down START 2026-10-12T07:50:40.168075403Z
+FAULT nokia-uplink-2-down 2026-10-12T07:50:43.969569634Z
+All changes have been committed. Leaving candidate mode.
+PASS nokia-uplink-2-down: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE nokia-uplink-2-down 2026-10-12T07:51:01.485165516Z
+All changes have been committed. Leaving candidate mode.
+PASS nokia-uplink-2-down: all nodes restored
+PASS: all 8 isolated single-fault scenarios. Simulator observations, not an ASIC convergence SLA.

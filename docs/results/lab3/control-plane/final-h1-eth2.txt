@@ -1,0 +1,10 @@
+PING 192.168.30.12 (192.168.30.12) from 192.168.20.11 eth2: 56(84) bytes of data.
+64 bytes from 192.168.30.12: icmp_seq=1 ttl=62 time=3.18 ms
+64 bytes from 192.168.30.12: icmp_seq=2 ttl=62 time=2.90 ms
+64 bytes from 192.168.30.12: icmp_seq=3 ttl=62 time=3.00 ms
+64 bytes from 192.168.30.12: icmp_seq=4 ttl=62 time=2.57 ms
+64 bytes from 192.168.30.12: icmp_seq=5 ttl=62 time=3.14 ms
+
+--- 192.168.30.12 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 802ms
+rtt min/avg/max/mdev = 2.571/2.956/3.176/0.216 ms

@@ -1,0 +1,26 @@
+{
+    "vrfs": {
+        "default": {
+            "vrf": "default",
+            "routerId": "10.255.1.1",
+            "asn": "65101",
+            "peers": {
+                "10.255.2.1": {
+                    "description": "E2E-EVPN-DC2-LEAF",
+                    "version": 4,
+                    "msgReceived": 30,
+                    "msgSent": 33,
+                    "inMsgQueue": 0,
+                    "outMsgQueue": 0,
+                    "asn": "65102",
+                    "prefixAccepted": 4,
+                    "prefixReceived": 4,
+                    "upDownTime": 1791790460.564828,
+                    "underMaintenance": false,
+                    "peerState": "Established",
+                    "prefixAdvertised": 3
+                }
+            }
+        }
+    }
+}

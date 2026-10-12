@@ -1,0 +1,12 @@
+VRF name: default
+-----------------
+DstAddr         MyDisc   YourDisc  Interface/Transport    Type          LastUp 
+----------- ---------- ----------- -------------------- ------- ---------------
+100.64.1.2  2570941826 1180111208        Ethernet1(39)  normal  10/12/26 07:34 
+100.64.12.3 1190787874      16385        Ethernet2(32)  normal  10/12/26 07:34 
+
+   LastDown            LastDiag    State
+-------------- ------------------- -----
+         NA       No Diagnostic       Up
+         NA       No Diagnostic       Up
+

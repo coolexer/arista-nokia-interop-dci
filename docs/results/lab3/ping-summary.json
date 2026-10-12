@@ -1,0 +1,322 @@
+[
+  {
+    "trace": "arista-uplink-1-down-l2-forward.txt",
+    "summary_available": true,
+    "transmitted": 200,
+    "received": 200,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 0.22,
+    "largest_rtt_ms": 29.9,
+    "replies_with_rtt_over_1s": 0
+  },
+  {
+    "trace": "arista-uplink-1-down-l2-reverse.txt",
+    "summary_available": true,
+    "transmitted": 200,
+    "received": 200,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 0.22,
+    "largest_rtt_ms": 37.8,
+    "replies_with_rtt_over_1s": 0
+  },
+  {
+    "trace": "arista-uplink-1-down-l3-forward.txt",
+    "summary_available": true,
+    "transmitted": 200,
+    "received": 200,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 0.22,
+    "largest_rtt_ms": 30.3,
+    "replies_with_rtt_over_1s": 0
+  },
+  {
+    "trace": "arista-uplink-1-down-l3-reverse.txt",
+    "summary_available": true,
+    "transmitted": 200,
+    "received": 200,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 0.214,
+    "largest_rtt_ms": 19.5,
+    "replies_with_rtt_over_1s": 0
+  },
+  {
+    "trace": "dci-1-down-l2-forward.txt",
+    "summary_available": true,
+    "transmitted": 200,
+    "received": 187,
+    "loss_percent": 6.5,
+    "largest_reply_gap_s": 2.973,
+    "largest_rtt_ms": 31.2,
+    "replies_with_rtt_over_1s": 0
+  },
+  {
+    "trace": "dci-1-down-l2-reverse.txt",
+    "summary_available": true,
+    "transmitted": 200,
+    "received": 188,
+    "loss_percent": 6.0,
+    "largest_reply_gap_s": 2.778,
+    "largest_rtt_ms": 20.9,
+    "replies_with_rtt_over_1s": 0
+  },
+  {
+    "trace": "dci-1-down-l3-forward.txt",
+    "summary_available": true,
+    "transmitted": 200,
+    "received": 188,
+    "loss_percent": 6.0,
+    "largest_reply_gap_s": 2.761,
+    "largest_rtt_ms": 28.2,
+    "replies_with_rtt_over_1s": 0
+  },
+  {
+    "trace": "dci-1-down-l3-reverse.txt",
+    "summary_available": true,
+    "transmitted": 200,
+    "received": 188,
+    "loss_percent": 6.0,
+    "largest_reply_gap_s": 2.796,
+    "largest_rtt_ms": 25.8,
+    "replies_with_rtt_over_1s": 0
+  },
+  {
+    "trace": "dci-2-down-l2-forward.txt",
+    "summary_available": true,
+    "transmitted": 200,
+    "received": 200,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 0.218,
+    "largest_rtt_ms": 16.5,
+    "replies_with_rtt_over_1s": 0
+  },
+  {
+    "trace": "dci-2-down-l2-reverse.txt",
+    "summary_available": true,
+    "transmitted": 200,
+    "received": 200,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 0.218,
+    "largest_rtt_ms": 20.2,
+    "replies_with_rtt_over_1s": 0
+  },
+  {
+    "trace": "dci-2-down-l3-forward.txt",
+    "summary_available": true,
+    "transmitted": 200,
+    "received": 200,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 0.213,
+    "largest_rtt_ms": 18.9,
+    "replies_with_rtt_over_1s": 0
+  },
+  {
+    "trace": "dci-2-down-l3-reverse.txt",
+    "summary_available": true,
+    "transmitted": 200,
+    "received": 200,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 0.211,
+    "largest_rtt_ms": 13.9,
+    "replies_with_rtt_over_1s": 0
+  },
+  {
+    "trace": "nokia-uplink-2-down-l2-forward.txt",
+    "summary_available": true,
+    "transmitted": 200,
+    "received": 200,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 0.213,
+    "largest_rtt_ms": 18.7,
+    "replies_with_rtt_over_1s": 0
+  },
+  {
+    "trace": "nokia-uplink-2-down-l2-reverse.txt",
+    "summary_available": true,
+    "transmitted": 200,
+    "received": 200,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 0.216,
+    "largest_rtt_ms": 21.6,
+    "replies_with_rtt_over_1s": 0
+  },
+  {
+    "trace": "nokia-uplink-2-down-l3-forward.txt",
+    "summary_available": true,
+    "transmitted": 200,
+    "received": 200,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 0.21,
+    "largest_rtt_ms": 15.9,
+    "replies_with_rtt_over_1s": 0
+  },
+  {
+    "trace": "nokia-uplink-2-down-l3-reverse.txt",
+    "summary_available": true,
+    "transmitted": 200,
+    "received": 200,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 0.214,
+    "largest_rtt_ms": 19.6,
+    "replies_with_rtt_over_1s": 0
+  },
+  {
+    "trace": "pause-dc1-spine1-l2-forward.txt",
+    "summary_available": false,
+    "transmitted": null,
+    "received": null,
+    "loss_percent": null,
+    "largest_reply_gap_s": 2.976,
+    "largest_rtt_ms": 19749.0,
+    "replies_with_rtt_over_1s": 6
+  },
+  {
+    "trace": "pause-dc1-spine1-l2-reverse.txt",
+    "summary_available": false,
+    "transmitted": null,
+    "received": null,
+    "loss_percent": null,
+    "largest_reply_gap_s": 2.974,
+    "largest_rtt_ms": 19725.0,
+    "replies_with_rtt_over_1s": 6
+  },
+  {
+    "trace": "pause-dc1-spine1-l3-forward.txt",
+    "summary_available": false,
+    "transmitted": null,
+    "received": null,
+    "loss_percent": null,
+    "largest_reply_gap_s": 2.967,
+    "largest_rtt_ms": 19682.0,
+    "replies_with_rtt_over_1s": 5
+  },
+  {
+    "trace": "pause-dc1-spine1-l3-reverse.txt",
+    "summary_available": false,
+    "transmitted": null,
+    "received": null,
+    "loss_percent": null,
+    "largest_reply_gap_s": 2.966,
+    "largest_rtt_ms": 19740.0,
+    "replies_with_rtt_over_1s": 6
+  },
+  {
+    "trace": "pause-dc1-spine2-l2-forward.txt",
+    "summary_available": true,
+    "transmitted": 200,
+    "received": 200,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 1.493,
+    "largest_rtt_ms": 16845.0,
+    "replies_with_rtt_over_1s": 6
+  },
+  {
+    "trace": "pause-dc1-spine2-l2-reverse.txt",
+    "summary_available": true,
+    "transmitted": 200,
+    "received": 200,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 1.473,
+    "largest_rtt_ms": 16825.0,
+    "replies_with_rtt_over_1s": 6
+  },
+  {
+    "trace": "pause-dc1-spine2-l3-forward.txt",
+    "summary_available": true,
+    "transmitted": 200,
+    "received": 200,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 1.453,
+    "largest_rtt_ms": 16854.0,
+    "replies_with_rtt_over_1s": 6
+  },
+  {
+    "trace": "pause-dc1-spine2-l3-reverse.txt",
+    "summary_available": true,
+    "transmitted": 200,
+    "received": 200,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 1.481,
+    "largest_rtt_ms": 16839.0,
+    "replies_with_rtt_over_1s": 6
+  },
+  {
+    "trace": "pause-dc2-bl-l2-forward.txt",
+    "summary_available": false,
+    "transmitted": null,
+    "received": null,
+    "loss_percent": null,
+    "largest_reply_gap_s": 3.203,
+    "largest_rtt_ms": 19414.0,
+    "replies_with_rtt_over_1s": 12
+  },
+  {
+    "trace": "pause-dc2-bl-l2-reverse.txt",
+    "summary_available": false,
+    "transmitted": null,
+    "received": null,
+    "loss_percent": null,
+    "largest_reply_gap_s": 3.156,
+    "largest_rtt_ms": 19420.0,
+    "replies_with_rtt_over_1s": 5
+  },
+  {
+    "trace": "pause-dc2-bl-l3-forward.txt",
+    "summary_available": false,
+    "transmitted": null,
+    "received": null,
+    "loss_percent": null,
+    "largest_reply_gap_s": 3.183,
+    "largest_rtt_ms": 19398.0,
+    "replies_with_rtt_over_1s": 12
+  },
+  {
+    "trace": "pause-dc2-bl-l3-reverse.txt",
+    "summary_available": false,
+    "transmitted": null,
+    "received": null,
+    "loss_percent": null,
+    "largest_reply_gap_s": 3.202,
+    "largest_rtt_ms": 19424.0,
+    "replies_with_rtt_over_1s": 4
+  },
+  {
+    "trace": "pause-dc2-bl2-l2-forward.txt",
+    "summary_available": true,
+    "transmitted": 200,
+    "received": 200,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 2.731,
+    "largest_rtt_ms": 19425.0,
+    "replies_with_rtt_over_1s": 12
+  },
+  {
+    "trace": "pause-dc2-bl2-l2-reverse.txt",
+    "summary_available": true,
+    "transmitted": 200,
+    "received": 200,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 2.717,
+    "largest_rtt_ms": 19412.0,
+    "replies_with_rtt_over_1s": 12
+  },
+  {
+    "trace": "pause-dc2-bl2-l3-forward.txt",
+    "summary_available": true,
+    "transmitted": 200,
+    "received": 200,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 2.75,
+    "largest_rtt_ms": 19507.0,
+    "replies_with_rtt_over_1s": 12
+  },
+  {
+    "trace": "pause-dc2-bl2-l3-reverse.txt",
+    "summary_available": true,
+    "transmitted": 200,
+    "received": 200,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 2.561,
+    "largest_rtt_ms": 19330.0,
+    "replies_with_rtt_over_1s": 11
+  }
+]

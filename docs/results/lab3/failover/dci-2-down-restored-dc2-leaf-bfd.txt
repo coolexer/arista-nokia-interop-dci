@@ -1,0 +1,70 @@
+    total-bfd-sessions 2
+    total-unmatched-bfd-packets 13
+    subinterface ethernet-1/1.0 {
+        admin-state enable
+        desired-minimum-transmit-interval 500000
+        required-minimum-receive 500000
+        detection-multiplier 3
+        minimum-echo-receive-interval 0
+        max-hop-count 255
+    }
+    subinterface ethernet-1/4.0 {
+        admin-state enable
+        desired-minimum-transmit-interval 500000
+        required-minimum-receive 500000
+        detection-multiplier 3
+        minimum-echo-receive-interval 0
+        max-hop-count 255
+    }
+    network-instance default {
+        peer 16389 {
+            oper-state up
+            local-address 100.64.2.1
+            remote-address 100.64.2.0
+            remote-discriminator 16395
+            subscribed-protocols BGP
+            session-state UP
+            remote-session-state UP
+            last-state-transition "2026-10-12T07:47:16.616Z (2 minutes ago)"
+            failure-transitions 0
+            local-diagnostic-code NO_DIAGNOSTIC
+            remote-diagnostic-code NO_DIAGNOSTIC
+            remote-minimum-receive-interval 1000000
+            remote-control-plane-independent false
+            active-transmit-interval 1000000
+            active-receive-interval 1000000
+            remote-multiplier 3
+            async {
+                last-packet-transmitted "2026-10-12T07:49:44.689Z (3 seconds ago)"
+                last-packet-received "2026-10-12T07:49:44.611Z (4 seconds ago)"
+                transmitted-packets 185
+                received-packets 185
+                up-transitions 1
+            }
+        }
+        peer 16390 {
+            oper-state up
+            local-address 100.64.2.3
+            remote-address 100.64.2.2
+            remote-discriminator 16396
+            subscribed-protocols BGP
+            session-state UP
+            remote-session-state UP
+            last-state-transition "2026-10-12T07:48:05.408Z (a minute ago)"
+            failure-transitions 0
+            local-diagnostic-code NO_DIAGNOSTIC
+            remote-diagnostic-code NO_DIAGNOSTIC
+            remote-minimum-receive-interval 1000000
+            remote-control-plane-independent false
+            active-transmit-interval 1000000
+            active-receive-interval 1000000
+            remote-multiplier 3
+            async {
+                last-packet-transmitted "2026-10-12T07:49:44.409Z (4 seconds ago)"
+                last-packet-received "2026-10-12T07:49:44.550Z (4 seconds ago)"
+                transmitted-packets 125
+                received-packets 124
+                up-transitions 1
+            }
+        }
+    }

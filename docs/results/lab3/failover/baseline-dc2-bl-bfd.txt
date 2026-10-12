@@ -1,0 +1,103 @@
+    total-bfd-sessions 3
+    total-unmatched-bfd-packets 6
+    subinterface ethernet-1/1.0 {
+        admin-state enable
+        desired-minimum-transmit-interval 500000
+        required-minimum-receive 500000
+        detection-multiplier 3
+        minimum-echo-receive-interval 0
+        max-hop-count 255
+    }
+    subinterface ethernet-1/2.0 {
+        admin-state enable
+        desired-minimum-transmit-interval 500000
+        required-minimum-receive 500000
+        detection-multiplier 3
+        minimum-echo-receive-interval 0
+        max-hop-count 255
+    }
+    subinterface ethernet-1/3.0 {
+        admin-state enable
+        desired-minimum-transmit-interval 500000
+        required-minimum-receive 500000
+        detection-multiplier 3
+        minimum-echo-receive-interval 0
+        max-hop-count 255
+    }
+    network-instance default {
+        peer 16390 {
+            oper-state up
+            local-address 100.64.2.0
+            remote-address 100.64.2.1
+            remote-discriminator 16387
+            subscribed-protocols BGP
+            session-state UP
+            remote-session-state UP
+            last-state-transition "2026-10-12T07:42:10.853Z (2 minutes ago)"
+            failure-transitions 0
+            local-diagnostic-code NO_DIAGNOSTIC
+            remote-diagnostic-code NO_DIAGNOSTIC
+            remote-minimum-receive-interval 1000000
+            remote-control-plane-independent false
+            active-transmit-interval 1000000
+            active-receive-interval 1000000
+            remote-multiplier 3
+            async {
+                last-packet-transmitted "2026-10-12T07:44:56.110Z (4 seconds ago)"
+                last-packet-received "2026-10-12T07:44:56.769Z (3 seconds ago)"
+                transmitted-packets 206
+                received-packets 208
+                up-transitions 1
+            }
+        }
+        peer 16391 {
+            oper-state up
+            local-address 100.64.12.1
+            remote-address 100.64.12.0
+            remote-discriminator 1447465392
+            subscribed-protocols BGP
+            session-state UP
+            remote-session-state UP
+            last-state-transition "2026-10-12T07:42:10.862Z (2 minutes ago)"
+            failure-transitions 0
+            local-diagnostic-code NO_DIAGNOSTIC
+            remote-diagnostic-code NO_DIAGNOSTIC
+            remote-minimum-receive-interval 500000
+            remote-control-plane-independent false
+            active-transmit-interval 1000000
+            active-receive-interval 1000000
+            remote-multiplier 3
+            async {
+                last-packet-transmitted "2026-10-12T07:44:56.240Z (4 seconds ago)"
+                last-packet-received "2026-10-12T07:44:56.376Z (4 seconds ago)"
+                transmitted-packets 207
+                received-packets 190
+                up-transitions 1
+            }
+        }
+        peer 16392 {
+            oper-state up
+            local-address 100.64.102.0
+            remote-address 100.64.102.1
+            remote-discriminator 16391
+            subscribed-protocols BGP
+            session-state UP
+            remote-session-state UP
+            last-state-transition "2026-10-12T07:42:54.526Z (2 minutes ago)"
+            failure-transitions 0
+            local-diagnostic-code NO_DIAGNOSTIC
+            remote-diagnostic-code NO_DIAGNOSTIC
+            remote-minimum-receive-interval 1000000
+            remote-control-plane-independent false
+            active-transmit-interval 1000000
+            active-receive-interval 1000000
+            remote-multiplier 3
+            async {
+                last-packet-transmitted "2026-10-12T07:44:56.708Z (3 seconds ago)"
+                last-packet-received "2026-10-12T07:44:56.420Z (3 seconds ago)"
+                transmitted-packets 154
+                received-packets 152
+                up-transitions 1
+            }
+        }
+    }

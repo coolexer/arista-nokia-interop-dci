@@ -1,0 +1,230 @@
+    route 10.255.1.1/32 id 0 route-type bgp route-owner bgp_mgr origin-network-instance default {
+        leakable false
+        leaked false
+        metric 0
+        preference 170
+        active true
+        route-limit-exceeded false
+        last-app-update "2026-10-12T07:52:54.618Z (a minute ago)"
+        next-hop-group 90596757
+        next-hop-group-network-instance default
+        resilient-hash false
+        dynamic-load-balancing false
+        fib-programming {
+            suppressed false
+            last-successful-operation-type modify
+            last-successful-operation-timestamp "2026-10-12T07:52:54.622Z (a minute ago)"
+            pending-operation-type none
+            last-failed-operation-type none
+        }
+    }
+    route 10.255.1.253/32 id 0 route-type bgp route-owner bgp_mgr origin-network-instance default {
+        leakable false
+        leaked false
+        metric 0
+        preference 170
+        active true
+        route-limit-exceeded false
+        last-app-update "2026-10-12T07:52:54.618Z (a minute ago)"
+        next-hop-group 90596747
+        next-hop-group-network-instance default
+        resilient-hash false
+        dynamic-load-balancing false
+        fib-programming {
+            suppressed false
+            last-successful-operation-type modify
+            last-successful-operation-timestamp "2026-10-12T07:52:54.622Z (a minute ago)"
+            pending-operation-type none
+            last-failed-operation-type none
+        }
+    }
+    route 10.255.1.254/32 id 0 route-type bgp route-owner bgp_mgr origin-network-instance default {
+        leakable false
+        leaked false
+        metric 0
+        preference 170
+        active true
+        route-limit-exceeded false
+        last-app-update "2026-10-12T07:52:54.618Z (a minute ago)"
+        next-hop-group 90596732
+        next-hop-group-network-instance default
+        resilient-hash false
+        dynamic-load-balancing false
+        fib-programming {
+            suppressed false
+            last-successful-operation-type modify
+            last-successful-operation-timestamp "2026-10-12T07:52:54.622Z (a minute ago)"
+            pending-operation-type none
+            last-failed-operation-type none
+        }
+    }
+    route 10.255.2.1/32 id 8 route-type host route-owner net_inst_mgr origin-network-instance default {
+        leakable false
+        leaked false
+        metric 0
+        preference 0
+        active true
+        route-limit-exceeded false
+        last-app-update "2026-10-12T07:33:41.124Z (20 minutes ago)"
+        next-hop-group 90596704
+        next-hop-group-network-instance default
+        resilient-hash false
+        dynamic-load-balancing false
+        fib-programming {
+            suppressed false
+            last-successful-operation-type add
+            last-successful-operation-timestamp "2026-10-12T07:33:41.146Z (20 minutes ago)"
+            pending-operation-type none
+            last-failed-operation-type none
+        }
+    }
+    route 10.255.2.253/32 id 0 route-type bgp route-owner bgp_mgr origin-network-instance default {
+        leakable false
+        leaked false
+        metric 0
+        preference 170
+        active true
+        route-limit-exceeded false
+        last-app-update "2026-10-12T07:51:42.544Z (2 minutes ago)"
+        next-hop-group 90596747
+        next-hop-group-network-instance default
+        resilient-hash false
+        dynamic-load-balancing false
+        fib-programming {
+            suppressed false
+            last-successful-operation-type modify
+            last-successful-operation-timestamp "2026-10-12T07:51:42.548Z (2 minutes ago)"
+            pending-operation-type none
+            last-failed-operation-type none
+        }
+    }
+    route 10.255.2.254/32 id 0 route-type bgp route-owner bgp_mgr origin-network-instance default {
+        leakable false
+        leaked false
+        metric 0
+        preference 170
+        active true
+        route-limit-exceeded false
+        last-app-update "2026-10-12T07:47:21.540Z (7 minutes ago)"
+        next-hop-group 90596732
+        next-hop-group-network-instance default
+        resilient-hash false
+        dynamic-load-balancing false
+        fib-programming {
+            suppressed false
+            last-successful-operation-type add
+            last-successful-operation-timestamp "2026-10-12T07:47:21.544Z (7 minutes ago)"
+            pending-operation-type none
+            last-failed-operation-type none
+        }
+    }
+    route 100.64.2.0/31 id 3 route-type local route-owner net_inst_mgr origin-network-instance default {
+        leakable false
+        leaked false
+        metric 0
+        preference 0
+        active true
+        route-limit-exceeded false
+        last-app-update "2026-10-12T07:33:46.943Z (20 minutes ago)"
+        next-hop-group 90596709
+        next-hop-group-network-instance default
+        resilient-hash false
+        dynamic-load-balancing false
+        fib-programming {
+            suppressed false
+            last-successful-operation-type add
+            last-successful-operation-timestamp "2026-10-12T07:33:46.946Z (20 minutes ago)"
+            pending-operation-type none
+            last-failed-operation-type none
+        }
+    }
+    route 100.64.2.1/32 id 3 route-type host route-owner net_inst_mgr origin-network-instance default {
+        leakable false
+        leaked false
+        metric 0
+        preference 0
+        active true
+        route-limit-exceeded false
+        last-app-update "2026-10-12T07:33:46.943Z (20 minutes ago)"
+        next-hop-group 90596708
+        next-hop-group-network-instance default
+        resilient-hash false
+        dynamic-load-balancing false
+        fib-programming {
+            suppressed false
+            last-successful-operation-type add
+            last-successful-operation-timestamp "2026-10-12T07:33:46.946Z (20 minutes ago)"
+            pending-operation-type none
+            last-failed-operation-type none
+        }
+    }
+    route 100.64.2.2/31 id 6 route-type local route-owner net_inst_mgr origin-network-instance default {
+        leakable false
+        leaked false
+        metric 0
+        preference 0
+        active true
+        route-limit-exceeded false
+        last-app-update "2026-10-12T07:51:08.789Z (3 minutes ago)"
+        next-hop-group 90596745
+        next-hop-group-network-instance default
+        resilient-hash false
+        dynamic-load-balancing false
+        fib-programming {
+            suppressed false
+            last-successful-operation-type add
+            last-successful-operation-timestamp "2026-10-12T07:51:08.791Z (3 minutes ago)"
+            pending-operation-type none
+            last-failed-operation-type none
+        }
+    }
+    route 100.64.2.3/32 id 6 route-type host route-owner net_inst_mgr origin-network-instance default {
+        leakable false
+        leaked false
+        metric 0
+        preference 0
+        active true
+        route-limit-exceeded false
+        last-app-update "2026-10-12T07:51:08.789Z (3 minutes ago)"
+        next-hop-group 90596744
+        next-hop-group-network-instance default
+        resilient-hash false
+        dynamic-load-balancing false
+        fib-programming {
+            suppressed false
+            last-successful-operation-type add
+            last-successful-operation-timestamp "2026-10-12T07:51:08.791Z (3 minutes ago)"
+            pending-operation-type none
+            last-failed-operation-type none
+        }
+    }
+    statistics {
+        active-routes 10
+        active-routes-with-ecmp 1
+        leaked-routes 0
+        resilient-hash-routes 0
+        dynamic-load-balancing-routes 0
+        fib-failed-routes 0
+        fib-suppressed-routes 0
+        routes-with-per-prefix-statistics 0
+        total-routes 10
+    }
+    route-summary {
+        route-type bgp {
+            active-routes 5
+        }
+        route-type host {
+            active-routes 3
+        }
+        route-type local {
+            active-routes 2
+        }
+    }
+    prefix-length-distribution {
+        length 31 {
+            active-routes 1
+        }
+        length 32 {
+            active-routes 3
+        }
+    }

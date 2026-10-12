@@ -83,7 +83,7 @@ Bidirectional L2/L3 and DF MTU 1500 passed with no steady-state loss. Both leaf 
 
 Before the first fault and after every restoration, the script verified all three BFD sessions and all six BGP peers on the relevant gateways. Final snapshots confirm all four gateways restored and both leaf IP-VRFs again using two gateway next hops. The MPLS state confirms installed SR-IS-IS tunnels. The snapshots do not separately qualify TI-LFA repair programming or hardware repair time. [B HA evidence](results/option-b-ha) includes the full fault log, 32 continuous ping traces, control-plane snapshots and captures. Gaps, loss and delayed buffered replies during injection are preserved in the raw traces and summarized in `ping-summary.json`; these are simulator observations, not a hardware failover SLA.
 
-A was destroyed after its tests; B remains deployed with all eight containers running. Windows/WSL ownership was adjusted so the user can edit the topologies and configs from VS Code. The private license remains local and is excluded from the public repository.
+A was destroyed after the 2026-10-09 tests; B was left deployed with all eight containers running at that time. Windows/WSL ownership was adjusted so the user can edit the topologies and configs from VS Code. The private license remains local and is excluded from the public repository. The separate 2026-10-12 direct-Arista-spine test is described in [Lab 3 validation](lab3-validation.md).
 
 ## Scope
 

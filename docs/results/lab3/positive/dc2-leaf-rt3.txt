@@ -1,0 +1,25 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Show report for the EVPN routes in network-instance  "default"
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Route Distinguisher: 10.255.1.1:10
+Tag-ID             : 0
+Originating router : 10.255.1.1
+neighbor           : 10.255.1.1
+path-id            : 0
+Received paths     : 1
+  Path 1: <Best,Valid,Used,>
+    Label                 : 10010
+    Route source          : neighbor 10.255.1.1 (last modified 2m57s ago)
+    Route preference      : No MED, No LocalPref
+    Atomic Aggr           : false
+    BGP next-hop          : 10.255.1.1
+    AS Path               :  i [65101]
+    Domain Path           : None
+    Communities           : [target:65000:10010, bgp-tunnel-encap:VXLAN]
+    RR Attributes         : No Originator-ID, Cluster-List is []
+    Aggregation           : None
+    Unknown Attr          : None
+    Invalid Reason        : None
+    Tie Break Reason      : none
+    Route Flap Damping    : None
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
