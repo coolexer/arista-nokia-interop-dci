@@ -1,0 +1,13 @@
+BGP routing table information for VRF TENANT
+Router identifier 10.255.1.254, local AS number 65201
+Route status codes: s - suppressed contributor, * - valid, > - active, E - ECMP head, e - ECMP
+                    S - Stale, c - Contributing to ECMP, b - backup, L - labeled-unicast, q - Pending FIB install
+                    % - Pending best path selection
+Origin codes: i - IGP, e - EGP, ? - incomplete
+RPKI Origin Validation codes: V - valid, I - invalid, U - unknown
+AS Path Attributes: Or-ID - Originator ID, C-LST - Cluster List, LL Nexthop - Link Local Nexthop
+
+          Network                Next Hop              Metric  AIGP       LocPref Weight  Path
+ * >      192.168.20.0/24        10.255.1.1            0       -          100     0       65101 i
+ * >Ec    192.168.30.0/24        10.200.0.3            0       -          100     0       65202 65102 i
+ *  ec    192.168.30.0/24        10.200.0.4            0       -          100     0       65202 65102 i

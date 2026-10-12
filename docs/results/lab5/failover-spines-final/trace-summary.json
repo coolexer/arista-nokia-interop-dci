@@ -1,0 +1,66 @@
+[
+  {
+    "trace": "pause-dc1-spine1-l2-forward.txt",
+    "transmitted": 200,
+    "received": 79,
+    "loss_percent": 60.5,
+    "longest_reply_gap_s": 22.916,
+    "duplicates": 4
+  },
+  {
+    "trace": "pause-dc1-spine1-l2-reverse.txt",
+    "transmitted": 200,
+    "received": 53,
+    "loss_percent": 73.5,
+    "longest_reply_gap_s": 23.176,
+    "duplicates": 3
+  },
+  {
+    "trace": "pause-dc1-spine1-l3-forward.txt",
+    "transmitted": 200,
+    "received": 92,
+    "loss_percent": 54.0,
+    "longest_reply_gap_s": 2.565,
+    "duplicates": 0
+  },
+  {
+    "trace": "pause-dc1-spine1-l3-reverse.txt",
+    "transmitted": 200,
+    "received": 81,
+    "loss_percent": 59.5,
+    "longest_reply_gap_s": 2.742,
+    "duplicates": 0
+  },
+  {
+    "trace": "pause-dc1-spine2-l2-forward.txt",
+    "transmitted": 200,
+    "received": 200,
+    "loss_percent": 0.0,
+    "longest_reply_gap_s": 0.229,
+    "duplicates": 0
+  },
+  {
+    "trace": "pause-dc1-spine2-l2-reverse.txt",
+    "transmitted": 200,
+    "received": 200,
+    "loss_percent": 0.0,
+    "longest_reply_gap_s": 0.25,
+    "duplicates": 0
+  },
+  {
+    "trace": "pause-dc1-spine2-l3-forward.txt",
+    "transmitted": 200,
+    "received": 174,
+    "loss_percent": 13.0,
+    "longest_reply_gap_s": 3.162,
+    "duplicates": 0
+  },
+  {
+    "trace": "pause-dc1-spine2-l3-reverse.txt",
+    "transmitted": 200,
+    "received": 174,
+    "loss_percent": 13.0,
+    "longest_reply_gap_s": 3.209,
+    "duplicates": 0
+  }
+]

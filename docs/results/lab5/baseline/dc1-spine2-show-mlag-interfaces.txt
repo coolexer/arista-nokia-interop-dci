@@ -1,0 +1,4 @@
+                                                                   local/remote
+mlag  desc                                  state  local   remote        status
+----- ------------------------------- ------------ ------ -------- ------------
+ 100  MLAG Ethernet handoff to Nokia  active-full  Po100    Po100         up/up

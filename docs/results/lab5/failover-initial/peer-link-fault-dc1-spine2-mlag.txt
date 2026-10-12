@@ -1,0 +1,92 @@
+MLAG Configuration:
+domain-id                          :          DC1-SPINES
+local-interface                    :            Vlan4094
+peer-address                       :          10.254.1.1
+peer-link                          :      Port-Channel10
+hb-peer-address                    :       172.31.251.12
+hb-peer-vrf                        :                MGMT
+peer-config                        :          consistent
+
+MLAG Status:
+state                              :              Active
+negotiation status                 :          Connecting
+peer-link status                   :      Lowerlayerdown
+local-int status                   :                  Up
+system-id                          :   02:1c:73:46:82:d4
+dual-primary detection             :          Configured
+dual-primary interface errdisabled :               False
+
+MLAG Ports:
+Disabled                           :                   0
+Configured                         :                   0
+Inactive                           :                   0
+Active-partial                     :                   1
+Active-full                        :                   0
+
+MLAG Detailed Status:
+State                                :
+Peer State                           :
+State changes                        :
+Last state change time               :
+Hardware ready                       :
+Failover                             :
+Failover Cause(s)                    :
+Last failover change time            :
+Secondary from failover              :
+Peer MAC address                     :
+Peer MAC routing supported           :
+Reload delay                         :
+Non-MLAG reload delay                :
+Peer ports errdisabled               :
+Lacp standby                         :
+Configured heartbeat interval        :
+Effective heartbeat interval         :
+Heartbeat timeout                    :
+Last heartbeat timeout               :
+Heartbeat timeouts since reboot      :
+UDP heartbeat alive                  :
+Heartbeats sent/received             :
+Peer monotonic clock offset          :
+Agent should be running              :
+P2p mount state changes              :
+Fast MAC redirection enabled         :
+Peer-link forwarding restricted      :
+Interface activation interlock       :
+Dual-primary detection delay         :
+Dual-primary action                  :
+Dual-primary recovery delay          :
+Dual-primary non-mlag recovery delay :
+
+                                 primary
+    secondary (waiting to become primary
+              because peer link is down)
+                                       2
+                             0:17:19 ago
+                                    True
+                                    True
+                          Peer Link Down
+                             0:00:18 ago
+                                   False
+                       00:1c:73:67:27:4b
+                                   False
+                              10 seconds
+                              10 seconds
+                                   False
+                                   False
+                                 4000 ms
+                                 4000 ms
+                                60000 ms
+                                   never
+                                       0
+                                    True
+                                 508/241
+                                 unknown
+                                    True
+                                       6
+                                   False
+                                   False
+                             unsupported
+                                       5
+                          errdisable-all
+                                      10
+                                       0

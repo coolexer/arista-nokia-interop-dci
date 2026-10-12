@@ -1,0 +1,97 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+BGP is enabled and up in network-instance "TENANT"
+Global AS number  : 65202
+BGP identifier    : 10.255.2.253
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Total paths               : 2
+  Received routes           : 1
+  Received and active routes: 2
+  Total UP peers            : 2
+  Configured peers          : 2, 0 are disabled
+  Dynamic peers             : None
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Default preferences
+  BGP Local Preference attribute: 100
+  EBGP route-table preference   : 170
+  IBGP route-table preference   : 170
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Wait for FIB install to advertise: True
+Send rapid withdrawals           : disabled
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ipv4-unicast AFI/SAFI
+    Received routes               : 2
+    Received and active routes    : 2
+    Max number of multipaths EBGP : 2
+    Max number of multipaths IBGP : 1
+    Multipath can transit multi AS: True
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ipv6-unicast AFI/SAFI
+    Received routes               : 0
+    Received and active routes    : 0
+    Max number of multipaths EBGP : N/A
+    Max number of multipaths IBGP : N/A
+    Multipath can transit multi AS: N/A
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+EVPN-unicast AFI/SAFI
+    Received routes               : 0
+    Received and active routes    : 0
+    Max number of multipaths EBGP : N/A
+    Max number of multipaths IBGP : N/A
+    Multipath can transit multi AS: N/A
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+L3vpn-ipv4-unicast AFI/SAFI
+    Received routes               : 0
+    Received and active routes    : 0
+    Max number of multipaths EBGP : N/A
+    Max number of multipaths IBGP : N/A
+    Multipath can transit multi AS: N/A
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+L3vpn-ipv6-unicast AFI/SAFI
+    Received routes               : 0
+    Received and active routes    : 0
+    Max number of multipaths EBGP : N/A
+    Max number of multipaths IBGP : N/A
+    Multipath can transit multi AS: N/A
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ipv4-labeled-unicast AFI/SAFI
+    Received routes               : 0
+    Received and active routes    : 0
+    Max number of multipaths EBGP : N/A
+    Max number of multipaths IBGP : N/A
+    Multipath can transit multi AS: N/A
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ipv6-labeled-unicast AFI/SAFI
+    Received routes               : 0
+    Received and active routes    : 0
+    Max number of multipaths EBGP : N/A
+    Max number of multipaths IBGP : N/A
+    Multipath can transit multi AS: N/A
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Route-target AFI/SAFI
+    Received routes               : 0
+    Received and active routes    : 0
+    Max number of multipaths EBGP : N/A
+    Max number of multipaths IBGP : N/A
+    Multipath can transit multi AS: N/A
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Srte-policy-ipv4 AFI/SAFI
+    Received routes               : 0
+    Received and active routes    : 0
+    Max number of multipaths EBGP : N/A
+    Max number of multipaths IBGP : N/A
+    Multipath can transit multi AS: N/A
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Srte-policy-ipv6 AFI/SAFI
+    Received routes               : 0
+    Received and active routes    : 0
+    Max number of multipaths EBGP : N/A
+    Max number of multipaths IBGP : N/A
+    Multipath can transit multi AS: N/A
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Link-state AFI/SAFI
+    Received routes               : 0
+    Received and active routes    : 0
+    Max number of multipaths EBGP : N/A
+    Max number of multipaths IBGP : N/A
+    Multipath can transit multi AS: N/A
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

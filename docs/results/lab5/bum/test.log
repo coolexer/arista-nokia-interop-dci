@@ -1,0 +1,3 @@
+forward: sent 5 broadcast requests; remote client received 5
+reverse: sent 5 broadcast requests; remote client received 5
+PASS: exactly five ARP broadcasts delivered per direction

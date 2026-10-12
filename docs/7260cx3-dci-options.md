@@ -1,6 +1,6 @@
 # DCI choices with Arista 7260CX3 spines
 
-Assessment date: **2026-10-12**. Physical design: two Arista spines, two transparent Ethernet/DWDM circuits, two Nokia X1b BLs, routed fabric uplinks and a local Nokia BL interlink. There is no direct Arista spine interlink or separate Arista-site border-leaf pair.
+Assessment date: **2026-10-12**. Physical design: two Arista spines, two transparent Ethernet/DWDM circuits, two Nokia X1b BLs, routed fabric uplinks and a local Nokia BL interlink. The Lab 3/4 base topology has no direct Arista spine interlink or separate Arista-site border-leaf pair. Lab 5 adds an Arista MLAG peer-link for native Ethernet DCI.
 
 **The established choice is end-to-end EVPN-VXLAN over an IP DCI, as tested in Lab 3. Plain L3 EVPN RT-5 gateway works in the cEOS probe. Full L2 multi-domain stitching and VXLAN-MPLS interworking are excluded for these 7260CX3 spines by Arista's published platform matrix.**
 
@@ -30,7 +30,7 @@ The [Arista multi-domain overview](https://arista.my.site.com/AristaCommunity/s/
 | Architecture | L2 / L3 | Spine role and required changes | Verdict with the current topology |
 |---|---|---|---|
 | End-to-end EVPN-VXLAN over routed IP | Both | Keep spines and Nokia BLs as IP transit; leaf VTEPs exchange EVPN | **Preferred for combined L2/L3.** Lab 3 validated services, MTU and eight single faults |
-| VRF-lite with per-tenant eBGP | L3 | Make spines ordinary local VTEPs/VRF routers; use separate tenant interfaces/VLANs and eBGP across DCI | **Feasible from documented base functions.** Not tested in these labs; requires fabric termination and per-VRF configuration, not just underlay BGP |
+| VRF-lite with per-tenant eBGP | L3 | Make spines ordinary local VTEPs/VRF routers; use separate tenant interfaces/VLANs and eBGP across DCI | **Software-tested as the L3 component of Lab 5.** Requires fabric termination and per-VRF configuration, not just underlay BGP |
 | VRF-lite for L3 + end-to-end VXLAN for selected L2 VNIs | Both, selectively | Combine tenant IP handoffs with a separate transport network for stretched L2 | **Feasible candidate.** Same cabling, more configuration; no full L2 gateway stitching. Not tested |
 | Plain L3 EVPN gateway, VXLAN-to-VXLAN | L3 | Spine terminates tenant VXLAN and advertises received RT-5 with its own VTEP next hop | **Works on available cEOS.** Hardware gateway feature/SKU/maintenance-release sign-off remains open; independent L2 mechanism is needed |
 | L3 gateway plus end-to-end VXLAN for selected L2 VNIs | Both, selectively | RT-5 uses gateways; L2 bypasses them using leaf-to-leaf EVPN/VXLAN reachability | **Conditional candidate.** L3 component tested; combined L2 bypass not tested. It retains remote VTEP exposure for L2 |
@@ -38,7 +38,7 @@ The [Arista multi-domain overview](https://arista.my.site.com/AristaCommunity/s/
 | Full hierarchical VXLAN-to-VXLAN L2/L3 gateway, including MLAG/anycast/ESI variants | Both | Spines must re-originate and terminate inter-domain L2 services as well as L3 | **Excluded for this model.** Published L2 DCI/gateway limits apply; MLAG alone does not add stitching support |
 | VXLAN-to-EVPN-MPLS gateway / original Option B | Both | Spines become service PEs, with MPLS interworking | **Excluded for this model.** Keep suitable service BLs or choose a documented gateway platform |
 | Direct EVPN-MPLS, LDP pseudowires or VPLS service termination | Depends on service | MPLS service PE on the Arista side | **Excluded for this model** by the relevant EVPN/MPLS service feature limits; basic MPLS transit is insufficient |
-| Native Ethernet VLAN trunk across DWDM | L2; L3 needs separate routing | Change selected leaf-spine/BL handoffs to bridging; explicitly build a loop-free or single-active L2 path | **Technically a different configuration using base L2 functions.** Not a replacement for the current routed fabric; dual-active forwarding cannot use IP ECMP. Not designed/tested here |
+| Native Ethernet VLAN trunk across DWDM | L2; L3 needs separate routing | Change selected leaf-spine/BL handoffs to bridging; explicitly build a loop-free or single-active L2 path | **Lab 5 tests a specific redundant implementation:** Arista MLAG plus Nokia EVPN all-active, with an added peer-link; VLAN 10 and VRF-lite VLAN 901 share both DCI channels. L2 redundancy uses LACP/EVPN, not IP ECMP. Transient loss/duplicate limitations are recorded |
 
 The VRF-lite variants can use a global routing table for a single non-overlapping service, but multiple tenants or overlapping addressing require separate VRFs. A native VLAN alternative must prevent loops across both fabrics; activating both DCI trunks without a validated loop-prevention/redundancy design is not an acceptable solution.
 
@@ -77,3 +77,7 @@ Lab 4 was stopped after validation. Lab 3 was restored with its original IP-tran
 1. **L2 and L3 are both required:** retain Lab 3's end-to-end EVPN-VXLAN over IP, with per-flow ECMP and BFD. It is the simplest design requiring only the documented spine IP-transit functions.
 2. **L3 domain separation is more important and L2 stretch is limited:** evaluate VRF-lite plus selective L2 VXLAN. This uses documented base functions but needs its own acceptance test.
 3. **L3-only EVPN gateway is desired:** the cEOS experiment is positive. Before treating it as a supported 7260CX3 production design, resolve the exact SKU, installed EOS release and gateway feature/platform applicability. The experiment provides a reproducible config, not that missing hardware sign-off.
+
+## Shared native Ethernet DCI
+
+[Lab 5](../labs/lab5-shared-ethernet-dci) terminates each local fabric on ordinary VTEPs and exchanges native L2 Ethernet plus VRF-lite IPv4 across shared DCI trunks. Arista MLAG and Nokia EVPN all-active provide the distributed attachment; an Arista peer-link and independent management heartbeat are required. Leaf VTEP addresses stay local. This does not require the unsupported hierarchical VXLAN-to-VXLAN L2 gateway feature. [Software validation and limitations](lab5-validation.md) include all nine fault cases, an extended dual-primary guard test, and transient duplication during a spine rejoin. Physical SKU/EOS qualification remains required.

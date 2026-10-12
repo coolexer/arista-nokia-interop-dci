@@ -1,0 +1,8 @@
+ARPING 192.168.10.12 from 192.168.10.11 eth1
+Unicast reply from 192.168.10.12 [02:00:00:02:10:12]  9.254ms
+Unicast reply from 192.168.10.12 [02:00:00:02:10:12]  6.904ms
+Unicast reply from 192.168.10.12 [02:00:00:02:10:12]  8.474ms
+Unicast reply from 192.168.10.12 [02:00:00:02:10:12]  10.707ms
+Unicast reply from 192.168.10.12 [02:00:00:02:10:12]  8.203ms
+Sent 5 probes (5 broadcast(s))
+Received 5 response(s)

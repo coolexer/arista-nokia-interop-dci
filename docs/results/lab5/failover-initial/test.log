@@ -1,0 +1,85 @@
+SCENARIO pause-dc1-spine1 START 2026-10-12T11:31:37.561212104Z
+FAULT pause-dc1-spine1 2026-10-12T11:31:41.794395523Z
+PING 192.168.10.12 (192.168.10.12) from 192.168.10.11 eth1: 56(84) bytes of data.
+
+--- 192.168.10.12 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 413ms
+PASS pause-dc1-spine1: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE pause-dc1-spine1 2026-10-12T11:32:06.463011033Z
+PASS pause-dc1-spine1: all nodes restored
+SCENARIO pause-dc1-spine2 START 2026-10-12T11:32:26.185398576Z
+FAULT pause-dc1-spine2 2026-10-12T11:32:30.500811476Z
+PING 192.168.10.12 (192.168.10.12) from 192.168.10.11 eth1: 56(84) bytes of data.
+
+--- 192.168.10.12 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 412ms
+PING 192.168.10.12 (192.168.10.12) from 192.168.10.11 eth1: 56(84) bytes of data.
+
+--- 192.168.10.12 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 430ms
+PING 192.168.30.12 (192.168.30.12) from 192.168.20.11 eth2: 56(84) bytes of data.
+From 10.200.0.1 icmp_seq=1 Destination Net Unreachable
+
+--- 192.168.30.12 ping statistics ---
+3 packets transmitted, 0 received, +1 errors, 100% packet loss, time 412ms
+PASS pause-dc1-spine2: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE pause-dc1-spine2 2026-10-12T11:33:13.187325053Z
+PING 192.168.30.12 (192.168.30.12) from 192.168.20.11 eth2: 56(84) bytes of data.
+
+--- 192.168.30.12 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 421ms
+PING 192.168.10.12 (192.168.10.12) from 192.168.10.11 eth1: 56(84) bytes of data.
+
+--- 192.168.10.12 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 417ms
+PING 192.168.10.12 (192.168.10.12) from 192.168.10.11 eth1: 56(84) bytes of data.
+
+--- 192.168.10.12 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 425ms
+PASS pause-dc1-spine2: all nodes restored
+SCENARIO pause-dc2-bl START 2026-10-12T11:33:53.918355005Z
+FAULT pause-dc2-bl 2026-10-12T11:33:58.479819278Z
+PASS pause-dc2-bl: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE pause-dc2-bl 2026-10-12T11:34:14.656878014Z
+PING 192.168.30.12 (192.168.30.12) from 192.168.20.11 eth2: 56(84) bytes of data.
+
+--- 192.168.30.12 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 421ms
+PASS pause-dc2-bl: all nodes restored
+SCENARIO pause-dc2-bl2 START 2026-10-12T11:34:48.739056615Z
+FAULT pause-dc2-bl2 2026-10-12T11:34:55.436654033Z
+PASS pause-dc2-bl2: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE pause-dc2-bl2 2026-10-12T11:35:14.245438974Z
+PASS pause-dc2-bl2: all nodes restored
+SCENARIO dci-1-down START 2026-10-12T11:35:37.799740601Z
+FAULT dci-1-down 2026-10-12T11:35:43.442484254Z
+PASS dci-1-down: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE dci-1-down 2026-10-12T11:36:17.488674638Z
+PASS dci-1-down: all nodes restored
+SCENARIO dci-2-down START 2026-10-12T11:36:45.562161168Z
+FAULT dci-2-down 2026-10-12T11:36:52.458573717Z
+PASS dci-2-down: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE dci-2-down 2026-10-12T11:37:20.491523809Z
+PASS dci-2-down: all nodes restored
+SCENARIO arista-uplink-1-down START 2026-10-12T11:38:13.466236311Z
+FAULT arista-uplink-1-down 2026-10-12T11:38:26.875174159Z
+PASS arista-uplink-1-down: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE arista-uplink-1-down 2026-10-12T11:39:07.241607419Z
+PASS arista-uplink-1-down: all nodes restored
+SCENARIO nokia-uplink-2-down START 2026-10-12T11:39:42.956070858Z
+FAULT nokia-uplink-2-down 2026-10-12T11:39:49.943749380Z
+All changes have been committed. Leaving candidate mode.
+PASS nokia-uplink-2-down: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE nokia-uplink-2-down 2026-10-12T11:40:21.009886551Z
+All changes have been committed. Leaving candidate mode.
+PASS nokia-uplink-2-down: all nodes restored
+SCENARIO arista-peer-link-down START 2026-10-12T11:40:38.912383734Z
+FAULT arista-peer-link-down 2026-10-12T11:40:43.947095271Z
+
+> interface Ethernet3
+
+! Interface Ethernet3 is a member of the MLAG peer link Port-Channel10 at line 2
+PASS arista-peer-link-down: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE arista-peer-link-down 2026-10-12T11:41:04.676137489Z
+PASS arista-peer-link-down: all nodes restored
+PASS: all 9 isolated single-fault scenarios. Simulator observations, not an ASIC convergence SLA.

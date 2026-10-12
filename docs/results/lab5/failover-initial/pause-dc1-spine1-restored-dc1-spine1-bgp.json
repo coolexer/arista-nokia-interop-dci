@@ -1,0 +1,39 @@
+{
+    "vrfs": {
+        "TENANT": {
+            "vrf": "TENANT",
+            "routerId": "10.255.1.254",
+            "asn": "65201",
+            "peers": {
+                "10.200.0.3": {
+                    "version": 4,
+                    "msgReceived": 25,
+                    "msgSent": 29,
+                    "inMsgQueue": 0,
+                    "outMsgQueue": 0,
+                    "asn": "65202",
+                    "prefixAccepted": 0,
+                    "prefixReceived": 0,
+                    "upDownTime": 1791804731.234342,
+                    "underMaintenance": false,
+                    "peerState": "Established",
+                    "prefixAdvertised": 1
+                },
+                "10.200.0.4": {
+                    "version": 4,
+                    "msgReceived": 24,
+                    "msgSent": 29,
+                    "inMsgQueue": 0,
+                    "outMsgQueue": 0,
+                    "asn": "65202",
+                    "prefixAccepted": 1,
+                    "prefixReceived": 1,
+                    "upDownTime": 1791804730.14057,
+                    "underMaintenance": false,
+                    "peerState": "Established",
+                    "prefixAdvertised": 1
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+MLAG Configuration:
+domain-id                          :          DC1-SPINES
+local-interface                    :            Vlan4094
+peer-address                       :          10.254.1.1
+peer-link                          :      Port-Channel10
+hb-peer-address                    :       172.31.251.12
+hb-peer-vrf                        :                MGMT
+peer-config                        :          consistent
+
+MLAG Status:
+state                              :              Active
+negotiation status                 :           Connected
+peer-link status                   :                  Up
+local-int status                   :                  Up
+system-id                          :   02:1c:73:46:82:d4
+dual-primary detection             :          Configured
+dual-primary interface errdisabled :               False
+
+MLAG Ports:
+Disabled                           :                   0
+Configured                         :                   0
+Inactive                           :                   0
+Active-partial                     :                   0
+Active-full                        :                   1
+
+MLAG Detailed Status:
+State                                :             primary
+Peer State                           :           secondary
+State changes                        :                   2
+Last state change time               :         0:01:11 ago
+Hardware ready                       :                True
+Failover                             :               False
+Failover Cause(s)                    :             Unknown
+Last failover change time            :               never
+Secondary from failover              :               False
+Peer MAC address                     :   00:1c:73:67:27:4b
+Peer MAC routing supported           :               False
+Reload delay                         :          10 seconds
+Non-MLAG reload delay                :          10 seconds
+Peer ports errdisabled               :               False
+Lacp standby                         :               False
+Configured heartbeat interval        :             4000 ms
+Effective heartbeat interval         :             4000 ms
+Heartbeat timeout                    :            60000 ms
+Last heartbeat timeout               :               never
+Heartbeat timeouts since reboot      :                   0
+UDP heartbeat alive                  :                True
+Heartbeats sent/received             :               44/21
+Peer monotonic clock offset          :   -0.000186 seconds
+Agent should be running              :                True
+P2p mount state changes              :                   1
+Fast MAC redirection enabled         :               False
+Peer-link forwarding restricted      :               False
+Interface activation interlock       :         unsupported
+Dual-primary detection delay         :                   5
+Dual-primary action                  :      errdisable-all
+Dual-primary recovery delay          :                  10
+Dual-primary non-mlag recovery delay :                   0

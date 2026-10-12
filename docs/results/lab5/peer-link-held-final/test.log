@@ -1,0 +1,53 @@
+
+> interface Ethernet3
+
+! Interface Ethernet3 is a member of the MLAG peer link Port-Channel10 at line 2
+PEER LINK DISABLED 2026-10-12T11:56:53
+STATE ROUND 1 2026-10-12T11:57:19
+STATE ROUND 2 2026-10-12T11:57:44
+STATE ROUND 3 2026-10-12T11:58:10
+PING 192.168.10.12 (192.168.10.12) from 192.168.10.11 eth1: 56(84) bytes of data.
+64 bytes from 192.168.10.12: icmp_seq=1 ttl=64 time=5.43 ms
+64 bytes from 192.168.10.12: icmp_seq=2 ttl=64 time=4.65 ms
+64 bytes from 192.168.10.12: icmp_seq=3 ttl=64 time=3.52 ms
+64 bytes from 192.168.10.12: icmp_seq=4 ttl=64 time=3.15 ms
+64 bytes from 192.168.10.12: icmp_seq=5 ttl=64 time=3.08 ms
+
+--- 192.168.10.12 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 803ms
+rtt min/avg/max/mdev = 3.079/3.966/5.431/0.924 ms
+PING 192.168.10.11 (192.168.10.11) from 192.168.10.12 eth1: 56(84) bytes of data.
+64 bytes from 192.168.10.11: icmp_seq=1 ttl=64 time=5.44 ms
+64 bytes from 192.168.10.11: icmp_seq=2 ttl=64 time=3.87 ms
+64 bytes from 192.168.10.11: icmp_seq=3 ttl=64 time=6.93 ms
+64 bytes from 192.168.10.11: icmp_seq=4 ttl=64 time=5.05 ms
+64 bytes from 192.168.10.11: icmp_seq=5 ttl=64 time=4.19 ms
+
+--- 192.168.10.11 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 802ms
+rtt min/avg/max/mdev = 3.865/5.095/6.931/1.079 ms
+PING 192.168.30.12 (192.168.30.12) from 192.168.20.11 eth2: 56(84) bytes of data.
+64 bytes from 192.168.30.12: icmp_seq=1 ttl=60 time=5.63 ms
+64 bytes from 192.168.30.12: icmp_seq=2 ttl=60 time=4.88 ms
+64 bytes from 192.168.30.12: icmp_seq=3 ttl=60 time=6.88 ms
+64 bytes from 192.168.30.12: icmp_seq=4 ttl=60 time=4.17 ms
+64 bytes from 192.168.30.12: icmp_seq=5 ttl=60 time=3.81 ms
+
+--- 192.168.30.12 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 803ms
+rtt min/avg/max/mdev = 3.807/5.072/6.877/1.096 ms
+PING 192.168.20.11 (192.168.20.11) from 192.168.30.12 eth2: 56(84) bytes of data.
+64 bytes from 192.168.20.11: icmp_seq=1 ttl=60 time=11.7 ms
+64 bytes from 192.168.20.11: icmp_seq=2 ttl=60 time=5.76 ms
+64 bytes from 192.168.20.11: icmp_seq=3 ttl=60 time=6.62 ms
+64 bytes from 192.168.20.11: icmp_seq=4 ttl=60 time=5.12 ms
+64 bytes from 192.168.20.11: icmp_seq=5 ttl=60 time=4.41 ms
+
+--- 192.168.20.11 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 804ms
+rtt min/avg/max/mdev = 4.411/6.720/11.697/2.592 ms
+forward: sent 5 broadcast requests; remote client received 5
+reverse: sent 5 broadcast requests; remote client received 5
+PASS: exactly five ARP broadcasts delivered per direction
+PASS: sustained peer-link failure, live MGMT heartbeat, one guarded peer, bidirectional L2/L3 and broadcast delivery
+PEER LINK RESTORED 2026-10-12T11:58:47

@@ -1,0 +1,137 @@
+name: interop-dci-5
+mgmt:
+  network: interop-dci-5-mgmt
+  ipv4-subnet: 172.31.251.0/24
+  ipv6-subnet: 2001:db8:251::/64
+topology:
+  kinds:
+    nokia_srlinux:
+      image: srlinux:26.7.1
+    linux:
+      image: network-multitool:latest
+      binds:
+      - ./configs/host-init.sh:/opt/lab/host-init.sh:ro
+      sysctls:
+        net.ipv4.ip_forward: '0'
+  nodes:
+    dc1-leaf:
+      kind: arista_ceos
+      image: arista_ceos:4.34.7M
+      startup-config: ./configs/dc1-leaf.cfg
+      mgmt-ipv4: 172.31.251.11
+      labels:
+        graph-group: DC1
+        graph-level: '1'
+        graph-icon: pe
+    dc1-spine1:
+      kind: arista_ceos
+      image: arista_ceos:4.34.7M
+      startup-config: ./configs/dc1-spine1.cfg
+      mgmt-ipv4: 172.31.251.12
+      labels:
+        graph-group: DC1
+        graph-level: '1'
+        graph-icon: pe
+    dc2-bl:
+      kind: nokia_srlinux
+      type: ixr-x1b
+      license: ./srl.license
+      startup-config: ./configs/dc2-bl.cli
+      mgmt-ipv4: 172.31.251.13
+      labels:
+        graph-group: DC2
+        graph-level: '1'
+        graph-icon: pe
+    dc2-leaf:
+      kind: nokia_srlinux
+      type: ixr-d2l
+      startup-config: ./configs/dc2-leaf.cli
+      mgmt-ipv4: 172.31.251.14
+      labels:
+        graph-group: DC2
+        graph-level: '1'
+        graph-icon: pe
+    h1:
+      kind: linux
+      mgmt-ipv4: 172.31.251.21
+      exec:
+      - bash /opt/lab/host-init.sh 1
+      labels:
+        graph-group: DC1
+        graph-level: '1'
+        graph-icon: client
+    h2:
+      kind: linux
+      mgmt-ipv4: 172.31.251.22
+      exec:
+      - bash /opt/lab/host-init.sh 2
+      labels:
+        graph-group: DC2
+        graph-level: '1'
+        graph-icon: client
+    dc1-spine2:
+      kind: arista_ceos
+      image: arista_ceos:4.34.7M
+      startup-config: ./configs/dc1-spine2.cfg
+      mgmt-ipv4: 172.31.251.15
+      labels:
+        graph-group: DC1
+        graph-level: '1'
+        graph-icon: pe
+    dc2-bl2:
+      kind: nokia_srlinux
+      type: ixr-x1b
+      license: ./srl.license
+      startup-config: ./configs/dc2-bl2.cli
+      mgmt-ipv4: 172.31.251.16
+      labels:
+        graph-group: DC2
+        graph-level: '1'
+        graph-icon: pe
+  links:
+  - endpoints:
+    - dc1-leaf:eth1
+    - dc1-spine1:eth1
+    mtu: 9216
+  - endpoints:
+    - dc1-spine1:eth2
+    - dc2-bl:ethernet-1/2
+    mtu: 9216
+  - endpoints:
+    - dc2-bl:ethernet-1/1
+    - dc2-leaf:ethernet-1/1
+    mtu: 9216
+  - endpoints:
+    - h1:eth1
+    - dc1-leaf:eth2
+  - endpoints:
+    - h1:eth2
+    - dc1-leaf:eth3
+  - endpoints:
+    - h2:eth1
+    - dc2-leaf:ethernet-1/2
+  - endpoints:
+    - h2:eth2
+    - dc2-leaf:ethernet-1/3
+  - endpoints:
+    - dc1-leaf:eth4
+    - dc1-spine2:eth1
+    mtu: 9216
+  - endpoints:
+    - dc2-leaf:ethernet-1/4
+    - dc2-bl2:ethernet-1/1
+    mtu: 9216
+  - endpoints:
+    - dc2-bl:ethernet-1/3
+    - dc2-bl2:ethernet-1/3
+    mtu: 9216
+  - endpoints:
+    - dc1-spine2:eth2
+    - dc2-bl2:ethernet-1/2
+    mtu: 9216
+  - endpoints:
+    - dc1-spine1:eth3
+    - dc1-spine2:eth3
+    mtu: 9216
+  defaults:
+    image-pull-policy: Never

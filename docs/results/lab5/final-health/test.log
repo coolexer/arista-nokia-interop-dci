@@ -1,0 +1,41 @@
+PING 192.168.10.12 (192.168.10.12) from 192.168.10.11 eth1: 56(84) bytes of data.
+64 bytes from 192.168.10.12: icmp_seq=1 ttl=64 time=13.2 ms
+64 bytes from 192.168.10.12: icmp_seq=2 ttl=64 time=7.87 ms
+64 bytes from 192.168.10.12: icmp_seq=3 ttl=64 time=17.6 ms
+64 bytes from 192.168.10.12: icmp_seq=4 ttl=64 time=7.74 ms
+64 bytes from 192.168.10.12: icmp_seq=5 ttl=64 time=14.3 ms
+
+--- 192.168.10.12 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 804ms
+rtt min/avg/max/mdev = 7.744/12.143/17.595/3.827 ms
+PING 192.168.10.11 (192.168.10.11) from 192.168.10.12 eth1: 56(84) bytes of data.
+64 bytes from 192.168.10.11: icmp_seq=1 ttl=64 time=17.8 ms
+64 bytes from 192.168.10.11: icmp_seq=2 ttl=64 time=7.34 ms
+64 bytes from 192.168.10.11: icmp_seq=3 ttl=64 time=14.1 ms
+64 bytes from 192.168.10.11: icmp_seq=4 ttl=64 time=16.1 ms
+64 bytes from 192.168.10.11: icmp_seq=5 ttl=64 time=16.8 ms
+
+--- 192.168.10.11 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 803ms
+rtt min/avg/max/mdev = 7.343/14.444/17.846/3.749 ms
+PING 192.168.30.12 (192.168.30.12) from 192.168.20.11 eth2: 56(84) bytes of data.
+64 bytes from 192.168.30.12: icmp_seq=1 ttl=60 time=15.8 ms
+64 bytes from 192.168.30.12: icmp_seq=2 ttl=60 time=8.81 ms
+64 bytes from 192.168.30.12: icmp_seq=3 ttl=60 time=7.67 ms
+64 bytes from 192.168.30.12: icmp_seq=4 ttl=60 time=8.72 ms
+64 bytes from 192.168.30.12: icmp_seq=5 ttl=60 time=9.30 ms
+
+--- 192.168.30.12 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 803ms
+rtt min/avg/max/mdev = 7.671/10.056/15.782/2.911 ms
+PING 192.168.20.11 (192.168.20.11) from 192.168.30.12 eth2: 56(84) bytes of data.
+64 bytes from 192.168.20.11: icmp_seq=1 ttl=60 time=12.7 ms
+64 bytes from 192.168.20.11: icmp_seq=2 ttl=60 time=15.8 ms
+64 bytes from 192.168.20.11: icmp_seq=3 ttl=60 time=12.8 ms
+64 bytes from 192.168.20.11: icmp_seq=4 ttl=60 time=8.90 ms
+64 bytes from 192.168.20.11: icmp_seq=5 ttl=60 time=8.53 ms
+
+--- 192.168.20.11 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 803ms
+rtt min/avg/max/mdev = 8.529/11.748/15.827/2.722 ms
+PASS: final MLAG active-full, four DCI BGP sessions, both ES up, L2/L3 bidirectional; lab restored and running

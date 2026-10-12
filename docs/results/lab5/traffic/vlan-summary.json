@@ -1,0 +1,16 @@
+[
+  {
+    "circuit": "dci-1",
+    "vlan10_frames": 196,
+    "vlan901_frames": 351,
+    "l3_tenant_frames": 126,
+    "vxlan_frames": 0
+  },
+  {
+    "circuit": "dci-2",
+    "vlan10_frames": 52,
+    "vlan901_frames": 344,
+    "l3_tenant_frames": 118,
+    "vxlan_frames": 0
+  }
+]

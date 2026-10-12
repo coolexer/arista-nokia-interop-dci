@@ -1,0 +1,33 @@
+SCENARIO pause-dc1-spine1 START 2026-10-12T11:55:02.568162439Z
+FAULT pause-dc1-spine1 2026-10-12T11:55:07.375439793Z
+PASS pause-dc1-spine1: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE pause-dc1-spine1 2026-10-12T11:55:24.852946405Z
+PING 192.168.10.12 (192.168.10.12) from 192.168.10.11 eth1: 56(84) bytes of data.
+
+--- 192.168.10.12 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 447ms
+PING 192.168.10.12 (192.168.10.12) from 192.168.10.11 eth1: 56(84) bytes of data.
+
+--- 192.168.10.12 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 420ms
+PING 192.168.10.12 (192.168.10.12) from 192.168.10.11 eth1: 56(84) bytes of data.
+64 bytes from 192.168.10.12: icmp_seq=1 ttl=64 time=12.6 ms
+64 bytes from 192.168.10.12: icmp_seq=1 ttl=64 time=13.2 ms (DUP!)
+64 bytes from 192.168.10.12: icmp_seq=2 ttl=64 time=6.83 ms
+64 bytes from 192.168.10.12: icmp_seq=2 ttl=64 time=7.70 ms (DUP!)
+64 bytes from 192.168.10.12: icmp_seq=3 ttl=64 time=9.22 ms
+
+--- 192.168.10.12 ping statistics ---
+3 packets transmitted, 3 received, +2 duplicates, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 6.828/9.895/13.161/2.550 ms
+PASS pause-dc1-spine1: all nodes restored
+SCENARIO pause-dc1-spine2 START 2026-10-12T11:56:06.299751859Z
+FAULT pause-dc1-spine2 2026-10-12T11:56:11.904467681Z
+PASS pause-dc1-spine2: bidirectional L2/L3 and fresh ARP with fault present
+RESTORE pause-dc1-spine2 2026-10-12T11:56:29.753131600Z
+PING 192.168.30.12 (192.168.30.12) from 192.168.20.11 eth2: 56(84) bytes of data.
+
+--- 192.168.30.12 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 430ms
+PASS pause-dc1-spine2: all nodes restored
+PASS: both isolated Arista spine freeze scenarios, all peers restored

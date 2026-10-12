@@ -1,0 +1,89 @@
+PING 192.168.10.12 (192.168.10.12) from 192.168.10.11 eth1: 56(84) bytes of data.
+64 bytes from 192.168.10.12: icmp_seq=1 ttl=64 time=5.27 ms
+64 bytes from 192.168.10.12: icmp_seq=2 ttl=64 time=6.92 ms
+64 bytes from 192.168.10.12: icmp_seq=3 ttl=64 time=4.60 ms
+
+--- 192.168.10.12 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 401ms
+rtt min/avg/max/mdev = 4.599/5.594/6.916/0.973 ms
+PING 192.168.30.12 (192.168.30.12) from 192.168.20.11 eth2: 56(84) bytes of data.
+64 bytes from 192.168.30.12: icmp_seq=1 ttl=60 time=6.35 ms
+64 bytes from 192.168.30.12: icmp_seq=2 ttl=60 time=6.37 ms
+64 bytes from 192.168.30.12: icmp_seq=3 ttl=60 time=4.83 ms
+
+--- 192.168.30.12 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 4.831/5.849/6.372/0.720 ms
+PING 192.168.10.12 (192.168.10.12) from 192.168.10.11 eth1: 56(84) bytes of data.
+64 bytes from 192.168.10.12: icmp_seq=1 ttl=64 time=4.71 ms
+64 bytes from 192.168.10.12: icmp_seq=2 ttl=64 time=5.19 ms
+64 bytes from 192.168.10.12: icmp_seq=3 ttl=64 time=5.62 ms
+64 bytes from 192.168.10.12: icmp_seq=4 ttl=64 time=5.01 ms
+64 bytes from 192.168.10.12: icmp_seq=5 ttl=64 time=7.31 ms
+
+--- 192.168.10.12 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 803ms
+rtt min/avg/max/mdev = 4.708/5.566/7.309/0.920 ms
+PING 192.168.10.12 (192.168.10.12) from 192.168.10.11 eth1: 1472(1500) bytes of data.
+1480 bytes from 192.168.10.12: icmp_seq=1 ttl=64 time=9.15 ms
+1480 bytes from 192.168.10.12: icmp_seq=2 ttl=64 time=5.38 ms
+1480 bytes from 192.168.10.12: icmp_seq=3 ttl=64 time=6.74 ms
+
+--- 192.168.10.12 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 401ms
+rtt min/avg/max/mdev = 5.381/7.091/9.149/1.557 ms
+PING 192.168.10.11 (192.168.10.11) from 192.168.10.12 eth1: 56(84) bytes of data.
+64 bytes from 192.168.10.11: icmp_seq=1 ttl=64 time=19.1 ms
+64 bytes from 192.168.10.11: icmp_seq=2 ttl=64 time=5.19 ms
+64 bytes from 192.168.10.11: icmp_seq=3 ttl=64 time=4.33 ms
+64 bytes from 192.168.10.11: icmp_seq=4 ttl=64 time=5.05 ms
+64 bytes from 192.168.10.11: icmp_seq=5 ttl=64 time=3.37 ms
+
+--- 192.168.10.11 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 802ms
+rtt min/avg/max/mdev = 3.371/7.399/19.058/5.865 ms
+PING 192.168.10.11 (192.168.10.11) from 192.168.10.12 eth1: 1472(1500) bytes of data.
+1480 bytes from 192.168.10.11: icmp_seq=1 ttl=64 time=6.32 ms
+1480 bytes from 192.168.10.11: icmp_seq=2 ttl=64 time=5.65 ms
+1480 bytes from 192.168.10.11: icmp_seq=3 ttl=64 time=5.89 ms
+
+--- 192.168.10.11 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 5.653/5.954/6.319/0.275 ms
+PING 192.168.30.12 (192.168.30.12) from 192.168.20.11 eth2: 56(84) bytes of data.
+64 bytes from 192.168.30.12: icmp_seq=1 ttl=60 time=10.1 ms
+64 bytes from 192.168.30.12: icmp_seq=2 ttl=60 time=7.01 ms
+64 bytes from 192.168.30.12: icmp_seq=3 ttl=60 time=7.92 ms
+64 bytes from 192.168.30.12: icmp_seq=4 ttl=60 time=6.45 ms
+64 bytes from 192.168.30.12: icmp_seq=5 ttl=60 time=7.48 ms
+
+--- 192.168.30.12 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 802ms
+rtt min/avg/max/mdev = 6.446/7.788/10.084/1.247 ms
+PING 192.168.30.12 (192.168.30.12) from 192.168.20.11 eth2: 1472(1500) bytes of data.
+1480 bytes from 192.168.30.12: icmp_seq=1 ttl=60 time=7.29 ms
+1480 bytes from 192.168.30.12: icmp_seq=2 ttl=60 time=6.53 ms
+1480 bytes from 192.168.30.12: icmp_seq=3 ttl=60 time=6.04 ms
+
+--- 192.168.30.12 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 6.039/6.619/7.292/0.515 ms
+PING 192.168.20.11 (192.168.20.11) from 192.168.30.12 eth2: 56(84) bytes of data.
+64 bytes from 192.168.20.11: icmp_seq=1 ttl=60 time=7.56 ms
+64 bytes from 192.168.20.11: icmp_seq=2 ttl=60 time=7.80 ms
+64 bytes from 192.168.20.11: icmp_seq=3 ttl=60 time=5.93 ms
+64 bytes from 192.168.20.11: icmp_seq=4 ttl=60 time=6.12 ms
+64 bytes from 192.168.20.11: icmp_seq=5 ttl=60 time=9.73 ms
+
+--- 192.168.20.11 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 803ms
+rtt min/avg/max/mdev = 5.934/7.429/9.725/1.368 ms
+PING 192.168.20.11 (192.168.20.11) from 192.168.30.12 eth2: 1472(1500) bytes of data.
+1480 bytes from 192.168.20.11: icmp_seq=1 ttl=60 time=7.24 ms
+1480 bytes from 192.168.20.11: icmp_seq=2 ttl=60 time=6.27 ms
+1480 bytes from 192.168.20.11: icmp_seq=3 ttl=60 time=6.44 ms
+
+--- 192.168.20.11 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 401ms
+rtt min/avg/max/mdev = 6.271/6.648/7.237/0.421 ms
+PASS: L2/L3 bidirectional, inner MTU 1500, both DCI members carry VLAN 10 and 901, no inter-site leaf reachability or VXLAN

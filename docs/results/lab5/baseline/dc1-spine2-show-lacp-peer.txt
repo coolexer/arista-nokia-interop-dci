@@ -1,0 +1,14 @@
+State: A = Active, P = Passive; S=ShortTimeout, L=LongTimeout;
+       G = Aggregable, I = Individual; s+=InSync, s-=OutOfSync;
+       C = Collecting, X = state machine expired,
+       D = Distributing, d = default neighbor state
+                 |                        Partner
+ Port    Status  | Sys-id                    Port#   State     OperKey  PortPri
+------ ----------|------------------------- ------- --------- --------- -------
+Port Channel Port-Channel10:
+ Et3     Bundled | 8000,00-1c-73-67-27-4b        3   ASGs+CD    0x000a    32768
+Port Channel Port-Channel100*:
+ Et2     Bundled | 8000,02-00-00-02-00-aa        1   ASGs+CD    0x0064    32768
+
+* - Only local interfaces for MLAGs are displayed. Connect to the peer to
+    see the state for peer interfaces.

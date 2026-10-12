@@ -10,6 +10,7 @@ Options A and B each have **8 nodes / 12 links**: an Arista leaf, a Nokia leaf, 
 | [Option B](labs/option-b) | Local VXLAN fabrics + EVPN-MPLS over SR-MPLS | Service gateway | L2/L3, MTU, 8 single-fault cases; see HA report |
 | [Lab 3](labs/lab3-arista-spines) | Option A with direct DCI from Arista spines | Arista spines + Nokia BLs: IP transit | L2/L3, MTU, 8 single-fault cases, RT and dual-DCI isolation |
 | [Lab 4](labs/lab4-arista-l3-gateway) | Plain L3 EVPN gateway / VXLAN-to-VXLAN | Arista spines: RT-5 next-hop-self; Nokia BLs: IP transit | cEOS functional proof: L3, MTU, 4 faults; hardware qualification pending |
+| [Lab 5](labs/lab5-shared-ethernet-dci) | Native Ethernet DCI with VRF-lite | Arista MLAG + Nokia EVPN all-active; shared L2/L3 trunks | See shared-channel validation report |
 
 ## Option A — end-to-end VXLAN
 
@@ -28,6 +29,12 @@ The X1b gateways terminate each local VXLAN fabric. A multi-instance MAC-VRF sti
 ![Lab 3 topology](docs/images/option-3.png)
 
 Two transit-only Arista spines connect directly to the two Nokia X1b BLs. The Arista site has no Nokia BL and no direct spine interlink. Both leafs keep their VTEPs and tenant gateways. Unique leaf ASNs and a direct multihop eBGP EVPN session provide the minimum control plane for this test. See [Lab 3 configuration and run instructions](labs/lab3-arista-spines) and [its validation report](docs/lab3-validation.md).
+
+## Lab 5 — shared L2/L3 Ethernet channels
+
+![Lab 5 topology](docs/images/option-5.png)
+
+Two Ethernet trunks carry both the stretched L2 VLAN and the VRF-lite L3 transit VLAN. Arista MLAG spines and Nokia X1b EVPN all-active BLs form a distributed LACP attachment. Each fabric retains its own EVPN control plane and leaf VTEP addresses. This variant requires an Arista spine peer-link and local VTEP/VRF termination on those spines. See [configuration and run instructions](labs/lab5-shared-ethernet-dci) and [validation results](docs/lab5-validation.md).
 
 ## Redundancy
 

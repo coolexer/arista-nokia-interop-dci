@@ -1,0 +1,22 @@
+VRF name: default
+-----------------
+DstAddr         MyDisc   YourDisc  Interface/Transport    Type          LastUp
+----------- ----------- ---------- -------------------- ------- ---------------
+100.64.1.2  3237690497  699229836       Ethernet1(227)  normal  10/12/26 11:23
+
+   LastDown            LastDiag    State
+-------------- ------------------- -----
+         NA       No Diagnostic       Up
+
+
+VRF name: TENANT
+-----------------
+DstAddr         MyDisc  YourDisc  Interface/Transport    Type           LastUp
+----------- ----------- --------- -------------------- ------- ----------------
+10.200.0.3  2558859850     16388           Vlan901(3)  normal   10/12/26 11:24
+10.200.0.4  2491031836     16387           Vlan901(3)  normal   10/12/26 11:24
+
+   LastDown            LastDiag    State
+-------------- ------------------- -----
+         NA       No Diagnostic       Up
+         NA       No Diagnostic       Up
