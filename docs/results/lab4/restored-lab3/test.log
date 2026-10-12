@@ -1,0 +1,156 @@
+Results: results/20261012T083324Z
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Hostname             : dc2-bl
+Chassis Type         : 7250 IXR-X1B
+Part Number          : Sim Part No.
+Serial Number        : Sim Serial No.
+System HW MAC Address: 1A:6C:03:FF:00:00
+OS                   : SR Linux
+Software Version     : v26.7.1
+Build Number         : 554-g78ed635f70a
+Architecture         : x86_64
+Last Booted          : 2026-10-12T08:29:12.195Z
+Total Memory         : 17984684 kB
+Free Memory          : 1766544 kB
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Hostname             : dc2-bl2
+Chassis Type         : 7250 IXR-X1B
+Part Number          : Sim Part No.
+Serial Number        : Sim Serial No.
+System HW MAC Address: 1A:86:04:FF:00:00
+OS                   : SR Linux
+Software Version     : v26.7.1
+Build Number         : 554-g78ed635f70a
+Architecture         : x86_64
+Last Booted          : 2026-10-12T08:29:12.103Z
+Total Memory         : 17984684 kB
+Free Memory          : 1792640 kB
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Hostname             : dc2-leaf
+Chassis Type         : 7220 IXR-D2L
+Part Number          : Sim Part No.
+Serial Number        : Sim Serial No.
+System HW MAC Address: 1A:6B:05:FF:00:00
+OS                   : SR Linux
+Software Version     : v26.7.1
+Build Number         : 554-g78ed635f70a
+Architecture         : x86_64
+Last Booted          : 2026-10-12T08:29:11.949Z
+Total Memory         : 17984684 kB
+Free Memory          : 1797572 kB
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Arista cEOSLab
+Hardware version: 
+Serial number: 59C6A2466D2B0649364A14364C4759F5
+Hardware MAC address: 001c.73ca.e389
+System MAC address: 001c.73ca.e389
+
+Software image version: 4.34.7M-48746980.4347M (engineering build)
+Architecture: x86_64
+Internal build version: 4.34.7M-48746980.4347M
+Internal build ID: 7800e62d-8cd6-4374-9192-7df89866e25a
+Image format version: 1.0
+Image optimization: None
+
+Kernel version: 5.15.167.4-microsoft-standard-WSL2
+
+Uptime: 8 minutes
+Total memory: 17984684 kB
+Free memory: 1879188 kB
+
+PING 192.168.10.12 (192.168.10.12) from 192.168.10.11 eth1: 56(84) bytes of data.
+64 bytes from 192.168.10.12: icmp_seq=1 ttl=64 time=52.2 ms
+64 bytes from 192.168.10.12: icmp_seq=2 ttl=64 time=6.97 ms
+64 bytes from 192.168.10.12: icmp_seq=3 ttl=64 time=6.19 ms
+64 bytes from 192.168.10.12: icmp_seq=4 ttl=64 time=7.21 ms
+64 bytes from 192.168.10.12: icmp_seq=5 ttl=64 time=7.87 ms
+
+--- 192.168.10.12 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 803ms
+rtt min/avg/max/mdev = 6.185/16.084/52.188/18.059 ms
+PING 192.168.10.11 (192.168.10.11) from 192.168.10.12 eth1: 56(84) bytes of data.
+64 bytes from 192.168.10.11: icmp_seq=1 ttl=64 time=12.7 ms
+64 bytes from 192.168.10.11: icmp_seq=2 ttl=64 time=6.51 ms
+64 bytes from 192.168.10.11: icmp_seq=3 ttl=64 time=7.34 ms
+64 bytes from 192.168.10.11: icmp_seq=4 ttl=64 time=7.09 ms
+64 bytes from 192.168.10.11: icmp_seq=5 ttl=64 time=17.4 ms
+
+--- 192.168.10.11 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 804ms
+rtt min/avg/max/mdev = 6.507/10.200/17.374/4.222 ms
+PING 192.168.10.12 (192.168.10.12) from 192.168.10.11 eth1: 1472(1500) bytes of data.
+1480 bytes from 192.168.10.12: icmp_seq=1 ttl=64 time=18.8 ms
+1480 bytes from 192.168.10.12: icmp_seq=2 ttl=64 time=6.68 ms
+1480 bytes from 192.168.10.12: icmp_seq=3 ttl=64 time=8.66 ms
+
+--- 192.168.10.12 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 402ms
+rtt min/avg/max/mdev = 6.680/11.364/18.754/5.287 ms
+PING 192.168.10.11 (192.168.10.11) from 192.168.10.12 eth1: 1472(1500) bytes of data.
+1480 bytes from 192.168.10.11: icmp_seq=1 ttl=64 time=9.44 ms
+1480 bytes from 192.168.10.11: icmp_seq=2 ttl=64 time=8.97 ms
+1480 bytes from 192.168.10.11: icmp_seq=3 ttl=64 time=6.99 ms
+
+--- 192.168.10.11 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 401ms
+rtt min/avg/max/mdev = 6.993/8.470/9.444/1.061 ms
+PING 192.168.20.1 (192.168.20.1) from 192.168.20.11 eth2: 56(84) bytes of data.
+64 bytes from 192.168.20.1: icmp_seq=1 ttl=64 time=43.5 ms
+64 bytes from 192.168.20.1: icmp_seq=2 ttl=64 time=2.50 ms
+64 bytes from 192.168.20.1: icmp_seq=3 ttl=64 time=2.30 ms
+64 bytes from 192.168.20.1: icmp_seq=4 ttl=64 time=2.41 ms
+64 bytes from 192.168.20.1: icmp_seq=5 ttl=64 time=2.73 ms
+
+--- 192.168.20.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 815ms
+rtt min/avg/max/mdev = 2.298/10.696/43.548/16.426 ms
+PING 192.168.30.1 (192.168.30.1) from 192.168.30.12 eth2: 56(84) bytes of data.
+64 bytes from 192.168.30.1: icmp_seq=1 ttl=64 time=18.4 ms
+64 bytes from 192.168.30.1: icmp_seq=2 ttl=64 time=3.86 ms
+64 bytes from 192.168.30.1: icmp_seq=3 ttl=64 time=3.40 ms
+64 bytes from 192.168.30.1: icmp_seq=4 ttl=64 time=3.21 ms
+64 bytes from 192.168.30.1: icmp_seq=5 ttl=64 time=3.17 ms
+
+--- 192.168.30.1 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 803ms
+rtt min/avg/max/mdev = 3.170/6.416/18.439/6.016 ms
+PING 192.168.30.12 (192.168.30.12) from 192.168.20.11 eth2: 56(84) bytes of data.
+64 bytes from 192.168.30.12: icmp_seq=1 ttl=62 time=21.5 ms
+64 bytes from 192.168.30.12: icmp_seq=2 ttl=62 time=21.2 ms
+64 bytes from 192.168.30.12: icmp_seq=3 ttl=62 time=6.95 ms
+64 bytes from 192.168.30.12: icmp_seq=4 ttl=62 time=9.54 ms
+64 bytes from 192.168.30.12: icmp_seq=5 ttl=62 time=7.23 ms
+
+--- 192.168.30.12 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 805ms
+rtt min/avg/max/mdev = 6.947/13.272/21.459/6.637 ms
+PING 192.168.20.11 (192.168.20.11) from 192.168.30.12 eth2: 56(84) bytes of data.
+64 bytes from 192.168.20.11: icmp_seq=1 ttl=62 time=28.0 ms
+64 bytes from 192.168.20.11: icmp_seq=2 ttl=62 time=10.6 ms
+64 bytes from 192.168.20.11: icmp_seq=3 ttl=62 time=13.4 ms
+64 bytes from 192.168.20.11: icmp_seq=4 ttl=62 time=6.07 ms
+64 bytes from 192.168.20.11: icmp_seq=5 ttl=62 time=6.45 ms
+
+--- 192.168.20.11 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 802ms
+rtt min/avg/max/mdev = 6.074/12.918/28.045/8.037 ms
+PING 192.168.30.12 (192.168.30.12) from 192.168.20.11 eth2: 1472(1500) bytes of data.
+1480 bytes from 192.168.30.12: icmp_seq=1 ttl=62 time=12.5 ms
+1480 bytes from 192.168.30.12: icmp_seq=2 ttl=62 time=6.99 ms
+1480 bytes from 192.168.30.12: icmp_seq=3 ttl=62 time=11.8 ms
+
+--- 192.168.30.12 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 401ms
+rtt min/avg/max/mdev = 6.986/10.446/12.509/2.461 ms
+PING 192.168.20.11 (192.168.20.11) from 192.168.30.12 eth2: 1472(1500) bytes of data.
+1480 bytes from 192.168.20.11: icmp_seq=1 ttl=62 time=10.6 ms
+1480 bytes from 192.168.20.11: icmp_seq=2 ttl=62 time=9.19 ms
+1480 bytes from 192.168.20.11: icmp_seq=3 ttl=62 time=6.52 ms
+
+--- 192.168.20.11 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 401ms
+rtt min/avg/max/mdev = 6.516/8.754/10.563/1.679 ms
+PASS: all bidirectional connectivity, inner IP MTU 1500 and DCI VXLAN VNI capture.
+Review RT-2/3/5, EVPN next-hops and the negative tests in README.md before accepting the design.

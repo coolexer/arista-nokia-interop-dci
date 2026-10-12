@@ -1,0 +1,13 @@
+FAULT pause-spine1 2026-10-12T08:24:38.025261502Z
+PASS pause-spine1: bidirectional L3 with fault present
+PASS pause-spine1: restored
+FAULT pause-spine2 2026-10-12T08:25:23.260341470Z
+PASS pause-spine2: bidirectional L3 with fault present
+PASS pause-spine2: restored
+FAULT dci-1-down 2026-10-12T08:26:04.065577261Z
+PASS dci-1-down: bidirectional L3 with fault present
+PASS dci-1-down: restored
+FAULT dci-2-down 2026-10-12T08:26:44.851971694Z
+PASS dci-2-down: bidirectional L3 with fault present
+PASS dci-2-down: restored
+PASS: both gateway endpoint failures and both DCI-link failures; restored

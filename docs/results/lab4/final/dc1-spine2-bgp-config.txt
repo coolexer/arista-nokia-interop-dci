@@ -1,0 +1,42 @@
+router bgp 65211
+   router-id 10.255.1.253
+   no bgp default ipv4-unicast
+   maximum-paths 2 ecmp 2
+   neighbor 10.255.1.1 remote-as 65101
+   neighbor 10.255.1.1 update-source Loopback0
+   neighbor 10.255.1.1 ebgp-multihop 8
+   neighbor 10.255.1.1 send-community extended
+   neighbor 10.255.2.1 remote-as 65102
+   neighbor 10.255.2.1 update-source Loopback0
+   neighbor 10.255.2.1 ebgp-multihop 8
+   neighbor 10.255.2.1 send-community extended
+   neighbor 100.64.1.2 remote-as 65101
+   neighbor 100.64.1.2 bfd
+   neighbor 100.64.1.2 route-map UNDERLAY in
+   neighbor 100.64.1.2 route-map UNDERLAY out
+   neighbor 100.64.12.3 remote-as 65212
+   neighbor 100.64.12.3 bfd
+   neighbor 100.64.12.3 route-map DCI in
+   neighbor 100.64.12.3 route-map DCI out
+   !
+   address-family evpn
+      neighbor 10.255.1.1 activate
+      neighbor 10.255.1.1 route-map EVPN-L3 in
+      neighbor 10.255.1.1 route-map EVPN-L3 out
+      neighbor 10.255.1.1 encapsulation vxlan 
+      neighbor 10.255.2.1 activate
+      neighbor 10.255.2.1 route-map EVPN-L3 in
+      neighbor 10.255.2.1 route-map EVPN-L3 out
+      neighbor 10.255.2.1 encapsulation vxlan 
+      neighbor default next-hop-self received-evpn-routes route-type ip-prefix
+   !
+   address-family ipv4
+      neighbor 100.64.1.2 activate
+      neighbor 100.64.12.3 activate
+      network 10.255.1.253/32
+   !
+   vrf TENANT
+      rd 10.255.1.253:50000
+      route-target import evpn 65000:50000
+      route-target export evpn 65000:50000
+      router-id 10.255.1.253

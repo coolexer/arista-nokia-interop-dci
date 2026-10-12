@@ -1,0 +1,133 @@
+{
+  "nodeAnnotations": [
+    {
+      "id": "h1",
+      "position": {
+        "x": 80,
+        "y": 320
+      },
+      "label": "h1\nLinux client",
+      "icon": "client",
+      "iconColor": "#64748B",
+      "groupId": "dc1",
+      "labelPosition": "bottom"
+    },
+    {
+      "id": "dc1-leaf",
+      "position": {
+        "x": 300,
+        "y": 320
+      },
+      "label": "dc1-leaf\nArista cEOS / VTEP",
+      "icon": "pe",
+      "iconColor": "#7A7A7A",
+      "groupId": "dc1",
+      "labelPosition": "bottom"
+    },
+    {
+      "id": "dc1-spine1",
+      "position": {
+        "x": 560,
+        "y": 200
+      },
+      "label": "dc1-spine1\nArista cEOS / L3 EVPN gateway",
+      "icon": "pe",
+      "iconColor": "#7A7A7A",
+      "groupId": "dc1",
+      "labelPosition": "bottom"
+    },
+    {
+      "id": "dc1-spine2",
+      "position": {
+        "x": 560,
+        "y": 440
+      },
+      "label": "dc1-spine2\nArista cEOS / L3 EVPN gateway",
+      "icon": "pe",
+      "iconColor": "#7A7A7A",
+      "groupId": "dc1",
+      "labelPosition": "bottom"
+    },
+    {
+      "id": "dc2-bl",
+      "position": {
+        "x": 900,
+        "y": 200
+      },
+      "label": "dc2-bl\nNokia X1b / IP transit",
+      "icon": "pe",
+      "iconColor": "#005AFF",
+      "groupId": "dc2",
+      "labelPosition": "bottom"
+    },
+    {
+      "id": "dc2-bl2",
+      "position": {
+        "x": 900,
+        "y": 440
+      },
+      "label": "dc2-bl2\nNokia X1b / IP transit",
+      "icon": "pe",
+      "iconColor": "#005AFF",
+      "groupId": "dc2",
+      "labelPosition": "bottom"
+    },
+    {
+      "id": "dc2-leaf",
+      "position": {
+        "x": 1160,
+        "y": 320
+      },
+      "label": "dc2-leaf\nNokia D2L / VTEP",
+      "icon": "pe",
+      "iconColor": "#005AFF",
+      "groupId": "dc2",
+      "labelPosition": "bottom"
+    },
+    {
+      "id": "h2",
+      "position": {
+        "x": 1380,
+        "y": 320
+      },
+      "label": "h2\nLinux client",
+      "icon": "client",
+      "iconColor": "#64748B",
+      "groupId": "dc2",
+      "labelPosition": "bottom"
+    }
+  ],
+  "groupStyleAnnotations": [
+    {
+      "id": "dc1",
+      "name": "DC1",
+      "level": "1",
+      "position": {
+        "x": 20,
+        "y": 80
+      },
+      "width": 640,
+      "height": 500,
+      "labelColor": "#005AFF",
+      "backgroundColor": "#EAF2FF",
+      "borderColor": "#005AFF"
+    },
+    {
+      "id": "dc2",
+      "name": "DC2",
+      "level": "1",
+      "position": {
+        "x": 800,
+        "y": 80
+      },
+      "width": 640,
+      "height": 500,
+      "labelColor": "#005AFF",
+      "backgroundColor": "#EAF2FF",
+      "borderColor": "#005AFF"
+    }
+  ],
+  "viewerSettings": {
+    "linkLabelMode": "show-all"
+  }
+}

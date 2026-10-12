@@ -1,0 +1,66 @@
+[
+  {
+    "trace": "dci-1-down-forward.txt",
+    "transmitted": 200,
+    "received": 169,
+    "loss_percent": 15.5,
+    "largest_reply_gap_s": 6.805,
+    "largest_rtt_ms": 18.1
+  },
+  {
+    "trace": "dci-1-down-reverse.txt",
+    "transmitted": 200,
+    "received": 169,
+    "loss_percent": 15.5,
+    "largest_reply_gap_s": 6.802,
+    "largest_rtt_ms": 22.6
+  },
+  {
+    "trace": "dci-2-down-forward.txt",
+    "transmitted": 200,
+    "received": 200,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 0.231,
+    "largest_rtt_ms": 34.6
+  },
+  {
+    "trace": "dci-2-down-reverse.txt",
+    "transmitted": 200,
+    "received": 200,
+    "loss_percent": 0.0,
+    "largest_reply_gap_s": 0.22,
+    "largest_rtt_ms": 16.9
+  },
+  {
+    "trace": "pause-spine1-forward.txt",
+    "transmitted": 200,
+    "received": 157,
+    "loss_percent": 21.5,
+    "largest_reply_gap_s": 8.485,
+    "largest_rtt_ms": 29.9
+  },
+  {
+    "trace": "pause-spine1-reverse.txt",
+    "transmitted": 200,
+    "received": 168,
+    "loss_percent": 16.0,
+    "largest_reply_gap_s": 8.514,
+    "largest_rtt_ms": 12392.0
+  },
+  {
+    "trace": "pause-spine2-forward.txt",
+    "transmitted": 200,
+    "received": 171,
+    "loss_percent": 14.5,
+    "largest_reply_gap_s": 5.306,
+    "largest_rtt_ms": 19.2
+  },
+  {
+    "trace": "pause-spine2-reverse.txt",
+    "transmitted": 200,
+    "received": 171,
+    "loss_percent": 14.5,
+    "largest_reply_gap_s": 5.339,
+    "largest_rtt_ms": 20.9
+  }
+]

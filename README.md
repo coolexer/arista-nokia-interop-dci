@@ -9,6 +9,7 @@ Options A and B each have **8 nodes / 12 links**: an Arista leaf, a Nokia leaf, 
 | [Option A](labs/option-a) | End-to-end EVPN-VXLAN over routed IP | IP transit | L2/L3, MTU, 8 single-fault cases; see HA report |
 | [Option B](labs/option-b) | Local VXLAN fabrics + EVPN-MPLS over SR-MPLS | Service gateway | L2/L3, MTU, 8 single-fault cases; see HA report |
 | [Lab 3](labs/lab3-arista-spines) | Option A with direct DCI from Arista spines | Arista spines + Nokia BLs: IP transit | L2/L3, MTU, 8 single-fault cases, RT and dual-DCI isolation |
+| [Lab 4](labs/lab4-arista-l3-gateway) | Plain L3 EVPN gateway / VXLAN-to-VXLAN | Arista spines: RT-5 next-hop-self; Nokia BLs: IP transit | cEOS functional proof: L3, MTU, 4 faults; hardware qualification pending |
 
 ## Option A — end-to-end VXLAN
 
@@ -87,6 +88,7 @@ The L2 clients share `192.168.10.0/24`. The L3 clients use separate local subnet
 - [Option A HA evidence](docs/results/option-a-ha)
 - [Option B HA evidence](docs/results/option-b-ha)
 - [Lab 3 validation](docs/lab3-validation.md)
+- [7260CX3 DCI choices and Arista L3 gateway result](docs/7260cx3-dci-options.md)
 
 The tested cEOS image reports an **engineering build** of 4.34.7M. Container software forwarding demonstrates protocol interoperability; it does not qualify X1b ASIC performance, production scale, hardware failover timing or DWDM optics. This is an independent lab example, not a vendor certification.
 
