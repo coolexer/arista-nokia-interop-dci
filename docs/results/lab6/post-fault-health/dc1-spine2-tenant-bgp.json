@@ -1,0 +1,26 @@
+{
+    "vrfs": {
+        "TENANT": {
+            "vrf": "TENANT",
+            "routerId": "10.255.1.253",
+            "asn": "65201",
+            "peers": {
+                "10.200.0.2": {
+                    "peerStateIdleReason": "NoInterface",
+                    "version": 4,
+                    "msgReceived": 107,
+                    "msgSent": 127,
+                    "inMsgQueue": 0,
+                    "outMsgQueue": 0,
+                    "asn": "65203",
+                    "prefixAccepted": 0,
+                    "prefixReceived": 0,
+                    "upDownTime": 1791815081.128203,
+                    "underMaintenance": false,
+                    "peerState": "Idle",
+                    "prefixAdvertised": 0
+                }
+            }
+        }
+    }
+}

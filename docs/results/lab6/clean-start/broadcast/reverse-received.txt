@@ -1,0 +1,11 @@
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on eth1, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+07:26:39.096429 ARP, Request who-has 192.168.10.11 (ff:ff:ff:ff:ff:ff) tell 192.168.10.12, length 46
+07:26:40.096073 ARP, Request who-has 192.168.10.11 (ff:ff:ff:ff:ff:ff) tell 192.168.10.12, length 46
+07:26:41.096184 ARP, Request who-has 192.168.10.11 (ff:ff:ff:ff:ff:ff) tell 192.168.10.12, length 46
+07:26:42.096335 ARP, Request who-has 192.168.10.11 (ff:ff:ff:ff:ff:ff) tell 192.168.10.12, length 46
+07:26:43.096455 ARP, Request who-has 192.168.10.11 (ff:ff:ff:ff:ff:ff) tell 192.168.10.12, length 46
+
+5 packets captured
+5 packets received by filter
+0 packets dropped by kernel

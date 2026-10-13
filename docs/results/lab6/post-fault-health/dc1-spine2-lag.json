@@ -1,0 +1,47 @@
+{
+    "interfaces": {
+        "Port-Channel100": {
+            "name": "Port-Channel100",
+            "forwardingModel": "bridged",
+            "lineProtocolStatus": "lowerLayerDown",
+            "interfaceStatus": "notconnect",
+            "hardware": "portChannel",
+            "interfaceAddress": [],
+            "physicalAddress": "aa:c1:ab:b3:e9:a3",
+            "description": "Independent LACP handoff; no MLAG",
+            "bandwidth": 0,
+            "mtu": 9214,
+            "l3MtuConfigured": true,
+            "l2Mru": 0,
+            "lastStatusChangeTimestamp": 1791815134.1052794,
+            "interfaceStatistics": {
+                "updateInterval": 300.0,
+                "inBitsRate": 1903.254271930617,
+                "inPktsRate": 2.21803350627964,
+                "outBitsRate": 1500.491181574195,
+                "outPktsRate": 1.8281180171930358
+            },
+            "interfaceCounters": {
+                "inOctets": 505493,
+                "inUcastPkts": 4491,
+                "inMulticastPkts": 308,
+                "inBroadcastPkts": 52,
+                "inDiscards": 0,
+                "inTotalPkts": 4851,
+                "outOctets": 471782,
+                "outUcastPkts": 4399,
+                "outMulticastPkts": 136,
+                "outBroadcastPkts": 48,
+                "outDiscards": 0,
+                "outTotalPkts": 4583,
+                "linkStatusChanges": 24,
+                "totalInErrors": 0,
+                "totalOutErrors": 0,
+                "counterRefreshTime": 1791815340.0968125
+            },
+            "memberInterfaces": {},
+            "fallbackEnabled": false,
+            "fallbackEnabledType": "fallbackNone"
+        }
+    }
+}

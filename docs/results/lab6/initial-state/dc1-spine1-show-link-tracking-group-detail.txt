@@ -1,0 +1,5 @@
+Link State Group: FABRIC Status: up
+Upstream Interfaces : Ethernet1
+Downstream Interfaces : Ethernet2
+Number of times disabled : 1
+Last disabled 0:10:50 ago

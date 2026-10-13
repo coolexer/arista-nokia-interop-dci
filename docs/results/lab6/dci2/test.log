@@ -1,0 +1,11 @@
+FAULT dci2 2026-10-12T14:11:12.069174282Z
+PING 192.168.10.12 (192.168.10.12) from 192.168.10.11 eth1: 56(84) bytes of data.
+
+--- 192.168.10.12 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 418ms
+PING 192.168.30.12 (192.168.30.12) from 192.168.20.11 eth2: 56(84) bytes of data.
+
+--- 192.168.30.12 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 423ms
+PASS dci2: L2/L3 both directions and fresh ARP with fault held
+RESTORE dci2 2026-10-12T14:11:38.914574150Z

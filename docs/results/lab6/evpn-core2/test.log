@@ -1,0 +1,5 @@
+FAULT evpn-core2 2026-10-12T14:25:08.045055184Z
+All changes have been committed. Leaving candidate mode.
+PASS evpn-core2: L2/L3 both directions and fresh ARP with fault held
+RESTORE evpn-core2 2026-10-12T14:25:29.243212063Z
+All changes have been committed. Leaving candidate mode.

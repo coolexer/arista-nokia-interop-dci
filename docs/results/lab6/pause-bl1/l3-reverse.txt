@@ -1,0 +1,230 @@
+PING 192.168.20.11 (192.168.20.11) from 192.168.30.12 eth2: 56(84) bytes of data.
+[1791814701.661002] 64 bytes from 192.168.20.11: icmp_seq=1 ttl=60 time=4.83 ms
+[1791814701.860005] 64 bytes from 192.168.20.11: icmp_seq=2 ttl=60 time=2.67 ms
+[1791814702.061344] 64 bytes from 192.168.20.11: icmp_seq=3 ttl=60 time=3.03 ms
+[1791814702.262150] 64 bytes from 192.168.20.11: icmp_seq=4 ttl=60 time=3.44 ms
+[1791814702.463613] 64 bytes from 192.168.20.11: icmp_seq=5 ttl=60 time=4.07 ms
+[1791814702.663698] 64 bytes from 192.168.20.11: icmp_seq=6 ttl=60 time=3.77 ms
+[1791814706.032302] From 192.168.30.1 icmp_seq=22 Destination Net Unreachable
+[1791814706.232293] From 192.168.30.1 icmp_seq=23 Destination Net Unreachable
+[1791814706.452446] From 192.168.30.1 icmp_seq=24 Destination Net Unreachable
+[1791814706.652229] From 192.168.30.1 icmp_seq=25 Destination Net Unreachable
+[1791814706.872321] From 192.168.30.1 icmp_seq=26 Destination Net Unreachable
+[1791814707.072418] From 192.168.30.1 icmp_seq=27 Destination Net Unreachable
+[1791814707.282886] From 192.168.30.1 icmp_seq=28 Destination Net Unreachable
+[1791814707.483805] From 192.168.30.1 icmp_seq=29 Destination Net Unreachable
+[1791814707.684234] From 192.168.30.1 icmp_seq=30 Destination Net Unreachable
+[1791814707.884804] From 192.168.30.1 icmp_seq=31 Destination Net Unreachable
+[1791814708.085402] From 192.168.30.1 icmp_seq=32 Destination Net Unreachable
+[1791814708.286606] From 192.168.30.1 icmp_seq=33 Destination Net Unreachable
+[1791814708.487535] From 192.168.30.1 icmp_seq=34 Destination Net Unreachable
+[1791814708.688298] From 192.168.30.1 icmp_seq=35 Destination Net Unreachable
+[1791814708.888225] From 192.168.30.1 icmp_seq=36 Destination Net Unreachable
+[1791814709.092244] From 192.168.30.1 icmp_seq=37 Destination Net Unreachable
+[1791814709.312202] From 192.168.30.1 icmp_seq=38 Destination Net Unreachable
+[1791814709.532216] From 192.168.30.1 icmp_seq=39 Destination Net Unreachable
+[1791814709.742227] From 192.168.30.1 icmp_seq=40 Destination Net Unreachable
+[1791814709.952404] From 192.168.30.1 icmp_seq=41 Destination Net Unreachable
+[1791814710.152400] From 192.168.30.1 icmp_seq=42 Destination Net Unreachable
+[1791814710.362229] From 192.168.30.1 icmp_seq=43 Destination Net Unreachable
+[1791814710.582220] From 192.168.30.1 icmp_seq=44 Destination Net Unreachable
+[1791814710.802673] From 192.168.30.1 icmp_seq=45 Destination Net Unreachable
+[1791814711.003268] From 192.168.30.1 icmp_seq=46 Destination Net Unreachable
+[1791814711.203327] From 192.168.30.1 icmp_seq=47 Destination Net Unreachable
+[1791814711.412450] From 192.168.30.1 icmp_seq=48 Destination Net Unreachable
+[1791814711.613295] From 192.168.30.1 icmp_seq=49 Destination Net Unreachable
+[1791814711.813201] From 192.168.30.1 icmp_seq=50 Destination Net Unreachable
+[1791814712.022340] From 192.168.30.1 icmp_seq=51 Destination Net Unreachable
+[1791814712.223326] From 192.168.30.1 icmp_seq=52 Destination Net Unreachable
+[1791814712.423329] From 192.168.30.1 icmp_seq=53 Destination Net Unreachable
+[1791814712.642394] From 192.168.30.1 icmp_seq=54 Destination Net Unreachable
+[1791814712.842272] From 192.168.30.1 icmp_seq=55 Destination Net Unreachable
+[1791814713.052481] From 192.168.30.1 icmp_seq=56 Destination Net Unreachable
+[1791814713.252191] From 192.168.30.1 icmp_seq=57 Destination Net Unreachable
+[1791814713.472228] From 192.168.30.1 icmp_seq=58 Destination Net Unreachable
+[1791814713.692160] From 192.168.30.1 icmp_seq=59 Destination Net Unreachable
+[1791814713.912310] From 192.168.30.1 icmp_seq=60 Destination Net Unreachable
+[1791814714.112438] From 192.168.30.1 icmp_seq=61 Destination Net Unreachable
+[1791814714.312231] From 192.168.30.1 icmp_seq=62 Destination Net Unreachable
+[1791814714.532627] From 192.168.30.1 icmp_seq=63 Destination Net Unreachable
+[1791814714.733328] From 192.168.30.1 icmp_seq=64 Destination Net Unreachable
+[1791814714.933220] From 192.168.30.1 icmp_seq=65 Destination Net Unreachable
+[1791814715.142421] From 192.168.30.1 icmp_seq=66 Destination Net Unreachable
+[1791814715.342303] From 192.168.30.1 icmp_seq=67 Destination Net Unreachable
+[1791814715.562225] From 192.168.30.1 icmp_seq=68 Destination Net Unreachable
+[1791814715.772532] From 192.168.30.1 icmp_seq=69 Destination Net Unreachable
+[1791814715.973301] From 192.168.30.1 icmp_seq=70 Destination Net Unreachable
+[1791814716.173402] From 192.168.30.1 icmp_seq=71 Destination Net Unreachable
+[1791814716.382235] From 192.168.30.1 icmp_seq=72 Destination Net Unreachable
+[1791814716.592386] From 192.168.30.1 icmp_seq=73 Destination Net Unreachable
+[1791814716.792395] From 192.168.30.1 icmp_seq=74 Destination Net Unreachable
+[1791814717.002217] From 192.168.30.1 icmp_seq=75 Destination Net Unreachable
+[1791814717.212242] From 192.168.30.1 icmp_seq=76 Destination Net Unreachable
+[1791814717.422205] From 192.168.30.1 icmp_seq=77 Destination Net Unreachable
+[1791814717.632330] From 192.168.30.1 icmp_seq=78 Destination Net Unreachable
+[1791814717.832214] From 192.168.30.1 icmp_seq=79 Destination Net Unreachable
+[1791814718.052508] From 192.168.30.1 icmp_seq=80 Destination Net Unreachable
+[1791814718.253406] From 192.168.30.1 icmp_seq=81 Destination Net Unreachable
+[1791814718.453263] From 192.168.30.1 icmp_seq=82 Destination Net Unreachable
+[1791814718.672217] From 192.168.30.1 icmp_seq=83 Destination Net Unreachable
+[1791814718.882209] From 192.168.30.1 icmp_seq=84 Destination Net Unreachable
+[1791814720.354271] 64 bytes from 192.168.20.11: icmp_seq=91 ttl=60 time=2.93 ms
+[1791814720.554485] 64 bytes from 192.168.20.11: icmp_seq=92 ttl=60 time=2.92 ms
+[1791814720.755727] 64 bytes from 192.168.20.11: icmp_seq=93 ttl=60 time=2.91 ms
+[1791814720.957434] 64 bytes from 192.168.20.11: icmp_seq=94 ttl=60 time=3.41 ms
+[1791814721.157282] 64 bytes from 192.168.20.11: icmp_seq=95 ttl=60 time=2.55 ms
+[1791814721.358305] 64 bytes from 192.168.20.11: icmp_seq=96 ttl=60 time=2.71 ms
+[1791814721.559996] 64 bytes from 192.168.20.11: icmp_seq=97 ttl=60 time=3.24 ms
+[1791814721.762724] 64 bytes from 192.168.20.11: icmp_seq=98 ttl=60 time=5.51 ms
+[1791814721.961890] 64 bytes from 192.168.20.11: icmp_seq=99 ttl=60 time=3.84 ms
+[1791814722.162414] 64 bytes from 192.168.20.11: icmp_seq=100 ttl=60 time=3.24 ms
+[1791814722.364201] 64 bytes from 192.168.20.11: icmp_seq=101 ttl=60 time=4.44 ms
+[1791814722.564361] 64 bytes from 192.168.20.11: icmp_seq=102 ttl=60 time=3.85 ms
+[1791814722.765555] 64 bytes from 192.168.20.11: icmp_seq=103 ttl=60 time=3.71 ms
+[1791814722.965631] 64 bytes from 192.168.20.11: icmp_seq=104 ttl=60 time=2.72 ms
+[1791814723.166660] 64 bytes from 192.168.20.11: icmp_seq=105 ttl=60 time=2.86 ms
+[1791814723.367885] 64 bytes from 192.168.20.11: icmp_seq=106 ttl=60 time=2.90 ms
+[1791814723.569302] 64 bytes from 192.168.20.11: icmp_seq=107 ttl=60 time=3.11 ms
+[1791814723.769057] 64 bytes from 192.168.20.11: icmp_seq=108 ttl=60 time=2.47 ms
+[1791814723.969740] 64 bytes from 192.168.20.11: icmp_seq=109 ttl=60 time=2.56 ms
+[1791814724.172725] 64 bytes from 192.168.20.11: icmp_seq=110 ttl=60 time=4.81 ms
+[1791814724.371941] 64 bytes from 192.168.20.11: icmp_seq=111 ttl=60 time=2.83 ms
+[1791814724.572481] 64 bytes from 192.168.20.11: icmp_seq=112 ttl=60 time=2.26 ms
+[1791814724.773114] 64 bytes from 192.168.20.11: icmp_seq=113 ttl=60 time=2.28 ms
+[1791814724.976027] 64 bytes from 192.168.20.11: icmp_seq=114 ttl=60 time=4.66 ms
+[1791814725.176243] 64 bytes from 192.168.20.11: icmp_seq=115 ttl=60 time=3.83 ms
+[1791814725.376906] 64 bytes from 192.168.20.11: icmp_seq=116 ttl=60 time=3.28 ms
+[1791814725.579022] 64 bytes from 192.168.20.11: icmp_seq=117 ttl=60 time=4.67 ms
+[1791814725.779006] 64 bytes from 192.168.20.11: icmp_seq=118 ttl=60 time=3.64 ms
+[1791814725.980518] 64 bytes from 192.168.20.11: icmp_seq=119 ttl=60 time=4.17 ms
+[1791814726.181971] 64 bytes from 192.168.20.11: icmp_seq=120 ttl=60 time=5.05 ms
+[1791814726.381761] 64 bytes from 192.168.20.11: icmp_seq=121 ttl=60 time=4.56 ms
+[1791814726.581175] 64 bytes from 192.168.20.11: icmp_seq=122 ttl=60 time=3.07 ms
+[1791814726.783223] 64 bytes from 192.168.20.11: icmp_seq=123 ttl=60 time=4.52 ms
+[1791814726.982975] 64 bytes from 192.168.20.11: icmp_seq=124 ttl=60 time=3.39 ms
+[1791814727.184277] 64 bytes from 192.168.20.11: icmp_seq=125 ttl=60 time=4.00 ms
+[1791814727.384087] 64 bytes from 192.168.20.11: icmp_seq=126 ttl=60 time=3.62 ms
+[1791814727.584173] 64 bytes from 192.168.20.11: icmp_seq=127 ttl=60 time=2.85 ms
+[1791814727.785773] 64 bytes from 192.168.20.11: icmp_seq=128 ttl=60 time=3.26 ms
+[1791814727.988860] 64 bytes from 192.168.20.11: icmp_seq=129 ttl=60 time=5.78 ms
+[1791814728.189885] 64 bytes from 192.168.20.11: icmp_seq=130 ttl=60 time=6.48 ms
+[1791814728.389451] 64 bytes from 192.168.20.11: icmp_seq=131 ttl=60 time=5.33 ms
+[1791814728.590139] 64 bytes from 192.168.20.11: icmp_seq=132 ttl=60 time=5.28 ms
+[1791814728.788979] 64 bytes from 192.168.20.11: icmp_seq=133 ttl=60 time=3.50 ms
+[1791814728.991175] 64 bytes from 192.168.20.11: icmp_seq=134 ttl=60 time=4.80 ms
+[1791814729.191296] 64 bytes from 192.168.20.11: icmp_seq=135 ttl=60 time=4.61 ms
+[1791814729.393347] 64 bytes from 192.168.20.11: icmp_seq=136 ttl=60 time=5.63 ms
+[1791814729.593890] 64 bytes from 192.168.20.11: icmp_seq=137 ttl=60 time=5.24 ms
+[1791814729.796234] 64 bytes from 192.168.20.11: icmp_seq=138 ttl=60 time=6.88 ms
+[1791814729.993647] 64 bytes from 192.168.20.11: icmp_seq=139 ttl=60 time=4.06 ms
+[1791814730.193033] 64 bytes from 192.168.20.11: icmp_seq=140 ttl=60 time=3.07 ms
+[1791814730.396875] 64 bytes from 192.168.20.11: icmp_seq=141 ttl=60 time=6.45 ms
+[1791814730.598748] 64 bytes from 192.168.20.11: icmp_seq=142 ttl=60 time=7.27 ms
+[1791814730.798358] 64 bytes from 192.168.20.11: icmp_seq=143 ttl=60 time=6.33 ms
+[1791814730.997617] 64 bytes from 192.168.20.11: icmp_seq=144 ttl=60 time=4.88 ms
+[1791814731.199716] 64 bytes from 192.168.20.11: icmp_seq=145 ttl=60 time=5.69 ms
+[1791814731.401541] 64 bytes from 192.168.20.11: icmp_seq=146 ttl=60 time=6.36 ms
+[1791814731.603278] 64 bytes from 192.168.20.11: icmp_seq=147 ttl=60 time=7.32 ms
+[1791814731.804579] 64 bytes from 192.168.20.11: icmp_seq=148 ttl=60 time=7.84 ms
+[1791814732.001899] 64 bytes from 192.168.20.11: icmp_seq=149 ttl=60 time=4.86 ms
+[1791814732.201176] 64 bytes from 192.168.20.11: icmp_seq=150 ttl=60 time=3.82 ms
+[1791814732.405046] 64 bytes from 192.168.20.11: icmp_seq=151 ttl=60 time=7.43 ms
+[1791814732.604235] 64 bytes from 192.168.20.11: icmp_seq=152 ttl=60 time=5.72 ms
+[1791814732.807205] 64 bytes from 192.168.20.11: icmp_seq=153 ttl=60 time=7.52 ms
+[1791814733.003832] 64 bytes from 192.168.20.11: icmp_seq=154 ttl=60 time=3.31 ms
+[1791814733.206011] 64 bytes from 192.168.20.11: icmp_seq=155 ttl=60 time=4.86 ms
+[1791814733.405548] 64 bytes from 192.168.20.11: icmp_seq=156 ttl=60 time=3.40 ms
+[1791814733.606249] 64 bytes from 192.168.20.11: icmp_seq=157 ttl=60 time=3.36 ms
+[1791814733.807384] 64 bytes from 192.168.20.11: icmp_seq=158 ttl=60 time=3.80 ms
+[1791814734.010037] 64 bytes from 192.168.20.11: icmp_seq=159 ttl=60 time=5.28 ms
+[1791814734.209771] 64 bytes from 192.168.20.11: icmp_seq=160 ttl=60 time=4.28 ms
+[1791814734.408734] 64 bytes from 192.168.20.11: icmp_seq=161 ttl=60 time=2.65 ms
+[1791814734.611691] 64 bytes from 192.168.20.11: icmp_seq=162 ttl=60 time=4.61 ms
+[1791814734.811681] 64 bytes from 192.168.20.11: icmp_seq=163 ttl=60 time=3.58 ms
+[1791814735.014822] 64 bytes from 192.168.20.11: icmp_seq=164 ttl=60 time=5.76 ms
+[1791814735.215933] 64 bytes from 192.168.20.11: icmp_seq=165 ttl=60 time=5.83 ms
+[1791814735.415629] 64 bytes from 192.168.20.11: icmp_seq=166 ttl=60 time=4.18 ms
+[1791814735.617836] 64 bytes from 192.168.20.11: icmp_seq=167 ttl=60 time=5.74 ms
+[1791814735.816624] 64 bytes from 192.168.20.11: icmp_seq=168 ttl=60 time=3.39 ms
+[1791814736.016977] 64 bytes from 192.168.20.11: icmp_seq=169 ttl=60 time=2.79 ms
+[1791814736.218774] 64 bytes from 192.168.20.11: icmp_seq=170 ttl=60 time=3.46 ms
+[1791814736.419620] 64 bytes from 192.168.20.11: icmp_seq=171 ttl=60 time=3.49 ms
+[1791814736.620697] 64 bytes from 192.168.20.11: icmp_seq=172 ttl=60 time=3.71 ms
+[1791814736.821357] 64 bytes from 192.168.20.11: icmp_seq=173 ttl=60 time=3.37 ms
+[1791814737.021503] 64 bytes from 192.168.20.11: icmp_seq=174 ttl=60 time=2.76 ms
+[1791814737.222369] 64 bytes from 192.168.20.11: icmp_seq=175 ttl=60 time=2.54 ms
+[1791814737.424079] 64 bytes from 192.168.20.11: icmp_seq=176 ttl=60 time=3.38 ms
+[1791814737.624708] 64 bytes from 192.168.20.11: icmp_seq=177 ttl=60 time=3.33 ms
+[1791814737.825473] 64 bytes from 192.168.20.11: icmp_seq=178 ttl=60 time=3.56 ms
+[1791814738.028257] 64 bytes from 192.168.20.11: icmp_seq=179 ttl=60 time=5.46 ms
+[1791814738.228985] 64 bytes from 192.168.20.11: icmp_seq=180 ttl=60 time=5.31 ms
+[1791814738.430480] 64 bytes from 192.168.20.11: icmp_seq=181 ttl=60 time=6.13 ms
+[1791814738.630432] 64 bytes from 192.168.20.11: icmp_seq=182 ttl=60 time=5.69 ms
+[1791814738.830483] 64 bytes from 192.168.20.11: icmp_seq=183 ttl=60 time=4.70 ms
+[1791814739.033652] 64 bytes from 192.168.20.11: icmp_seq=184 ttl=60 time=6.73 ms
+[1791814739.235682] 64 bytes from 192.168.20.11: icmp_seq=185 ttl=60 time=7.53 ms
+[1791814739.436332] 64 bytes from 192.168.20.11: icmp_seq=186 ttl=60 time=7.11 ms
+[1791814739.635249] 64 bytes from 192.168.20.11: icmp_seq=187 ttl=60 time=5.51 ms
+[1791814739.836070] 64 bytes from 192.168.20.11: icmp_seq=188 ttl=60 time=5.38 ms
+[1791814740.035483] 64 bytes from 192.168.20.11: icmp_seq=189 ttl=60 time=4.03 ms
+[1791814740.234956] 64 bytes from 192.168.20.11: icmp_seq=190 ttl=60 time=3.18 ms
+[1791814740.435150] 64 bytes from 192.168.20.11: icmp_seq=191 ttl=60 time=2.90 ms
+[1791814740.637066] 64 bytes from 192.168.20.11: icmp_seq=192 ttl=60 time=3.54 ms
+[1791814740.837465] 64 bytes from 192.168.20.11: icmp_seq=193 ttl=60 time=3.07 ms
+[1791814741.037344] 64 bytes from 192.168.20.11: icmp_seq=194 ttl=60 time=2.59 ms
+[1791814741.239360] 64 bytes from 192.168.20.11: icmp_seq=195 ttl=60 time=3.74 ms
+[1791814741.439364] 64 bytes from 192.168.20.11: icmp_seq=196 ttl=60 time=2.70 ms
+[1791814741.640763] 64 bytes from 192.168.20.11: icmp_seq=197 ttl=60 time=3.23 ms
+[1791814741.839305] From 100.64.2.2 icmp_seq=198 Destination Net Unreachable
+[1791814742.039974] From 100.64.2.2 icmp_seq=199 Destination Net Unreachable
+[1791814742.239943] From 100.64.2.2 icmp_seq=200 Destination Net Unreachable
+[1791814742.443366] From 100.64.2.2 icmp_seq=201 Destination Net Unreachable
+[1791814742.643081] From 100.64.2.2 icmp_seq=202 Destination Net Unreachable
+[1791814742.844777] From 100.64.2.2 icmp_seq=203 Destination Net Unreachable
+[1791814743.044627] From 100.64.2.2 icmp_seq=204 Destination Net Unreachable
+[1791814743.245361] From 100.64.2.2 icmp_seq=205 Destination Net Unreachable
+[1791814743.446209] From 100.64.2.2 icmp_seq=206 Destination Net Unreachable
+[1791814743.647149] From 100.64.2.2 icmp_seq=207 Destination Net Unreachable
+[1791814743.848139] From 100.64.2.2 icmp_seq=208 Destination Net Unreachable
+[1791814744.048460] From 192.168.30.1 icmp_seq=209 Destination Net Unreachable
+[1791814744.248420] From 192.168.30.1 icmp_seq=210 Destination Net Unreachable
+[1791814744.462636] From 192.168.30.1 icmp_seq=211 Destination Net Unreachable
+[1791814744.663275] From 192.168.30.1 icmp_seq=212 Destination Net Unreachable
+[1791814744.863178] From 192.168.30.1 icmp_seq=213 Destination Net Unreachable
+[1791814745.072308] From 192.168.30.1 icmp_seq=214 Destination Net Unreachable
+[1791814745.272327] From 192.168.30.1 icmp_seq=215 Destination Net Unreachable
+[1791814745.482386] From 192.168.30.1 icmp_seq=216 Destination Net Unreachable
+[1791814745.682410] From 192.168.30.1 icmp_seq=217 Destination Net Unreachable
+[1791814745.902238] From 192.168.30.1 icmp_seq=218 Destination Net Unreachable
+[1791814746.112230] From 192.168.30.1 icmp_seq=219 Destination Net Unreachable
+[1791814746.322468] From 192.168.30.1 icmp_seq=220 Destination Net Unreachable
+[1791814746.522397] From 192.168.30.1 icmp_seq=221 Destination Net Unreachable
+[1791814746.732621] From 192.168.30.1 icmp_seq=222 Destination Net Unreachable
+[1791814746.933480] From 192.168.30.1 icmp_seq=223 Destination Net Unreachable
+[1791814747.134595] From 192.168.30.1 icmp_seq=224 Destination Net Unreachable
+[1791814747.335453] From 192.168.30.1 icmp_seq=225 Destination Net Unreachable
+[1791814747.536390] From 192.168.30.1 icmp_seq=226 Destination Net Unreachable
+[1791814747.736235] From 192.168.30.1 icmp_seq=227 Destination Net Unreachable
+[1791814747.942360] From 192.168.30.1 icmp_seq=228 Destination Net Unreachable
+[1791814748.142237] From 192.168.30.1 icmp_seq=229 Destination Net Unreachable
+[1791814748.352224] From 192.168.30.1 icmp_seq=230 Destination Net Unreachable
+[1791814748.572610] From 192.168.30.1 icmp_seq=231 Destination Net Unreachable
+[1791814748.773608] From 192.168.30.1 icmp_seq=232 Destination Net Unreachable
+[1791814749.824130] 64 bytes from 192.168.20.11: icmp_seq=237 ttl=60 time=2.73 ms
+[1791814750.024987] 64 bytes from 192.168.20.11: icmp_seq=238 ttl=60 time=2.58 ms
+[1791814750.225750] 64 bytes from 192.168.20.11: icmp_seq=239 ttl=60 time=2.58 ms
+[1791814750.426537] 64 bytes from 192.168.20.11: icmp_seq=240 ttl=60 time=2.57 ms
+[1791814750.627492] 64 bytes from 192.168.20.11: icmp_seq=241 ttl=60 time=2.65 ms
+[1791814750.828619] 64 bytes from 192.168.20.11: icmp_seq=242 ttl=60 time=2.77 ms
+[1791814751.029711] 64 bytes from 192.168.20.11: icmp_seq=243 ttl=60 time=2.83 ms
+[1791814751.231419] 64 bytes from 192.168.20.11: icmp_seq=244 ttl=60 time=3.48 ms
+[1791814751.431912] 64 bytes from 192.168.20.11: icmp_seq=245 ttl=60 time=3.20 ms
+[1791814751.632679] 64 bytes from 192.168.20.11: icmp_seq=246 ttl=60 time=3.42 ms
+[1791814751.832356] 64 bytes from 192.168.20.11: icmp_seq=247 ttl=60 time=2.50 ms
+[1791814752.034529] 64 bytes from 192.168.20.11: icmp_seq=248 ttl=60 time=3.92 ms
+[1791814752.233810] 64 bytes from 192.168.20.11: icmp_seq=249 ttl=60 time=2.94 ms
+[1791814752.435212] 64 bytes from 192.168.20.11: icmp_seq=250 ttl=60 time=4.01 ms
+
+--- 192.168.20.11 ping statistics ---
+250 packets transmitted, 127 received, +98 errors, 49.2% packet loss, time 50774ms
+rtt min/avg/max/mdev = 2.259/4.123/7.837/1.381 ms

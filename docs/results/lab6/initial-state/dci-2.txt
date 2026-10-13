@@ -1,0 +1,1445 @@
+tcpdump: listening on e1-2, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+14:08:23.688811 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:23.991044 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:24.699315 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:25.001349 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:25.709389 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:26.011004 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:26.718702 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:27.021343 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:27.729113 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:28.031128 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:28.739342 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:29.041177 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:29.748940 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:30.052801 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:30.759325 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:31.061156 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:31.769427 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:31.970896 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:32.778708 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:32.979972 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:33.789183 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:33.991164 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:34.798908 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:35.001369 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:35.808732 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:36.010911 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:36.819324 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:37.021027 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:37.829153 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:38.031066 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:38.839088 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:39.040994 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:39.848814 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:40.051035 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:40.859226 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:41.061126 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:41.869326 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:41.970760 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:42.879501 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:42.980802 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:43.889465 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:43.990772 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:44.899498 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:45.002282 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:45.908846 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:46.010816 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:46.918732 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:47.020998 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:47.929133 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:48.031106 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:48.938517 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:49.039839 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:49.840045 1a:7f:04:ff:00:01 > 01:80:c2:00:00:0e, ethertype LLDP (0x88cc), length 252: LLDP, length 238
+	Chassis ID TLV (1), length 7
+	  Subtype MAC address (4): 1a:7f:04:ff:00:00
+	  0x0000:  041a 7f04 ff00 00
+	Port ID TLV (2), length 13
+	  Subtype Interface Name (5): ethernet-1/2
+	  0x0000:  0565 7468 6572 6e65 742d 312f 32
+	Time to Live TLV (3), length 2: TTL 120s
+	  0x0000:  0078
+	System Name TLV (5), length 7: dc2-bl2
+	  0x0000:  6463 322d 626c 32
+	System Description TLV (6), length 110
+	  SRLinux-v26.7.1-554-g78ed635f70a dc2-bl2 5.15.167.4-microsoft-standard-WSL2 #1 SMP Tue Nov 5 00:21:55 UTC 2024
+	  0x0000:  5352 4c69 6e75 782d 7632 362e 372e 312d
+	  0x0010:  3535 342d 6737 3865 6436 3335 6637 3061
+	  0x0020:  2064 6332 2d62 6c32 2035 2e31 352e 3136
+	  0x0030:  372e 342d 6d69 6372 6f73 6f66 742d 7374
+	  0x0040:  616e 6461 7264 2d57 534c 3220 2331 2053
+	  0x0050:  4d50 2054 7565 204e 6f76 2035 2030 303a
+	  0x0060:  3231 3a35 3520 5554 4320 3230 3234
+	System Capabilities TLV (7), length 4
+	  System  Capabilities [Router] (0x0010)
+	  Enabled Capabilities [Router] (0x0010)
+	  0x0000:  0010 0010
+	Organization specific TLV (127), length 6: OUI Ethernet bridged (0x0080c2)
+	  Priority Flow Control Configuration Subtype (11)
+	    Willing: 0, MBC: 0, RES: 0, PFC cap:8
+	    PFC Enable
+	     Priority : 0  1  2  3  4  5  6  7
+	     Value    : 0  0  0  0  0  0  0  0
+	  0x0000:  0080 c20b 0800
+	Organization specific TLV (127), length 6: OUI IEEE 802.3 Private (0x00120f)
+	  Max frame size Subtype (4)
+	    MTU size 0
+	  0x0000:  0012 0f04 0000
+	Organization specific TLV (127), length 9: OUI Ethernet bridged (0x0080c2)
+	  Link aggregation Subtype (7)
+	    aggregation status [supported, enabled], aggregation port ID 1818322737
+	  0x0000:  0080 c207 0f6c 6167 31
+	Organization specific TLV (127), length 25: OUI Ethernet bridged (0x0080c2)
+	  ETS Configuration Subtype (9)
+	    Willing:0, CBS:0, RES:0, Max TCs:0
+	    Priority Assignment Table
+	     Priority : 0   1   2   3   4   5   6   7
+	     Value    : 0   1   2   3   4   5   6   7
+	    TC Bandwidth Table
+	     TC%   : 0   1   2   3   4   5   6   7
+	     Value : 0   0   0   0   0   0   0   0
+	    TSA Assignment Table
+	     Traffic Class: 0   1   2   3   4   5   6   7
+	     Value        : 0   0   0   0   0   0   0   0
+	  0x0000:  0080 c209 0001 2345 6700 0000 0000 0000
+	  0x0010:  0000 0000 0000 0000 00
+	Organization specific TLV (127), length 25: OUI Ethernet bridged (0x0080c2)
+	  ETS Recommendation Subtype (10)
+	    RES: 0
+	    Priority Assignment Table
+	     Priority : 0   1   2   3   4   5   6   7
+	     Value    : 0   1   2   3   4   5   6   7
+	    TC Bandwidth Table
+	     TC%   : 0   1   2   3   4   5   6   7
+	     Value : 0   0   0   0   0   0   0   0
+	    TSA Assignment Table
+	     Traffic Class: 0   1   2   3   4   5   6   7
+	     Value        : 0   0   0   0   0   0   0   0
+	  0x0000:  0080 c20a 0001 2345 6700 0000 0000 0000
+	  0x0010:  0000 0000 0000 0000 00
+	End TLV (0), length 0
+14:08:49.948750 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:50.050953 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:50.959153 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:51.059856 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:51.969482 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:52.070952 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:52.972288 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:52.979098 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:52.987842 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:0e, ethertype LLDP (0x88cc), length 291: LLDP, length 277
+	Chassis ID TLV (1), length 7
+	  Subtype MAC address (4): 00:1c:73:ab:bc:a4
+	  0x0000:  0400 1c73 abbc a4
+	Port ID TLV (2), length 10
+	  Subtype Interface Name (5): Ethernet2
+	  0x0000:  0545 7468 6572 6e65 7432
+	Time to Live TLV (3), length 2: TTL 120s
+	  0x0000:  0078
+	Port Description TLV (4), length 50: Single-member LACP trunk to Nokia single-active ES
+	  0x0000:  5369 6e67 6c65 2d6d 656d 6265 7220 4c41
+	  0x0010:  4350 2074 7275 6e6b 2074 6f20 4e6f 6b69
+	  0x0020:  6120 7369 6e67 6c65 2d61 6374 6976 6520
+	  0x0030:  4553
+	System Name TLV (5), length 10: dc1-spine2
+	  0x0000:  6463 312d 7370 696e 6532
+	System Description TLV (6), length 99
+	  Arista Networks EOS version 4.34.7M-48746980.4347M (engineering build) running on an Arista cEOSLab
+	  0x0000:  4172 6973 7461 204e 6574 776f 726b 7320
+	  0x0010:  454f 5320 7665 7273 696f 6e20 342e 3334
+	  0x0020:  2e37 4d2d 3438 3734 3639 3830 2e34 3334
+	  0x0030:  374d 2028 656e 6769 6e65 6572 696e 6720
+	  0x0040:  6275 696c 6429 2072 756e 6e69 6e67 206f
+	  0x0050:  6e20 616e 2041 7269 7374 6120 6345 4f53
+	  0x0060:  4c61 62
+	System Capabilities TLV (7), length 4
+	  System  Capabilities [Bridge, Router] (0x0014)
+	  Enabled Capabilities [Bridge, Router] (0x0014)
+	  0x0000:  0014 0014
+	Management Address TLV (8), length 12
+	  Management Address length 5, AFI IPv4 (1): 10.255.1.253
+	  Interface Index Interface Numbering (2): 5000000
+	  0x0000:  0501 0aff 01fd 0200 4c4b 4000
+	Organization specific TLV (127), length 6: OUI Ethernet bridged (0x0080c2)
+	  Port VLAN Id Subtype (1)
+	    port vlan id (PVID): 1
+	  0x0000:  0080 c201 0001
+	Organization specific TLV (127), length 9: OUI IEEE 802.3 Private (0x00120f)
+	  Link aggregation Subtype (3)
+	    aggregation status [supported], aggregation port ID 0
+	  0x0000:  0012 0f03 0100 0000 00
+	Organization specific TLV (127), length 6: OUI IEEE 802.3 Private (0x00120f)
+	  Max frame size Subtype (4)
+	    MTU size 9236
+	  0x0000:  0012 0f04 2414
+	Organization specific TLV (127), length 36: OUI ANSI/TIA (0x0012bb)
+	  Inventory - serial number Subtype (8)
+	  Serial number 09FDFE0D50E5F571643783F87E5B1B3F
+	  0x0000:  0012 bb08 3039 4644 4645 3044 3530 4535
+	  0x0010:  4635 3731 3634 3337 3833 4638 3745 3542
+	  0x0020:  3142 3346
+	End TLV (0), length 0
+14:08:53.982278 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:53.989226 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:54.992003 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:54.999111 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:56.002517 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:56.009332 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:57.012111 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:57.018614 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:58.022457 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:58.029143 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:59.032126 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:08:59.039430 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:09:00.038719 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:09:00.040676 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:09:01.038731 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:09:01.040497 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:09:02.042516 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:09:02.049156 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:09:03.048799 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:09:03.050485 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:09:04.052355 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:09:04.058881 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:09:04.962527 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:09:05.069137 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:09:05.972154 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:09:06.078618 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:09:06.982230 1a:7f:04:ff:00:01 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+14:09:07.088604 aa:c1:ab:b3:e9:a3 > 01:80:c2:00:00:02, ethertype Slow Protocols (0x8809), length 124: LACPv1, length 110
+	Actor Information TLV (0x01), length 20
+	  System 00:1c:73:ab:bc:a4, System Priority 32768, Key 100, Port 2, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation, Synchronization]
+	  0x0000:  8000 001c 73ab bca4 0064 8000 0002 0f00
+	  0x0010:  0000
+	Partner Information TLV (0x02), length 20
+	  System 02:00:00:02:00:aa, System Priority 32768, Key 100, Port 1, Port Priority 32768
+	  State Flags [Activity, Timeout, Aggregation]
+	  0x0000:  8000 0200 0002 00aa 0064 8000 0001 0700
+	  0x0010:  0000
+	Collector Information TLV (0x03), length 16
+	  Max Delay 0
+	  0x0000:  0000 0000 0000 0000 0000 0000 0000
+	Terminator TLV (0x00), length 0
+
+90 packets captured
+91 packets received by filter
+0 packets dropped by kernel

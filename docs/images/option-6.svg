@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="820" viewBox="0 0 1800 820">
+<text x="45" y="44" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#64748B" text-anchor="start">ARISTA + NOKIA  /  INTEROPERABILITY LAB</text>
+<text x="45" y="99" font-family="Arial,sans-serif" font-size="35" font-weight="700" fill="#001135" text-anchor="start">Lab 6  |  Single-active shared Ethernet DCI</text>
+<text x="45" y="140" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#64748B" text-anchor="start">cEOS 4.34.7M + SR Linux 26.7.1  |  Independent Arista spines + 2 x X1b BL  |  8 nodes / 11 links</text>
+<rect x="30" y="205" width="760" height="495" rx="14" fill="#F3F6FA" stroke="#D7E1EF" stroke-width="2"/>
+<rect x="1010" y="205" width="760" height="495" rx="14" fill="#F3F6FA" stroke="#D7E1EF" stroke-width="2"/>
+<text x="65" y="243" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#001135" text-anchor="start">DATA CENTER 1</text>
+<text x="1045" y="243" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#001135" text-anchor="start">DATA CENTER 2</text>
+<polyline points="485,425 605,325" fill="none" stroke="#8A9BB3" stroke-width="4"/>
+<polyline points="485,425 605,545" fill="none" stroke="#8A9BB3" stroke-width="4"/>
+<polyline points="1315,425 1195,325" fill="none" stroke="#8A9BB3" stroke-width="4"/>
+<polyline points="1315,425 1195,545" fill="none" stroke="#8A9BB3" stroke-width="4"/>
+<polyline points="1115,365 1115,505" fill="none" stroke="#8A9BB3" stroke-width="4"/>
+<text x="1025" y="445" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#64748B" text-anchor="middle">Local EVPN</text>
+<text x="1025" y="467" font-family="Arial,sans-serif" font-size="15" font-weight="400" fill="#64748B" text-anchor="middle">interlink</text>
+<polyline points="765,325 1035,325" fill="none" stroke="#FF7900" stroke-width="5"/>
+<polyline points="765,545 777,545" fill="none" stroke="#005AFF" stroke-width="5"/>
+<polyline points="789,545 801,545" fill="none" stroke="#005AFF" stroke-width="5"/>
+<polyline points="813,545 825,545" fill="none" stroke="#005AFF" stroke-width="5"/>
+<polyline points="837,545 849,545" fill="none" stroke="#005AFF" stroke-width="5"/>
+<polyline points="861,545 873,545" fill="none" stroke="#005AFF" stroke-width="5"/>
+<polyline points="885,545 897,545" fill="none" stroke="#005AFF" stroke-width="5"/>
+<polyline points="909,545 921,545" fill="none" stroke="#005AFF" stroke-width="5"/>
+<polyline points="933,545 945,545" fill="none" stroke="#005AFF" stroke-width="5"/>
+<polyline points="957,545 969,545" fill="none" stroke="#005AFF" stroke-width="5"/>
+<polyline points="981,545 993,545" fill="none" stroke="#005AFF" stroke-width="5"/>
+<polyline points="1005,545 1017,545" fill="none" stroke="#005AFF" stroke-width="5"/>
+<polyline points="1029,545 1035,545" fill="none" stroke="#005AFF" stroke-width="5"/>
+<polyline points="230,417 325,417" fill="none" stroke="#8A9BB3" stroke-width="4"/>
+<polyline points="230,433 325,433" fill="none" stroke="#8A9BB3" stroke-width="4"/>
+<polyline points="1475,417 1570,417" fill="none" stroke="#8A9BB3" stroke-width="4"/>
+<polyline points="1475,433 1570,433" fill="none" stroke="#8A9BB3" stroke-width="4"/>
+<rect x="70" y="385" width="160" height="80" rx="12" fill="#64748B" stroke="#64748B" stroke-width="2"/>
+<text x="150" y="422" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="white" text-anchor="middle">h1</text>
+<text x="150" y="445" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="white" text-anchor="middle">LINUX HOST</text>
+<rect x="325" y="385" width="160" height="80" rx="12" fill="#7A7A7A" stroke="#7A7A7A" stroke-width="2"/>
+<text x="405" y="422" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="white" text-anchor="middle">dc1-leaf</text>
+<text x="405" y="445" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="white" text-anchor="middle">ARISTA cEOS</text>
+<rect x="605" y="285" width="160" height="80" rx="12" fill="#7A7A7A" stroke="#7A7A7A" stroke-width="2"/>
+<text x="685" y="322" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="white" text-anchor="middle">dc1-spine1</text>
+<text x="685" y="345" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="white" text-anchor="middle">ARISTA cEOS</text>
+<rect x="605" y="505" width="160" height="80" rx="12" fill="#7A7A7A" stroke="#7A7A7A" stroke-width="2"/>
+<text x="685" y="542" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="white" text-anchor="middle">dc1-spine2</text>
+<text x="685" y="565" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="white" text-anchor="middle">ARISTA cEOS</text>
+<rect x="1035" y="285" width="160" height="80" rx="12" fill="#005AFF" stroke="#005AFF" stroke-width="2"/>
+<text x="1115" y="322" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="white" text-anchor="middle">dc2-bl</text>
+<text x="1115" y="345" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="white" text-anchor="middle">NOKIA X1b</text>
+<rect x="1035" y="505" width="160" height="80" rx="12" fill="#005AFF" stroke="#005AFF" stroke-width="2"/>
+<text x="1115" y="542" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="white" text-anchor="middle">dc2-bl2</text>
+<text x="1115" y="565" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="white" text-anchor="middle">NOKIA X1b</text>
+<rect x="1315" y="385" width="160" height="80" rx="12" fill="#005AFF" stroke="#005AFF" stroke-width="2"/>
+<text x="1395" y="422" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="white" text-anchor="middle">dc2-leaf</text>
+<text x="1395" y="445" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="white" text-anchor="middle">NOKIA LEAF</text>
+<rect x="1570" y="385" width="160" height="80" rx="12" fill="#64748B" stroke="#64748B" stroke-width="2"/>
+<text x="1650" y="422" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="white" text-anchor="middle">h2</text>
+<text x="1650" y="445" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="white" text-anchor="middle">LINUX HOST</text>
+<text x="900" y="288" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#001135" text-anchor="middle">DCI-1 / DWDM</text>
+<text x="900" y="365" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#001135" text-anchor="middle">Preferred active / LACP</text>
+<text x="900" y="508" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#001135" text-anchor="middle">DCI-2 / DWDM</text>
+<text x="900" y="585" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#64748B" text-anchor="middle">Standby / LACP</text>
+<text x="900" y="428" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#005AFF" text-anchor="middle">L2 + L3</text>
+<text x="900" y="457" font-family="Arial,sans-serif" font-size="19" font-weight="400" fill="#001135" text-anchor="middle">Native VLAN trunk</text>
+<text x="405" y="323" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#087F6A" text-anchor="middle">2 routed uplinks</text>
+<text x="1395" y="323" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#087F6A" text-anchor="middle">2 routed uplinks</text>
+<text x="405" y="355" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#087F6A" text-anchor="middle">Local EVPN-VXLAN</text>
+<text x="1395" y="355" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#087F6A" text-anchor="middle">Local EVPN-VXLAN</text>
+<text x="280" y="614" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#001135" text-anchor="middle">L2: 192.168.10.11/24</text>
+<text x="280" y="644" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#001135" text-anchor="middle">L3: 192.168.20.11/24</text>
+<text x="1520" y="614" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#001135" text-anchor="middle">L2: 192.168.10.12/24</text>
+<text x="1520" y="644" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#001135" text-anchor="middle">L3: 192.168.30.12/24</text>
+<text x="45" y="755" font-family="Arial,sans-serif" font-size="21" font-weight="400" fill="#001135" text-anchor="start">DCI: VLAN 10 = L2  |  VLAN 901 = per-tenant VRF-lite / eBGP + BFD  |  Local VXLAN only</text>
+<text x="45" y="793" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#64748B" text-anchor="start">No spine MLAG  |  One-member LAG per circuit  |  Nokia single-active + core isolation guard</text>
+</svg>

@@ -1,0 +1,27 @@
+    admin-state enable
+    upython-script core-guard.py
+    oper-state up
+    paths [
+        "network-instance default protocols bgp neighbor 10.255.2.1 session-state"
+        "network-instance default protocols bgp neighbor 10.255.2.254 session-state"
+    ]
+    options {
+        object down-links {
+            values [
+                ethernet-1/2
+            ]
+        }
+    }
+    last-execution {
+        start-time "2026-10-12T14:25:31.774Z (3 minutes ago)"
+        end-time "2026-10-12T14:25:31.775Z (3 minutes ago)"
+        upython-duration 0
+        input "{\"instance\":\"DCI-CORE\",\"paths\":[{\"path\":\"network-instance default protocols bgp neighbor 10.255.2.1 session-state\",\"value\":\"established\"},{\"path\":\"network-instance default protocols bgp neighbor 10.255.2.254 session-state\",\"value\":\"established\"}],\"schemas\":[{\"path\":\"network-instance * protocols bgp neighbor * session-state\"}],\"options\":{\"down-links\":[\"ethernet-1/2\"]}}"
+        output "{\"actions\": [{\"set-ephemeral-path\": {\"path\": \"interface ethernet-1/2 oper-state\", \"value\": \"up\"}}]}"
+        stdout-stderr ""
+    }
+    statistics {
+        upython-duration 14
+        execution-count 36
+        execution-successes 36
+    }

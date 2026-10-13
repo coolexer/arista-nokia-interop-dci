@@ -11,6 +11,7 @@ Options A and B each have **8 nodes / 12 links**: an Arista leaf, a Nokia leaf, 
 | [Lab 3](labs/lab3-arista-spines) | Option A with direct DCI from Arista spines | Arista spines + Nokia BLs: IP transit | L2/L3, MTU, 8 single-fault cases, RT and dual-DCI isolation |
 | [Lab 4](labs/lab4-arista-l3-gateway) | Plain L3 EVPN gateway / VXLAN-to-VXLAN | Arista spines: RT-5 next-hop-self; Nokia BLs: IP transit | cEOS functional proof: L3, MTU, 4 faults; hardware qualification pending |
 | [Lab 5](labs/lab5-shared-ethernet-dci) | Native Ethernet DCI with VRF-lite | Arista MLAG + Nokia EVPN all-active; shared L2/L3 trunks | See shared-channel validation report |
+| [Lab 6](labs/lab6-single-active-dci) | Shared native Ethernet / VRF-lite, active/standby | Independent Arista VTEPs + Nokia single-active/LACP standby | See independent-spine validation report |
 
 ## Option A — end-to-end VXLAN
 
@@ -35,6 +36,12 @@ Two transit-only Arista spines connect directly to the two Nokia X1b BLs. The Ar
 ![Lab 5 topology](docs/images/option-5.png)
 
 Two Ethernet trunks carry both the stretched L2 VLAN and the VRF-lite L3 transit VLAN. Arista MLAG spines and Nokia X1b EVPN all-active BLs form a distributed LACP attachment. Each fabric retains its own EVPN control plane and leaf VTEP addresses. This variant requires an Arista spine peer-link and local VTEP/VRF termination on those spines. See [configuration and run instructions](labs/lab5-shared-ethernet-dci) and [validation results](docs/lab5-validation.md).
+
+## Lab 6 — shared channels with independent spines
+
+![Lab 6 topology](docs/images/option-6.png)
+
+Ordinary one-member LACP LAGs connect independent Arista spine VTEPs to Nokia X1b BLs. Nokia EVPN single-active/LACP standby selects one common L2/L3 trunk, with local fabric isolation protection. Leaf VTEPs stay local. This variant requires no Arista spine MLAG or peer-link. See [configuration and run instructions](labs/lab6-single-active-dci) and [validation results](docs/lab6-validation.md).
 
 ## Redundancy
 
@@ -79,7 +86,7 @@ sudo containerlab destroy --topo interop-dci-a.clab.yml
 
 ## Explore the topologies
 
-Open the repository in VS Code with the Containerlab extension. Select **Graph (TopoViewer)**: both YAML files have companion `.annotations.json` files with fixed positions, data-center groups and vendor colors. The editable `.clab.drawio` diagrams use the generator invoked by the extension's **Graph (draw.io, Horizontal)** action and the Nokia Modern theme. Arista is grey; Nokia is blue.
+Open the repository in VS Code with the Containerlab extension. Select **Graph (TopoViewer)**: the lab YAML files have companion `.annotations.json` files with fixed positions, data-center groups and vendor colors. The editable `.clab.drawio` diagrams use the generator invoked by the extension's **Graph (draw.io, Horizontal)** action and the Nokia Modern theme. Arista is grey; Nokia is blue.
 
 ## Test design and evidence
 

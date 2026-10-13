@@ -1,0 +1,52 @@
+{
+    "interfaces": {
+        "Port-Channel100": {
+            "name": "Port-Channel100",
+            "forwardingModel": "bridged",
+            "lineProtocolStatus": "up",
+            "interfaceStatus": "connected",
+            "hardware": "portChannel",
+            "interfaceAddress": [],
+            "physicalAddress": "aa:c1:ab:c0:0e:71",
+            "description": "Independent LACP handoff; no MLAG",
+            "bandwidth": 1000000000,
+            "mtu": 9214,
+            "l3MtuConfigured": true,
+            "l2Mru": 0,
+            "lastStatusChangeTimestamp": 1791815081.204405,
+            "interfaceStatistics": {
+                "updateInterval": 300.0,
+                "inBitsRate": 6417.428504171709,
+                "inPktsRate": 7.8540413088510554,
+                "outBitsRate": 5920.743119016829,
+                "outPktsRate": 7.344278339640432
+            },
+            "interfaceCounters": {
+                "inOctets": 1337369,
+                "inUcastPkts": 11731,
+                "inMulticastPkts": 1167,
+                "inBroadcastPkts": 57,
+                "inDiscards": 0,
+                "inTotalPkts": 12955,
+                "outOctets": 1259108,
+                "outUcastPkts": 11689,
+                "outMulticastPkts": 589,
+                "outBroadcastPkts": 49,
+                "outDiscards": 0,
+                "outTotalPkts": 12327,
+                "linkStatusChanges": 20,
+                "totalInErrors": 0,
+                "totalOutErrors": 0,
+                "counterRefreshTime": 1791815339.246282
+            },
+            "memberInterfaces": {
+                "Ethernet2": {
+                    "duplex": "duplexFull",
+                    "bandwidth": 1000000000
+                }
+            },
+            "fallbackEnabled": false,
+            "fallbackEnabledType": "fallbackNone"
+        }
+    }
+}

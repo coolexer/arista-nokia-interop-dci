@@ -1,0 +1,5 @@
+FAULT nokia-peer 2026-10-12T14:20:19.384507584Z
+All changes have been committed. Leaving candidate mode.
+PASS nokia-peer: L2/L3 both directions and fresh ARP with fault held
+RESTORE nokia-peer 2026-10-12T14:20:31.411801805Z
+All changes have been committed. Leaving candidate mode.

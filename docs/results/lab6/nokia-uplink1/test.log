@@ -1,0 +1,5 @@
+FAULT nokia-uplink1 2026-10-12T14:14:09.488698851Z
+All changes have been committed. Leaving candidate mode.
+PASS nokia-uplink1: L2/L3 both directions and fresh ARP with fault held
+RESTORE nokia-uplink1 2026-10-12T14:14:22.111093827Z
+All changes have been committed. Leaving candidate mode.

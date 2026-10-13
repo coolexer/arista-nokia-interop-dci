@@ -1,0 +1,18 @@
+Port-Channel100 is down, line protocol is lowerlayerdown (notconnect)
+  Hardware is Port-Channel, address is aac1.abb3.e9a3
+  Description: Independent LACP handoff; no MLAG
+  Ethernet MTU 9214 bytes
+  Full-duplex, Unconfigured
+  Active members in this channel: 0
+  Fallback mode is: off
+  Down 4 minutes, 21 seconds
+  3 link status changes since last clear
+  Last clearing of "show interface" counters never
+  5 minutes input rate 42 bps (- with framing overhead), 0 packets/sec
+  5 minutes output rate 6 bps (- with framing overhead), 0 packets/sec
+     11 packets input, 1290 bytes
+     Received 3 broadcasts, 8 multicast
+     0 input errors, 0 input discards
+     7 packets output, 569 bytes
+     Sent 4 broadcasts, 3 multicast
+     0 output errors, 0 output discards

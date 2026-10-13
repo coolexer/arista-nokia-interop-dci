@@ -1,0 +1,392 @@
+[
+  {
+    "scenario": "arista-uplink1",
+    "stable_fault_held_services": "pass",
+    "traces": [
+      {
+        "flow": "l2-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 7.011
+      },
+      {
+        "flow": "l2-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 7.039
+      },
+      {
+        "flow": "l3-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 18.222
+      },
+      {
+        "flow": "l3-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 18.139
+      }
+    ]
+  },
+  {
+    "scenario": "arista-uplink2",
+    "stable_fault_held_services": "pass",
+    "traces": [
+      {
+        "flow": "l2-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 7.471
+      },
+      {
+        "flow": "l2-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 7.455
+      },
+      {
+        "flow": "l3-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 17.711
+      },
+      {
+        "flow": "l3-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 17.685
+      }
+    ]
+  },
+  {
+    "scenario": "dci1",
+    "stable_fault_held_services": "pass",
+    "traces": [
+      {
+        "flow": "l2-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 9.678
+      },
+      {
+        "flow": "l2-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 9.682
+      },
+      {
+        "flow": "l3-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 20.795
+      },
+      {
+        "flow": "l3-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 20.808
+      }
+    ]
+  },
+  {
+    "scenario": "dci2",
+    "stable_fault_held_services": "pass",
+    "traces": [
+      {
+        "flow": "l2-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 8.704
+      },
+      {
+        "flow": "l2-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 8.687
+      },
+      {
+        "flow": "l3-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 19.868
+      },
+      {
+        "flow": "l3-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 19.789
+      }
+    ]
+  },
+  {
+    "scenario": "evpn-core1",
+    "stable_fault_held_services": "pass",
+    "traces": [
+      {
+        "flow": "l2-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 37.933
+      },
+      {
+        "flow": "l2-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 37.951
+      },
+      {
+        "flow": "l3-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 45.544
+      },
+      {
+        "flow": "l3-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 45.611
+      }
+    ]
+  },
+  {
+    "scenario": "evpn-core2",
+    "stable_fault_held_services": "pass",
+    "traces": [
+      {
+        "flow": "l2-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 0.234
+      },
+      {
+        "flow": "l2-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 0.222
+      },
+      {
+        "flow": "l3-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 0.237
+      },
+      {
+        "flow": "l3-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 0.235
+      }
+    ]
+  },
+  {
+    "scenario": "nokia-core1",
+    "stable_fault_held_services": "pass",
+    "traces": [
+      {
+        "flow": "l2-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 4.901
+      },
+      {
+        "flow": "l2-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 5.281
+      },
+      {
+        "flow": "l3-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 15.017
+      },
+      {
+        "flow": "l3-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 15.119
+      }
+    ]
+  },
+  {
+    "scenario": "nokia-core2",
+    "stable_fault_held_services": "pass",
+    "traces": [
+      {
+        "flow": "l2-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 0.274
+      },
+      {
+        "flow": "l2-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 0.278
+      },
+      {
+        "flow": "l3-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 0.265
+      },
+      {
+        "flow": "l3-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 0.305
+      }
+    ]
+  },
+  {
+    "scenario": "nokia-peer",
+    "stable_fault_held_services": "pass",
+    "traces": [
+      {
+        "flow": "l2-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 0.34
+      },
+      {
+        "flow": "l2-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 0.344
+      },
+      {
+        "flow": "l3-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 0.343
+      },
+      {
+        "flow": "l3-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 0.344
+      }
+    ]
+  },
+  {
+    "scenario": "nokia-uplink1",
+    "stable_fault_held_services": "pass",
+    "traces": [
+      {
+        "flow": "l2-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 0.3
+      },
+      {
+        "flow": "l2-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 0.308
+      },
+      {
+        "flow": "l3-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 0.294
+      },
+      {
+        "flow": "l3-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 0.376
+      }
+    ]
+  },
+  {
+    "scenario": "nokia-uplink2",
+    "stable_fault_held_services": "pass",
+    "traces": [
+      {
+        "flow": "l2-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 0.229
+      },
+      {
+        "flow": "l2-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 0.22
+      },
+      {
+        "flow": "l3-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 0.22
+      },
+      {
+        "flow": "l3-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 0.228
+      }
+    ]
+  },
+  {
+    "scenario": "pause-bl1",
+    "stable_fault_held_services": "pass",
+    "traces": [
+      {
+        "flow": "l2-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 8.039
+      },
+      {
+        "flow": "l2-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 8.13
+      },
+      {
+        "flow": "l3-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 17.562
+      },
+      {
+        "flow": "l3-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 17.691
+      }
+    ]
+  },
+  {
+    "scenario": "pause-bl2",
+    "stable_fault_held_services": "pass",
+    "traces": [
+      {
+        "flow": "l2-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 0.211
+      },
+      {
+        "flow": "l2-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 0.209
+      },
+      {
+        "flow": "l3-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 0.208
+      },
+      {
+        "flow": "l3-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 0.213
+      }
+    ]
+  },
+  {
+    "scenario": "pause-spine1",
+    "stable_fault_held_services": "pass",
+    "traces": [
+      {
+        "flow": "l2-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 5.911
+      },
+      {
+        "flow": "l2-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 5.923
+      },
+      {
+        "flow": "l3-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 15.148
+      },
+      {
+        "flow": "l3-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 15.069
+      }
+    ]
+  },
+  {
+    "scenario": "pause-spine2",
+    "stable_fault_held_services": "pass",
+    "traces": [
+      {
+        "flow": "l2-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 8.28
+      },
+      {
+        "flow": "l2-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 8.278
+      },
+      {
+        "flow": "l3-forward",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 17.286
+      },
+      {
+        "flow": "l3-reverse",
+        "duplicate_echo_replies": 0,
+        "max_observed_reply_gap_s": 17.287
+      }
+    ]
+  }
+]

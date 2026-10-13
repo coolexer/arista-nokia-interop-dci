@@ -1,0 +1,19 @@
+Port-Channel100 is up, line protocol is up (connected)
+  Hardware is Port-Channel, address is aac1.abc0.0e71
+  Description: Independent LACP handoff; no MLAG
+  Ethernet MTU 9214 bytes, BW 1000000 kbit
+  Full-duplex, 1Gb/s
+  Active members in this channel: 1
+  ... Ethernet2 , Full-duplex, 1Gb/s
+  Fallback mode is: off
+  Up 4 minutes, 29 seconds
+  2 link status changes since last clear
+  Last clearing of "show interface" counters never
+  5 minutes input rate 2.70 kbps (0.0% with framing overhead), 4 packets/sec
+  5 minutes output rate 2.33 kbps (0.0% with framing overhead), 3 packets/sec
+     797 packets input, 74796 bytes
+     Received 6 broadcasts, 258 multicast
+     0 input errors, 0 input discards
+     650 packets output, 56691 bytes
+     Sent 5 broadcasts, 132 multicast
+     0 output errors, 0 output discards

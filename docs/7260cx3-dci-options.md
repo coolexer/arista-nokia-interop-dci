@@ -38,7 +38,7 @@ The [Arista multi-domain overview](https://arista.my.site.com/AristaCommunity/s/
 | Full hierarchical VXLAN-to-VXLAN L2/L3 gateway, including MLAG/anycast/ESI variants | Both | Spines must re-originate and terminate inter-domain L2 services as well as L3 | **Excluded for this model.** Published L2 DCI/gateway limits apply; MLAG alone does not add stitching support |
 | VXLAN-to-EVPN-MPLS gateway / original Option B | Both | Spines become service PEs, with MPLS interworking | **Excluded for this model.** Keep suitable service BLs or choose a documented gateway platform |
 | Direct EVPN-MPLS, LDP pseudowires or VPLS service termination | Depends on service | MPLS service PE on the Arista side | **Excluded for this model** by the relevant EVPN/MPLS service feature limits; basic MPLS transit is insufficient |
-| Native Ethernet VLAN trunk across DWDM | L2; L3 needs separate routing | Change selected leaf-spine/BL handoffs to bridging; explicitly build a loop-free or single-active L2 path | **Lab 5 tests a specific redundant implementation:** Arista MLAG plus Nokia EVPN all-active, with an added peer-link; VLAN 10 and VRF-lite VLAN 901 share both DCI channels. L2 redundancy uses LACP/EVPN, not IP ECMP. Transient loss/duplicate limitations are recorded |
+| Native Ethernet VLAN trunk across DWDM | L2; L3 needs separate routing | Change selected leaf-spine/BL handoffs to bridging; explicitly build a loop-free or single-active L2 path | **Lab 6 validates independent spines with Nokia single-active/LACP standby and shared L2/L3 trunks.** Lab 5 tests an alternative implementation: Arista MLAG plus Nokia EVPN all-active, with an added peer-link; VLAN 10 and VRF-lite VLAN 901 share both DCI channels. L2 redundancy uses LACP/EVPN, not IP ECMP. Transient loss/duplicate limitations are recorded |
 
 The VRF-lite variants can use a global routing table for a single non-overlapping service, but multiple tenants or overlapping addressing require separate VRFs. A native VLAN alternative must prevent loops across both fabrics; activating both DCI trunks without a validated loop-prevention/redundancy design is not an acceptable solution.
 
@@ -72,12 +72,17 @@ This is **two independent RT-5 gateways with L3 ECMP**, not an ESI all-active mu
 
 Lab 4 was stopped after validation. Lab 3 was restored with its original IP-transit configuration.
 
-## Choice for this project
+## Choice by service boundary
 
-1. **L2 and L3 are both required:** retain Lab 3's end-to-end EVPN-VXLAN over IP, with per-flow ECMP and BFD. It is the simplest design requiring only the documented spine IP-transit functions.
-2. **L3 domain separation is more important and L2 stretch is limited:** evaluate VRF-lite plus selective L2 VXLAN. This uses documented base functions but needs its own acceptance test.
-3. **L3-only EVPN gateway is desired:** the cEOS experiment is positive. Before treating it as a supported 7260CX3 production design, resolve the exact SKU, installed EOS release and gateway feature/platform applicability. The experiment provides a reproducible config, not that missing hardware sign-off.
+1. **L2/L3 with local leaf VTEP addresses and active/standby DCI:** use [Lab 6](../labs/lab6-single-active-dci). Independent Arista VTEPs connect by standalone LACP LAGs to Nokia single-active BLs. Include the tested local fabric protection and qualify the full multi-site VLAN/VNI graph.
+2. **L2/L3 with inter-site leaf VTEP reachability allowed:** use Lab 3's end-to-end EVPN-VXLAN over routed IP, with per-flow ECMP and BFD.
+3. **L3-only EVPN gateway:** Lab 4 provides cEOS functional evidence. Resolve exact SKU, EOS release and hardware feature applicability before production use.
 
 ## Shared native Ethernet DCI
 
 [Lab 5](../labs/lab5-shared-ethernet-dci) terminates each local fabric on ordinary VTEPs and exchanges native L2 Ethernet plus VRF-lite IPv4 across shared DCI trunks. Arista MLAG and Nokia EVPN all-active provide the distributed attachment; an Arista peer-link and independent management heartbeat are required. Leaf VTEP addresses stay local. This does not require the unsupported hierarchical VXLAN-to-VXLAN L2 gateway feature. [Software validation and limitations](lab5-validation.md) include all nine fault cases, an extended dual-primary guard test, and transient duplication during a spine rejoin. Physical SKU/EOS qualification remains required.
+
+
+## Shared channels without Arista spine MLAG
+
+[Lab 6](../labs/lab6-single-active-dci) uses Nokia EVPN single-active/LACP standby and ordinary one-member LAGs on independent Arista spines. It preserves local VTEP addresses and gives both L2 and L3 one active common DCI trunk with one standby. It does not require Arista ESI all-active or hierarchical L2 VXLAN stitching. [Validation](lab6-validation.md) covers 15 fault-present scenarios, MTU, broadcast delivery and a clean source deployment. Lab 5 remains an alternative that explicitly introduces spine MLAG.
